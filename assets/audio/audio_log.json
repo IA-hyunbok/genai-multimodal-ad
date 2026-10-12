@@ -1,0 +1,833 @@
+[
+  {
+    "file": "bgm_main.wav",
+    "tool": "HF Space gradio_client",
+    "space": "artificialguybr/Stable-Audio-Open-Zero",
+    "prompt": "Warm uplifting cinematic electronic pop instrumental, 100 BPM, soft piano arpeggio and light synth pads, gentle build from calm and slightly tense to hopeful and bright, subtle percussion, no vocals, no lyrics, clean mix with space for voice-over, 45 seconds",
+    "status": "failed",
+    "summary": "artificialguybr/Stable-Audio-Open-Zero 실패: AppError: RuntimeError",
+    "time": "2026-10-12 14:44:39"
+  },
+  {
+    "file": "bgm_main.wav",
+    "tool": "HF Space gradio_client",
+    "space": "facebook/MusicGen",
+    "prompt": "Warm uplifting cinematic electronic pop instrumental, 100 BPM, soft piano arpeggio and light synth pads, gentle build from calm and slightly tense to hopeful and bright, subtle percussion, no vocals, no lyrics, clean mix with space for voice-over, 45 seconds",
+    "status": "failed",
+    "summary": "facebook/MusicGen 실패: AppError: Internal Gradio error",
+    "time": "2026-10-12 14:44:42"
+  },
+  {
+    "file": "sfx_whoosh.wav",
+    "tool": "HF Space gradio_client",
+    "space": "artificialguybr/Stable-Audio-Open-Zero",
+    "prompt": "short soft whoosh riser sweep, clean, no music",
+    "status": "failed",
+    "summary": "artificialguybr/Stable-Audio-Open-Zero 실패: AppError: You have exceeded your ZeroGPU quota (180s requested vs. 170s left). Try again in 23:59:44. Authenticate with a Hugging Face token for more quota - https://huggingface.co/settings/tokens",
+    "time": "2026-10-12 14:44:45"
+  },
+  {
+    "file": "sfx_whoosh.wav",
+    "tool": "HF Space gradio_client",
+    "space": "facebook/MusicGen",
+    "prompt": "short soft whoosh riser sweep, clean, no music",
+    "status": "failed",
+    "summary": "facebook/MusicGen 실패: AppError: Internal Gradio error",
+    "time": "2026-10-12 14:44:48"
+  },
+  {
+    "file": "sfx_chime.wav",
+    "tool": "HF Space gradio_client",
+    "space": "artificialguybr/Stable-Audio-Open-Zero",
+    "prompt": "single bright glass chime, soft bell, short, gentle decay, no music",
+    "status": "failed",
+    "summary": "artificialguybr/Stable-Audio-Open-Zero 실패: AppError: You have exceeded your ZeroGPU quota (180s requested vs. 170s left). Try again in 23:59:38. Authenticate with a Hugging Face token for more quota - https://huggingface.co/settings/tokens",
+    "time": "2026-10-12 14:44:52"
+  },
+  {
+    "file": "sfx_chime.wav",
+    "tool": "HF Space gradio_client",
+    "space": "facebook/MusicGen",
+    "prompt": "single bright glass chime, soft bell, short, gentle decay, no music",
+    "status": "failed",
+    "summary": "facebook/MusicGen 실패: AppError: Internal Gradio error",
+    "time": "2026-10-12 14:44:55"
+  },
+  {
+    "file": "scene01_vo.mp3",
+    "tool": "edge-tts",
+    "voice": "ko-KR-SunHiNeural",
+    "text": "새로운 AI 기술, 어디서부터 배워야 할지 막막하셨나요?",
+    "status": "failed",
+    "summary": "edge-tts 실패: WSServerHandshakeError: 403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1 (speech.platform.bing.com WS 403, 재시도·버전 헤더 변경 모두 실패) -> gTTS 대체 (MeloTTS Space는 KR 화자가 선택지에 없어 실패)",
+    "time": "2026-10-12 14:45:14"
+  },
+  {
+    "file": "scene01_vo.mp3",
+    "tool": "gTTS + ffmpeg atempo",
+    "voice": "gTTS ko (Google Translate TTS)",
+    "text": "새로운 AI 기술, 어디서부터 배워야 할지 막막하셨나요?",
+    "params": {
+      "lang": "ko",
+      "atempo": 1.0
+    },
+    "duration": 5.42,
+    "scene_duration": 7,
+    "status": "ok",
+    "summary": "5.42s / 씬 7s, atempo 1.0",
+    "time": "2026-10-12 14:45:14"
+  },
+  {
+    "file": "scene02_vo.mp3",
+    "tool": "gTTS + ffmpeg atempo",
+    "voice": "gTTS ko (Google Translate TTS)",
+    "text": "강의는 들었지만, 혼자서는 비싼 학비와 시간이 발목을 잡죠.",
+    "params": {
+      "lang": "ko",
+      "atempo": 1.0
+    },
+    "duration": 6.21,
+    "scene_duration": 7,
+    "status": "ok",
+    "summary": "6.21s / 씬 7s, atempo 1.0",
+    "time": "2026-10-12 14:45:15"
+  },
+  {
+    "file": "scene03_vo.mp3",
+    "tool": "gTTS + ffmpeg atempo",
+    "voice": "gTTS ko (Google Translate TTS)",
+    "text": "그래서 코디세이는 강의 대신, 직접 만들며 동료와 함께 배우는 길을 엽니다.",
+    "params": {
+      "lang": "ko",
+      "atempo": 1.0
+    },
+    "duration": 8.01,
+    "scene_duration": 8,
+    "status": "too_long_retry",
+    "summary": "8.01s / 씬 8s, atempo 1.0 -> 초과, 속도 상향",
+    "time": "2026-10-12 14:45:16"
+  },
+  {
+    "file": "scene03_vo.mp3",
+    "tool": "gTTS + ffmpeg atempo",
+    "voice": "gTTS ko (Google Translate TTS)",
+    "text": "그래서 코디세이는 강의 대신, 직접 만들며 동료와 함께 배우는 길을 엽니다.",
+    "params": {
+      "lang": "ko",
+      "atempo": 1.1
+    },
+    "duration": 7.29,
+    "scene_duration": 8,
+    "status": "ok",
+    "summary": "7.29s / 씬 8s, atempo 1.1",
+    "time": "2026-10-12 14:45:16"
+  },
+  {
+    "file": "scene04_vo.mp3",
+    "tool": "gTTS + ffmpeg atempo",
+    "voice": "gTTS ko (Google Translate TTS)",
+    "text": "프로젝트 속에서 서로 묻고 가르치며, 전공도 경력도 상관없이 시작할 수 있어요.",
+    "params": {
+      "lang": "ko",
+      "atempo": 1.0
+    },
+    "duration": 7.87,
+    "scene_duration": 8,
+    "status": "too_long_retry",
+    "summary": "7.87s / 씬 8s, atempo 1.0 -> 초과, 속도 상향",
+    "time": "2026-10-12 14:45:16"
+  },
+  {
+    "file": "scene04_vo.mp3",
+    "tool": "gTTS + ffmpeg atempo",
+    "voice": "gTTS ko (Google Translate TTS)",
+    "text": "프로젝트 속에서 서로 묻고 가르치며, 전공도 경력도 상관없이 시작할 수 있어요.",
+    "params": {
+      "lang": "ko",
+      "atempo": 1.1
+    },
+    "duration": 7.16,
+    "scene_duration": 8,
+    "status": "ok",
+    "summary": "7.16s / 씬 8s, atempo 1.1",
+    "time": "2026-10-12 14:45:16"
+  },
+  {
+    "file": "scene05_vo.mp3",
+    "tool": "gTTS + ffmpeg atempo",
+    "voice": "gTTS ko (Google Translate TTS)",
+    "text": "학비 부담은 장학금으로 덜고, 5개월 AI 네이티브부터 18개월 AI 올인원까지, 나에게 맞는 과정을 고르세요.",
+    "params": {
+      "lang": "ko",
+      "atempo": 1.0
+    },
+    "duration": 11.76,
+    "scene_duration": 9,
+    "status": "too_long_retry",
+    "summary": "11.76s / 씬 9s, atempo 1.0 -> 초과, 속도 상향",
+    "time": "2026-10-12 14:45:17"
+  },
+  {
+    "file": "scene05_vo.mp3",
+    "tool": "gTTS + ffmpeg atempo",
+    "voice": "gTTS ko (Google Translate TTS)",
+    "text": "학비 부담은 장학금으로 덜고, 5개월 AI 네이티브부터 18개월 AI 올인원까지, 나에게 맞는 과정을 고르세요.",
+    "params": {
+      "lang": "ko",
+      "atempo": 1.1
+    },
+    "duration": 10.69,
+    "scene_duration": 9,
+    "status": "too_long_retry",
+    "summary": "10.69s / 씬 9s, atempo 1.1 -> 초과, 속도 상향",
+    "time": "2026-10-12 14:45:17"
+  },
+  {
+    "file": "scene05_vo.mp3",
+    "tool": "gTTS + ffmpeg atempo",
+    "voice": "gTTS ko (Google Translate TTS)",
+    "text": "학비 부담은 장학금으로 덜고, 5개월 AI 네이티브부터 18개월 AI 올인원까지, 나에게 맞는 과정을 고르세요.",
+    "params": {
+      "lang": "ko",
+      "atempo": 1.2
+    },
+    "duration": 9.8,
+    "scene_duration": 9,
+    "status": "too_long_retry",
+    "summary": "9.80s / 씬 9s, atempo 1.2 -> 초과, 속도 상향",
+    "time": "2026-10-12 14:45:17"
+  },
+  {
+    "file": "scene05_vo.mp3",
+    "tool": "gTTS + ffmpeg atempo",
+    "voice": "gTTS ko (Google Translate TTS)",
+    "text": "학비 부담은 장학금으로 덜고, 5개월 AI 네이티브부터 18개월 AI 올인원까지, 나에게 맞는 과정을 고르세요.",
+    "params": {
+      "lang": "ko",
+      "atempo": 1.3
+    },
+    "duration": 9.05,
+    "scene_duration": 9,
+    "status": "too_long_retry",
+    "summary": "9.05s / 씬 9s, atempo 1.3 -> 초과, 속도 상향",
+    "time": "2026-10-12 14:45:17"
+  },
+  {
+    "file": "scene05_vo.mp3",
+    "status": "failed",
+    "summary": "atempo 1.3에도 씬 길이 초과, 문장 축약 필요",
+    "time": "2026-10-12 14:45:17"
+  },
+  {
+    "file": "scene06_vo.mp3",
+    "tool": "gTTS + ffmpeg atempo",
+    "voice": "gTTS ko (Google Translate TTS)",
+    "text": "코디세이. 지금, 나의 AI 여정을 시작하세요.",
+    "params": {
+      "lang": "ko",
+      "atempo": 1.0
+    },
+    "duration": 5.18,
+    "scene_duration": 5,
+    "status": "too_long_retry",
+    "summary": "5.18s / 씬 5s, atempo 1.0 -> 초과, 속도 상향",
+    "time": "2026-10-12 14:45:18"
+  },
+  {
+    "file": "scene06_vo.mp3",
+    "tool": "gTTS + ffmpeg atempo",
+    "voice": "gTTS ko (Google Translate TTS)",
+    "text": "코디세이. 지금, 나의 AI 여정을 시작하세요.",
+    "params": {
+      "lang": "ko",
+      "atempo": 1.1
+    },
+    "duration": 4.71,
+    "scene_duration": 5,
+    "status": "too_long_retry",
+    "summary": "4.71s / 씬 5s, atempo 1.1 -> 초과, 속도 상향",
+    "time": "2026-10-12 14:45:18"
+  },
+  {
+    "file": "scene06_vo.mp3",
+    "tool": "gTTS + ffmpeg atempo",
+    "voice": "gTTS ko (Google Translate TTS)",
+    "text": "코디세이. 지금, 나의 AI 여정을 시작하세요.",
+    "params": {
+      "lang": "ko",
+      "atempo": 1.2
+    },
+    "duration": 4.32,
+    "scene_duration": 5,
+    "status": "ok",
+    "summary": "4.32s / 씬 5s, atempo 1.2",
+    "time": "2026-10-12 14:45:18"
+  },
+  {
+    "file": "bgm_main.wav",
+    "tool": "HF Space gradio_client",
+    "space": "artificialguybr/Stable-Audio-Open-Zero",
+    "prompt": "Warm uplifting cinematic electronic pop instrumental, 100 BPM, soft piano arpeggio and light synth pads, gentle build from calm and slightly tense to hopeful and bright, subtle percussion, no vocals, no lyrics, clean mix with space for voice-over, 45 seconds",
+    "status": "failed",
+    "summary": "artificialguybr/Stable-Audio-Open-Zero 실패: AppError: You have exceeded your ZeroGPU quota (180s requested vs. 170s left). Try again in 23:58:55. Authenticate with a Hugging Face token for more quota - https://huggingface.co/settings/tokens",
+    "time": "2026-10-12 14:45:35"
+  },
+  {
+    "file": "bgm_main.wav",
+    "tool": "HF Space gradio_client",
+    "space": "sanchit-gandhi/musicgen-streaming",
+    "prompt": "Warm uplifting cinematic electronic pop instrumental, 100 BPM, soft piano arpeggio and light synth pads, gentle build from calm and slightly tense to hopeful and bright, subtle percussion, no vocals, no lyrics, clean mix with space for voice-over, 45 seconds",
+    "status": "failed",
+    "summary": "sanchit-gandhi/musicgen-streaming 실패: AppError: Value 42 is greater than maximum value 10.",
+    "time": "2026-10-12 14:45:38"
+  },
+  {
+    "file": "bgm_main.wav",
+    "tool": "HF Space gradio_client",
+    "space": "facebook/MusicGen",
+    "prompt": "Warm uplifting cinematic electronic pop instrumental, 100 BPM, soft piano arpeggio and light synth pads, gentle build from calm and slightly tense to hopeful and bright, subtle percussion, no vocals, no lyrics, clean mix with space for voice-over, 45 seconds",
+    "status": "failed",
+    "summary": "facebook/MusicGen 실패: AppError: Internal Gradio error",
+    "time": "2026-10-12 14:45:41"
+  },
+  {
+    "file": "bgm_main.wav",
+    "tool": "HF Space gradio_client",
+    "space": "artificialguybr/Stable-Audio-Open-Zero",
+    "prompt": "Warm uplifting cinematic electronic pop instrumental, 100 BPM, soft piano arpeggio and light synth pads, gentle build from calm and slightly tense to hopeful and bright, subtle percussion, no vocals, no lyrics, clean mix with space for voice-over, 45 seconds",
+    "status": "failed",
+    "summary": "artificialguybr/Stable-Audio-Open-Zero 실패: AppError: You have exceeded your ZeroGPU quota (180s requested vs. 170s left). Try again in 23:58:42. Authenticate with a Hugging Face token for more quota - https://huggingface.co/settings/tokens",
+    "time": "2026-10-12 14:45:47"
+  },
+  {
+    "file": "bgm_main.wav",
+    "tool": "HF Space gradio_client",
+    "space": "sanchit-gandhi/musicgen-streaming",
+    "prompt": "Warm uplifting cinematic electronic pop instrumental, 100 BPM, soft piano arpeggio and light synth pads, gentle build from calm and slightly tense to hopeful and bright, subtle percussion, no vocals, no lyrics, clean mix with space for voice-over, 45 seconds",
+    "status": "failed",
+    "summary": "sanchit-gandhi/musicgen-streaming 실패: CalledProcessError: Command '['/opt/homebrew/bin/ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', '/Users/hyunbok/Desktop/genai-multimodal-ad/assets/audio/bgm_main.wav']' returned non-zero e",
+    "time": "2026-10-12 14:46:24"
+  },
+  {
+    "file": "bgm_main.wav",
+    "tool": "HF Space gradio_client",
+    "space": "facebook/MusicGen",
+    "prompt": "Warm uplifting cinematic electronic pop instrumental, 100 BPM, soft piano arpeggio and light synth pads, gentle build from calm and slightly tense to hopeful and bright, subtle percussion, no vocals, no lyrics, clean mix with space for voice-over, 45 seconds",
+    "status": "failed",
+    "summary": "facebook/MusicGen 실패: AppError: Internal Gradio error",
+    "time": "2026-10-12 14:46:27"
+  },
+  {
+    "file": "bgm_part1.wav",
+    "tool": "HF Space gradio_client",
+    "space": "artificialguybr/Stable-Audio-Open-Zero",
+    "prompt": "Warm uplifting cinematic electronic pop instrumental, 100 BPM, soft piano arpeggio and light synth pads, gentle build from calm and slightly tense to hopeful and bright, subtle percussion, no vocals, no lyrics, clean mix with space for voice-over, 45 seconds",
+    "status": "failed",
+    "summary": "artificialguybr/Stable-Audio-Open-Zero 실패: AppError: You have exceeded your ZeroGPU runs limit. Authenticate with a Hugging Face token for more quota - https://huggingface.co/settings/tokens",
+    "time": "2026-10-12 14:47:22"
+  },
+  {
+    "file": "bgm_part1.wav",
+    "tool": "HF Space gradio_client",
+    "space": "sanchit-gandhi/musicgen-streaming",
+    "prompt": "Warm uplifting cinematic electronic pop instrumental, 100 BPM, soft piano arpeggio and light synth pads, gentle build from calm and slightly tense to hopeful and bright, subtle percussion, no vocals, no lyrics, clean mix with space for voice-over, 45 seconds",
+    "status": "failed",
+    "summary": "sanchit-gandhi/musicgen-streaming 실패: TypeError: 'NoneType' object is not subscriptable",
+    "time": "2026-10-12 14:47:25"
+  },
+  {
+    "file": "bgm_part1.wav",
+    "tool": "HF Space gradio_client",
+    "space": "facebook/MusicGen",
+    "prompt": "Warm uplifting cinematic electronic pop instrumental, 100 BPM, soft piano arpeggio and light synth pads, gentle build from calm and slightly tense to hopeful and bright, subtle percussion, no vocals, no lyrics, clean mix with space for voice-over, 45 seconds",
+    "status": "failed",
+    "summary": "facebook/MusicGen 실패: AppError: Internal Gradio error",
+    "time": "2026-10-12 14:47:28"
+  },
+  {
+    "file": "bgm_part1.wav",
+    "tool": "HF Space gradio_client",
+    "space": "artificialguybr/Stable-Audio-Open-Zero",
+    "prompt": "Warm uplifting cinematic electronic pop instrumental, 100 BPM, soft piano arpeggio and light synth pads, gentle build from calm and slightly tense to hopeful and bright, subtle percussion, no vocals, no lyrics, clean mix with space for voice-over, 45 seconds",
+    "status": "failed",
+    "summary": "artificialguybr/Stable-Audio-Open-Zero 실패: AppError: You have exceeded your ZeroGPU runs limit. Authenticate with a Hugging Face token for more quota - https://huggingface.co/settings/tokens",
+    "time": "2026-10-12 14:48:10"
+  },
+  {
+    "file": "bgm_part1.wav",
+    "tool": "HF Space gradio_client",
+    "space": "sanchit-gandhi/musicgen-streaming",
+    "prompt": "Warm uplifting cinematic electronic pop instrumental, 100 BPM, soft piano arpeggio and light synth pads, gentle build from calm and slightly tense to hopeful and bright, subtle percussion, no vocals, no lyrics, clean mix with space for voice-over, 45 seconds",
+    "status": "failed",
+    "summary": "sanchit-gandhi/musicgen-streaming 실패: TypeError: 'NoneType' object is not subscriptable",
+    "time": "2026-10-12 14:48:14"
+  },
+  {
+    "file": "bgm_part1.wav",
+    "tool": "HF Space gradio_client",
+    "space": "facebook/MusicGen",
+    "prompt": "Warm uplifting cinematic electronic pop instrumental, 100 BPM, soft piano arpeggio and light synth pads, gentle build from calm and slightly tense to hopeful and bright, subtle percussion, no vocals, no lyrics, clean mix with space for voice-over, 45 seconds",
+    "status": "failed",
+    "summary": "facebook/MusicGen 실패: AppError: Internal Gradio error",
+    "time": "2026-10-12 14:48:17"
+  },
+  {
+    "file": "bgm_part1.wav",
+    "tool": "HF Space gradio_client",
+    "space": "patgpt4/MusicGen",
+    "prompt": "Warm uplifting cinematic electronic pop instrumental, 100 BPM, soft piano arpeggio and light synth pads, gentle build from calm and slightly tense to hopeful and bright, subtle percussion, no vocals, no lyrics, clean mix with space for voice-over, 45 seconds",
+    "status": "failed",
+    "summary": "patgpt4/MusicGen 실패: ValueError: This endpoint does not support key-word arguments Please click on 'view API' in the footer of the Gradio app to see usage.",
+    "time": "2026-10-12 14:48:20"
+  },
+  {
+    "file": "bgm_part1.wav",
+    "tool": "HF Space gradio_client",
+    "space": "patgpt4/MusicGen",
+    "prompt": "Warm uplifting cinematic electronic pop instrumental, 100 BPM, soft piano arpeggio and light synth pads, gentle build from calm and slightly tense to hopeful and bright, subtle percussion, no vocals, no lyrics, clean mix with space for voice-over, 45 seconds",
+    "status": "failed",
+    "summary": "patgpt4/MusicGen 실패: ValueError: Unknown protocol: ws",
+    "time": "2026-10-12 14:48:29"
+  },
+  {
+    "file": "scene01_vo.mp3",
+    "tool": "edge-tts",
+    "voice": "ko-KR-SunHiNeural",
+    "text": "새로운 AI 기술, 어디서부터 배워야 할지 막막하셨나요?",
+    "status": "failed",
+    "summary": "edge-tts 실패: WSServerHandshakeError: 403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1 (speech.platform.bing.com WS 403, 재시도·버전 헤더 변경 모두 실패) -> gTTS 대체 (MeloTTS Space는 KR 화자가 선택지에 없어 실패)",
+    "time": "2026-10-12 14:48:34"
+  },
+  {
+    "file": "scene01_vo.mp3",
+    "tool": "gTTS + ffmpeg atempo",
+    "voice": "gTTS ko (Google Translate TTS)",
+    "text": "새로운 AI 기술, 어디서부터 배워야 할지 막막하셨나요?",
+    "params": {
+      "lang": "ko",
+      "atempo": 1.0
+    },
+    "duration": 5.42,
+    "scene_duration": 7,
+    "status": "ok",
+    "summary": "5.42s / 씬 7s, atempo 1.0",
+    "time": "2026-10-12 14:48:35"
+  },
+  {
+    "file": "scene02_vo.mp3",
+    "tool": "gTTS + ffmpeg atempo",
+    "voice": "gTTS ko (Google Translate TTS)",
+    "text": "강의는 들었지만, 혼자서는 비싼 학비와 시간이 발목을 잡죠.",
+    "params": {
+      "lang": "ko",
+      "atempo": 1.0
+    },
+    "duration": 6.21,
+    "scene_duration": 7,
+    "status": "ok",
+    "summary": "6.21s / 씬 7s, atempo 1.0",
+    "time": "2026-10-12 14:48:35"
+  },
+  {
+    "file": "scene03_vo.mp3",
+    "tool": "gTTS + ffmpeg atempo",
+    "voice": "gTTS ko (Google Translate TTS)",
+    "text": "그래서 코디세이는 강의 대신, 직접 만들며 동료와 함께 배우는 길을 엽니다.",
+    "params": {
+      "lang": "ko",
+      "atempo": 1.0
+    },
+    "duration": 8.01,
+    "scene_duration": 8,
+    "status": "too_long_retry",
+    "summary": "8.01s / 씬 8s, atempo 1.0 -> 초과, 속도 상향",
+    "time": "2026-10-12 14:48:36"
+  },
+  {
+    "file": "scene03_vo.mp3",
+    "tool": "gTTS + ffmpeg atempo",
+    "voice": "gTTS ko (Google Translate TTS)",
+    "text": "그래서 코디세이는 강의 대신, 직접 만들며 동료와 함께 배우는 길을 엽니다.",
+    "params": {
+      "lang": "ko",
+      "atempo": 1.1
+    },
+    "duration": 7.29,
+    "scene_duration": 8,
+    "status": "ok",
+    "summary": "7.29s / 씬 8s, atempo 1.1",
+    "time": "2026-10-12 14:48:36"
+  },
+  {
+    "file": "scene04_vo.mp3",
+    "tool": "gTTS + ffmpeg atempo",
+    "voice": "gTTS ko (Google Translate TTS)",
+    "text": "프로젝트 속에서 서로 묻고 가르치며, 전공도 경력도 상관없이 시작할 수 있어요.",
+    "params": {
+      "lang": "ko",
+      "atempo": 1.0
+    },
+    "duration": 7.87,
+    "scene_duration": 8,
+    "status": "too_long_retry",
+    "summary": "7.87s / 씬 8s, atempo 1.0 -> 초과, 속도 상향",
+    "time": "2026-10-12 14:48:36"
+  },
+  {
+    "file": "scene04_vo.mp3",
+    "tool": "gTTS + ffmpeg atempo",
+    "voice": "gTTS ko (Google Translate TTS)",
+    "text": "프로젝트 속에서 서로 묻고 가르치며, 전공도 경력도 상관없이 시작할 수 있어요.",
+    "params": {
+      "lang": "ko",
+      "atempo": 1.1
+    },
+    "duration": 7.16,
+    "scene_duration": 8,
+    "status": "ok",
+    "summary": "7.16s / 씬 8s, atempo 1.1",
+    "time": "2026-10-12 14:48:37"
+  },
+  {
+    "file": "scene05_vo.mp3",
+    "tool": "gTTS + ffmpeg atempo",
+    "voice": "gTTS ko (Google Translate TTS)",
+    "text": "학비는 장학금으로 덜고, 5개월 AI 네이티브부터 18개월 AI 올인원까지, 나에게 맞는 과정을 고르세요.",
+    "params": {
+      "lang": "ko",
+      "atempo": 1.0
+    },
+    "duration": 11.35,
+    "scene_duration": 9,
+    "status": "too_long_retry",
+    "summary": "11.35s / 씬 9s, atempo 1.0 -> 초과, 속도 상향",
+    "time": "2026-10-12 14:48:37"
+  },
+  {
+    "file": "scene05_vo.mp3",
+    "tool": "gTTS + ffmpeg atempo",
+    "voice": "gTTS ko (Google Translate TTS)",
+    "text": "학비는 장학금으로 덜고, 5개월 AI 네이티브부터 18개월 AI 올인원까지, 나에게 맞는 과정을 고르세요.",
+    "params": {
+      "lang": "ko",
+      "atempo": 1.1
+    },
+    "duration": 10.32,
+    "scene_duration": 9,
+    "status": "too_long_retry",
+    "summary": "10.32s / 씬 9s, atempo 1.1 -> 초과, 속도 상향",
+    "time": "2026-10-12 14:48:37"
+  },
+  {
+    "file": "scene05_vo.mp3",
+    "tool": "gTTS + ffmpeg atempo",
+    "voice": "gTTS ko (Google Translate TTS)",
+    "text": "학비는 장학금으로 덜고, 5개월 AI 네이티브부터 18개월 AI 올인원까지, 나에게 맞는 과정을 고르세요.",
+    "params": {
+      "lang": "ko",
+      "atempo": 1.2
+    },
+    "duration": 9.47,
+    "scene_duration": 9,
+    "status": "too_long_retry",
+    "summary": "9.47s / 씬 9s, atempo 1.2 -> 초과, 속도 상향",
+    "time": "2026-10-12 14:48:38"
+  },
+  {
+    "file": "scene05_vo.mp3",
+    "tool": "gTTS + ffmpeg atempo",
+    "voice": "gTTS ko (Google Translate TTS)",
+    "text": "학비는 장학금으로 덜고, 5개월 AI 네이티브부터 18개월 AI 올인원까지, 나에게 맞는 과정을 고르세요.",
+    "params": {
+      "lang": "ko",
+      "atempo": 1.3
+    },
+    "duration": 8.74,
+    "scene_duration": 9,
+    "status": "too_long_retry",
+    "summary": "8.74s / 씬 9s, atempo 1.3 -> 초과, 속도 상향",
+    "time": "2026-10-12 14:48:38"
+  },
+  {
+    "file": "scene05_vo.mp3",
+    "status": "failed",
+    "summary": "atempo 1.3에도 씬 길이 초과, 문장 축약 필요",
+    "time": "2026-10-12 14:48:38"
+  },
+  {
+    "file": "scene06_vo.mp3",
+    "tool": "gTTS + ffmpeg atempo",
+    "voice": "gTTS ko (Google Translate TTS)",
+    "text": "코디세이. 지금, 나의 AI 여정을 시작하세요.",
+    "params": {
+      "lang": "ko",
+      "atempo": 1.0
+    },
+    "duration": 5.18,
+    "scene_duration": 5,
+    "status": "too_long_retry",
+    "summary": "5.18s / 씬 5s, atempo 1.0 -> 초과, 속도 상향",
+    "time": "2026-10-12 14:48:38"
+  },
+  {
+    "file": "scene06_vo.mp3",
+    "tool": "gTTS + ffmpeg atempo",
+    "voice": "gTTS ko (Google Translate TTS)",
+    "text": "코디세이. 지금, 나의 AI 여정을 시작하세요.",
+    "params": {
+      "lang": "ko",
+      "atempo": 1.1
+    },
+    "duration": 4.72,
+    "scene_duration": 5,
+    "status": "too_long_retry",
+    "summary": "4.72s / 씬 5s, atempo 1.1 -> 초과, 속도 상향",
+    "time": "2026-10-12 14:48:38"
+  },
+  {
+    "file": "scene06_vo.mp3",
+    "tool": "gTTS + ffmpeg atempo",
+    "voice": "gTTS ko (Google Translate TTS)",
+    "text": "코디세이. 지금, 나의 AI 여정을 시작하세요.",
+    "params": {
+      "lang": "ko",
+      "atempo": 1.2
+    },
+    "duration": 4.33,
+    "scene_duration": 5,
+    "status": "ok",
+    "summary": "4.33s / 씬 5s, atempo 1.2",
+    "time": "2026-10-12 14:48:38"
+  },
+  {
+    "file": "scene01_vo.mp3",
+    "tool": "edge-tts",
+    "voice": "ko-KR-SunHiNeural",
+    "text": "새로운 AI 기술, 어디서부터 배워야 할지 막막하셨나요?",
+    "status": "failed",
+    "summary": "edge-tts 실패: WSServerHandshakeError: 403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1 (speech.platform.bing.com WS 403, 재시도·버전 헤더 변경 모두 실패) -> gTTS 대체 (MeloTTS Space는 KR 화자가 선택지에 없어 실패)",
+    "time": "2026-10-12 14:48:43"
+  },
+  {
+    "file": "scene01_vo.mp3",
+    "tool": "gTTS + ffmpeg atempo",
+    "voice": "gTTS ko (Google Translate TTS)",
+    "text": "새로운 AI 기술, 어디서부터 배워야 할지 막막하셨나요?",
+    "params": {
+      "lang": "ko",
+      "atempo": 1.0
+    },
+    "duration": 5.41,
+    "scene_duration": 7,
+    "status": "ok",
+    "summary": "5.41s / 씬 7s, atempo 1.0",
+    "time": "2026-10-12 14:48:43"
+  },
+  {
+    "file": "scene02_vo.mp3",
+    "tool": "gTTS + ffmpeg atempo",
+    "voice": "gTTS ko (Google Translate TTS)",
+    "text": "강의는 들었지만, 혼자서는 비싼 학비와 시간이 발목을 잡죠.",
+    "params": {
+      "lang": "ko",
+      "atempo": 1.0
+    },
+    "duration": 6.21,
+    "scene_duration": 7,
+    "status": "ok",
+    "summary": "6.21s / 씬 7s, atempo 1.0",
+    "time": "2026-10-12 14:48:44"
+  },
+  {
+    "file": "scene03_vo.mp3",
+    "tool": "gTTS + ffmpeg atempo",
+    "voice": "gTTS ko (Google Translate TTS)",
+    "text": "그래서 코디세이는 강의 대신, 직접 만들며 동료와 함께 배우는 길을 엽니다.",
+    "params": {
+      "lang": "ko",
+      "atempo": 1.0
+    },
+    "duration": 8.01,
+    "scene_duration": 8,
+    "status": "too_long_retry",
+    "summary": "8.01s / 씬 8s, atempo 1.0 -> 초과, 속도 상향",
+    "time": "2026-10-12 14:48:44"
+  },
+  {
+    "file": "scene03_vo.mp3",
+    "tool": "gTTS + ffmpeg atempo",
+    "voice": "gTTS ko (Google Translate TTS)",
+    "text": "그래서 코디세이는 강의 대신, 직접 만들며 동료와 함께 배우는 길을 엽니다.",
+    "params": {
+      "lang": "ko",
+      "atempo": 1.1
+    },
+    "duration": 7.29,
+    "scene_duration": 8,
+    "status": "ok",
+    "summary": "7.29s / 씬 8s, atempo 1.1",
+    "time": "2026-10-12 14:48:44"
+  },
+  {
+    "file": "scene04_vo.mp3",
+    "tool": "gTTS + ffmpeg atempo",
+    "voice": "gTTS ko (Google Translate TTS)",
+    "text": "프로젝트 속에서 서로 묻고 가르치며, 전공도 경력도 상관없이 시작할 수 있어요.",
+    "params": {
+      "lang": "ko",
+      "atempo": 1.0
+    },
+    "duration": 7.87,
+    "scene_duration": 8,
+    "status": "too_long_retry",
+    "summary": "7.87s / 씬 8s, atempo 1.0 -> 초과, 속도 상향",
+    "time": "2026-10-12 14:48:45"
+  },
+  {
+    "file": "scene04_vo.mp3",
+    "tool": "gTTS + ffmpeg atempo",
+    "voice": "gTTS ko (Google Translate TTS)",
+    "text": "프로젝트 속에서 서로 묻고 가르치며, 전공도 경력도 상관없이 시작할 수 있어요.",
+    "params": {
+      "lang": "ko",
+      "atempo": 1.1
+    },
+    "duration": 7.16,
+    "scene_duration": 8,
+    "status": "ok",
+    "summary": "7.16s / 씬 8s, atempo 1.1",
+    "time": "2026-10-12 14:48:45"
+  },
+  {
+    "file": "scene05_vo.mp3",
+    "tool": "gTTS + ffmpeg atempo",
+    "voice": "gTTS ko (Google Translate TTS)",
+    "text": "장학금으로 학비 부담은 덜고, 나에게 맞는 AI 과정을 고르세요.",
+    "params": {
+      "lang": "ko",
+      "atempo": 1.0
+    },
+    "duration": 6.21,
+    "scene_duration": 9,
+    "status": "ok",
+    "summary": "6.21s / 씬 9s, atempo 1.0",
+    "time": "2026-10-12 14:48:46"
+  },
+  {
+    "file": "scene06_vo.mp3",
+    "tool": "gTTS + ffmpeg atempo",
+    "voice": "gTTS ko (Google Translate TTS)",
+    "text": "코디세이. 지금, 나의 AI 여정을 시작하세요.",
+    "params": {
+      "lang": "ko",
+      "atempo": 1.0
+    },
+    "duration": 5.18,
+    "scene_duration": 5,
+    "status": "too_long_retry",
+    "summary": "5.18s / 씬 5s, atempo 1.0 -> 초과, 속도 상향",
+    "time": "2026-10-12 14:48:46"
+  },
+  {
+    "file": "scene06_vo.mp3",
+    "tool": "gTTS + ffmpeg atempo",
+    "voice": "gTTS ko (Google Translate TTS)",
+    "text": "코디세이. 지금, 나의 AI 여정을 시작하세요.",
+    "params": {
+      "lang": "ko",
+      "atempo": 1.1
+    },
+    "duration": 4.71,
+    "scene_duration": 5,
+    "status": "too_long_retry",
+    "summary": "4.71s / 씬 5s, atempo 1.1 -> 초과, 속도 상향",
+    "time": "2026-10-12 14:48:46"
+  },
+  {
+    "file": "scene06_vo.mp3",
+    "tool": "gTTS + ffmpeg atempo",
+    "voice": "gTTS ko (Google Translate TTS)",
+    "text": "코디세이. 지금, 나의 AI 여정을 시작하세요.",
+    "params": {
+      "lang": "ko",
+      "atempo": 1.2
+    },
+    "duration": 4.32,
+    "scene_duration": 5,
+    "status": "ok",
+    "summary": "4.32s / 씬 5s, atempo 1.2",
+    "time": "2026-10-12 14:48:46"
+  },
+  {
+    "file": "scene01_vo_gpt.mp3",
+    "tool": "COPA gpt-4o-mini-tts",
+    "voice": "nova",
+    "speed": 1.0,
+    "text": "새로운 AI 기술, 어디서부터 배워야 할지 막막하셨나요?",
+    "duration": 6.5,
+    "scene_duration": 7.0,
+    "status": "ok",
+    "summary": "6.504000s / 씬 7s, speed 1.0",
+    "time": "2026-10-12 15:43:22"
+  },
+  {
+    "file": "scene02_vo_gpt.mp3",
+    "tool": "COPA gpt-4o-mini-tts",
+    "voice": "nova",
+    "speed": 1.0,
+    "text": "강의는 들었지만, 혼자서는 비싼 학비와 시간이 발목을 잡죠.",
+    "duration": 5.52,
+    "scene_duration": 7.0,
+    "status": "ok",
+    "summary": "5.520000s / 씬 7s, speed 1.0",
+    "time": "2026-10-12 15:43:26"
+  },
+  {
+    "file": "scene03_vo_gpt.mp3",
+    "tool": "COPA gpt-4o-mini-tts",
+    "voice": "nova",
+    "speed": 1.0,
+    "text": "그래서 코디세이는 강의 대신, 직접 만들며 동료와 함께 배우는 길을 엽니다.",
+    "duration": 6.26,
+    "scene_duration": 8.0,
+    "status": "ok",
+    "summary": "6.264000s / 씬 8s, speed 1.0",
+    "time": "2026-10-12 15:43:28"
+  },
+  {
+    "file": "scene04_vo_gpt.mp3",
+    "tool": "COPA gpt-4o-mini-tts",
+    "voice": "nova",
+    "speed": 1.0,
+    "text": "프로젝트 속에서 서로 묻고 가르치며, 전공도 경력도 상관없이 시작할 수 있어요.",
+    "duration": 7.32,
+    "scene_duration": 8.0,
+    "status": "ok",
+    "summary": "7.320000s / 씬 8s, speed 1.0",
+    "time": "2026-10-12 15:43:31"
+  },
+  {
+    "file": "scene05_vo_gpt.mp3",
+    "tool": "COPA gpt-4o-mini-tts",
+    "voice": "nova",
+    "speed": 1.0,
+    "text": "장학금으로 학비 부담은 덜고, 나에게 맞는 AI 과정을 고르세요.",
+    "duration": 5.76,
+    "scene_duration": 9.0,
+    "status": "ok",
+    "summary": "5.760000s / 씬 9s, speed 1.0",
+    "time": "2026-10-12 15:43:33"
+  },
+  {
+    "file": "scene06_vo_gpt.mp3",
+    "tool": "COPA gpt-4o-mini-tts",
+    "voice": "nova",
+    "speed": 1.0,
+    "text": "코디세이. 지금, 나의 AI 여정을 시작하세요.",
+    "duration": 4.42,
+    "scene_duration": 5.0,
+    "status": "ok",
+    "summary": "4.416000s / 씬 5s, speed 1.0",
+    "time": "2026-10-12 15:43:36"
+  }
+]

@@ -1,0 +1,8 @@
+.venv/
+.mission.md
+__pycache__/
+*.pyc
+*.tmp
+.DS_Store
+build/
+.env

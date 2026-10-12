@@ -1,0 +1,407 @@
+{
+ "brand": {
+  "name": "코디세이 (Codyssey)",
+  "operator": "이노베이션 아카데미 (과학기술정보통신부·서울특별시·정보통신기획평가원 지원)",
+  "what_it_is": "AI·SW 인재 교육 플랫폼. 프랑스 에꼴42 모델 기반의 한국형 교육으로, 강의 위주가 아닌 자기주도·동료학습·프로젝트 기반 학습(PBL)을 중심으로 운영한다.",
+  "programs": [
+   "AI 올인원 (18개월, 개발자·엔지니어 양성)",
+   "AI 네이티브 (5개월, 생성형 AI 활용·자동화 중심)"
+  ],
+  "target": "AI·SW 분야로 진입하고 싶은 성인 학습자(전공·경력 무관, 성인 또는 고졸 이상 — 2026 AI 네이티브 모집 공고 기준). 광고 주 타깃: 20~30대 비전공자·커리어 전환 희망자.",
+  "tone_and_manner": "차분하지만 응원하는 톤. 과장·공포 소구 없이 '시작할 수 있다'는 신뢰감과 가능성. 모험(오디세이) 은유를 쓰는 밝고 깨끗한 일러스트.",
+  "usp": [
+   "학비·시간 제약 없이 장학금을 받으며 배우는 AI 전문인재 과정 (공식 사이트 문구)",
+   "교수 중심 강의가 아닌 동료학습 + 프로젝트 기반 학습",
+   "전공·경력 무관 지원 가능 (AI 네이티브 2026 모집 기준)",
+   "AI 올인원(18개월)과 AI 네이티브(5개월) 두 트랙"
+  ],
+  "sources": [
+   "https://www.codyssey.kr",
+   "https://www.syu.ac.kr/4aov",
+   "https://www.ajunews.com/view/20240930085245816",
+   "https://lms.42seoul.kr/en/innovation_academy/business_info/codyssey.html (검색 결과에만 노출, 직접 fetch는 연결 거부로 미확인 — 근거로 단정하지 않음)"
+  ],
+  "fact_caveats": "모집 일정·과정 구성은 변동 가능. 광고에는 일정·금액·취업률 등 미확인 수치를 쓰지 않는다. 에꼴42 기반·동료학습/PBL 특징은 검색 요약(syu.ac.kr, ajunews 등) 근거."
+ },
+ "campaign": {
+  "objective": "인지 (Awareness) — 비전공자에게 코디세이의 존재와 학습 방식(동료·프로젝트 기반, 장학금)을 알리고 사이트 방문 유도",
+  "core_message": "코디세이는 비싼 강의 대신, 동료와 직접 만들며 AI를 배우는 장학금 기반 교육 플랫폼입니다.",
+  "slogan": "나의 AI 여정, 코디세이에서 시작하세요",
+  "cta": "codyssey.kr 에서 과정 확인하기"
+ },
+ "style_lock": {
+  "style_suffix": "minimal flat vector illustration, clean geometric shapes, soft gradient background, wide cinematic composition, deep navy (#0B1B3F) and electric blue (#2F6BFF) with warm amber (#FFB400) accent, off-white (#F5F7FB) highlights, soft rim light, faceless silhouette characters, no text, no letters, no logo, no watermark, 16:9",
+  "seed": 42,
+  "seed_note": "모든 씬 seed=42 고정. 같은 seed라도 프롬프트가 다르면 구도는 달라지므로 화풍 일관성은 style_suffix + 팔레트 + 모델 고정으로 확보. 재생성 시에만 seed 43, 44로 변형(파일명 variant로 기록).",
+  "model": "최종(2차): 코디세이 COPA 게이트웨이 gpt-image-2, 1536x1024, 전 씬 동일 STYLE 접미 프롬프트. 1차·비교용: Pollinations 익명 API(요청 model=flux, 응답 EXIF 기준 실제 sana)",
+  "generate_resolution": "1280x720",
+  "final_resolution": "1920x1080 (ffmpeg lanczos 업스케일 + 우하단 Pollinations 워터마크 제거를 위해 하단/우측 약 6% 크롭 후 스케일 — 크롭 사실을 README에 기록)",
+  "fps": 30,
+  "palette": {
+   "navy": "#0B1B3F",
+   "electric_blue": "#2F6BFF",
+   "amber_accent": "#FFB400",
+   "teal_support": "#19C3B1",
+   "off_white": "#F5F7FB"
+  },
+  "text_strategy": "이미지 안 글자는 생성하지 않는다(깨짐 방지). 자막·엔드카드 텍스트는 ffmpeg drawtext/오버레이로 한글 폰트를 직접 합성.",
+  "consistency_strategy": "(1) 동일 style_suffix를 모든 프롬프트 끝에 고정 (2) seed 고정 (3) 팔레트 hex를 프롬프트에 명시 (4) 인물은 얼굴 없는 실루엣·뒷모습·손만 사용해 캐릭터 일관성 문제와 딥페이크 위험 회피 (5) 주인공은 '앰버색 배낭/스카프를 한 실루엣'을 모든 인물 씬의 고정 식별자로 사용",
+  "round2_style_suffix": "Strict flat 2D vector illustration, solid color shapes only, no painterly texture, no photorealism, no 3D render, no gradients except smooth sky/background. Palette limited to deep navy #0B1B3F, electric blue #2F6BFF, warm amber #FFB400, off-white #F5F7FB. Any human is a faceless solid-color silhouette with no facial features at all (no eyes, nose, mouth). The single protagonist always wears a bright amber #FFB400 scarf as the identifying marker. Wide cinematic 3:2 composition. Absolutely no text, no letters, no numbers, no logo, no watermark.",
+  "round2_note": "COPA는 seed 파라미터를 받지 않아(copa.py 호출 인자에 없음) seed 고정은 1차 Pollinations에만 적용됐다. 2차 일관성은 모든 프롬프트 끝에 같은 STYLE 문구(화풍·팔레트 hex·얼굴 없는 실루엣·앰버 스카프 식별자)를 명시해 확보했다. 최종 이미지는 1536x1024(3:2)이고 assemble.sh가 중앙 16:9(1536x864)로 크롭해 1920x1080으로 업스케일한다. Pollinations 워터마크 크롭은 불필요해졌다."
+ },
+ "tts_voice": {
+  "engine": "코디세이 COPA 게이트웨이 gpt-4o-mini-tts (최종)",
+  "voice": "nova, speed 1.0 (씬 1 문장으로 nova/shimmer/alloy 3종 비교 후 nova 선택, assets/audio/_voice_cmp/)",
+  "verified_by": "assets/copa_log.jsonl, assets/audio/audio_log.json (file=scene0N_vo_gpt.mp3)",
+  "round1": "gTTS (ko). 1순위 edge-tts는 HTTP 403으로 3회 실패. scene0N_vo.mp3는 비교용으로 보존",
+  "alternatives": [
+   "tts-1-hd",
+   "gemini-2.5-flash-tts",
+   "gTTS",
+   "edge-tts ko-KR-InJoonNeural"
+  ]
+ },
+ "bgm_prompt": "(실제 사용: 별도 BGM 모델 호출 없음) veo-3.1-fast 씬 1 프롬프트 끝의 'Audio: soft ambient piano and synth pad music, no speech, no voice'로 생성된 클립 오디오를 추출해 BGM으로 사용. 청취 검수는 못 했고 volumedetect만 확인. 원래 계획 프롬프트: Warm uplifting cinematic electronic pop instrumental, 100 BPM, soft piano arpeggio and light synth pads, gentle build from calm and slightly tense to hopeful and bright, subtle percussion, no vocals, no lyrics, clean mix with space for voice-over, 45 seconds",
+ "scenes": [
+  {
+   "no": 1,
+   "phase": "기(문제)",
+   "duration_sec": 7,
+   "goal_message": "AI를 배우고 싶지만 어디서부터 시작할지 막막하다.",
+   "composition": "구도: 와이드 쇼트, 인물은 화면 하단 좌측 1/3에 뒷모습 실루엣. 피사체: 앰버 스카프의 실루엣이 갈림길 앞에 서 있음. 배경: 안개 낀 남색 밤하늘과 무수한 빛나는 길·화살표 조각. 텍스트: 없음(하단 자막만 후편집).",
+   "narration": "새로운 AI 기술, 어디서부터 배워야 할지 막막하셨나요?",
+   "image_prompt": "wide shot of a faceless silhouette seen from behind, wearing an amber scarf, standing at a fork of many glowing paths in a foggy deep navy night, feeling lost, minimal flat vector illustration, clean geometric shapes, soft gradient background, wide cinematic composition, deep navy (#0B1B3F) and electric blue (#2F6BFF) with warm amber (#FFB400) accent, off-white (#F5F7FB) highlights, soft rim light, faceless silhouette characters, no text, no letters, no logo, no watermark, 16:9",
+   "motion_plan": "원 계획: HF Space I2V(1차에서 쿼터 실패). 최종: COPA veo-3.1-fast T2V 클립 사용(COPA 영상 API는 이미지 입력 없음). 편집에서 24→30fps, 8초 중 7초 사용, 채도 0.9·밝기 -0.03 보정, 오디오는 BGM 소스로만 추출",
+   "audio": {
+    "narration": "scene01_vo_gpt.mp3",
+    "sfx": "없음",
+    "bgm": "bgm_veo.m4a (veo-3.1-fast 생성 오디오, 전 구간 -19dB 믹스+내레이션 덕킹)"
+   },
+   "files": {
+    "image_round1": [
+     "scene01_img_v1.png",
+     "scene01_img_v2.png"
+    ],
+    "image_final": "scene01_img_gpt.png",
+    "motion": "scene01_motion_v2.mp4",
+    "vo": "scene01_vo_gpt.mp3",
+    "vo_round1": "scene01_vo.mp3",
+    "motion_before": "scene01_motion.mp4"
+   },
+   "output_summary": "뒷모습 실루엣+앰버 스카프+다수 갈래 길/화살표 조각, 남색·블루 플랫 팔레트 일치, 얼굴 없음, 글자 없음. 1차 Pollinations 대비 갈림길·스카프 모두 반영",
+   "final": {
+    "image": "scene01_img_gpt.png",
+    "image_prompt": "A single faceless silhouette seen from behind, wearing an amber scarf, small figure in the lower-left third, standing at a fork of many glowing blue paths and arrow-like shards in a foggy deep navy night sky. Feeling lost and uncertain. Strict flat 2D vector illustration, solid color shapes only, no painterly texture, no photorealism, no 3D render, no gradients except smooth sky/background. Palette limited to deep navy #0B1B3F, electric blue #2F6BFF, warm amber #FFB400, off-white #F5F7FB. Any human is a faceless solid-color silhouette with no facial features at all (no eyes, nose, mouth). The single protagonist always wears a bright amber #FFB400 scarf as the identifying marker. Wide cinematic 3:2 composition. Absolutely no text, no letters, no numbers, no logo, no watermark.",
+    "image_tool": "COPA gpt-image-2 1536x1024",
+    "output_summary": "뒷모습 실루엣+앰버 스카프+다수 갈래 길/화살표 조각, 남색·블루 플랫 팔레트 일치, 얼굴 없음, 글자 없음. 1차 Pollinations 대비 갈림길·스카프 모두 반영",
+    "vo": "scene01_vo_gpt.mp3",
+    "vo_tool": "COPA gpt-4o-mini-tts nova",
+    "vo_duration_sec": 6.5,
+    "motion": "veo-3.1-fast T2V 클립 scene01_motion_v2.mp4",
+    "video_prompt": "Wide shot, very slow dolly-in, camera stays far back. A small faceless silhouette seen from behind in a dark navy coat with an amber scarf gently fluttering, standing in the lower-left third at a fork of many glowing electric-blue (#2F6BFF) winding paths with floating saturated electric-blue arrow shapes, in a foggy deep navy night. All clouds and hills are dark navy and slate-blue shapes with a faint blue rim light; no white, beige, peach or orange clouds. The amber scarf is the only warm color. Arrows pulse softly, the mood is lost and uncertain. Minimal flat vector illustration look, clean geometric shapes, smooth soft gradients, deep navy (#0B1B3F) and electric blue (#2F6BFF) palette with a warm amber (#FFB400) accent and off-white (#F5F7FB) highlights. The protagonist is a faceless dark navy silhouette wearing a flowing amber scarf. No text, no letters, no logos, no watermark, no subtitles. No human speech, no dialogue, no voice-over. Audio: soft ambient piano and synth pad music, no speech, no voice.",
+    "video_output_summary": "구름·언덕이 네이비/회청, 앰버 스카프·얼굴 없음·글자 없음 유지. 한계: 정지 이미지의 '여러 갈래 길'이 한 줄기 구불길+위로 향한 큰 화살표로 바뀌었고 길 색이 #2F6BFF보다 밝은 시안."
+   },
+   "video": {
+    "tool": "코디세이 COPA 게이트웨이 veo-3.1-fast (Text-to-Video)",
+    "model": "veo-3.1-fast",
+    "job_id": "vjob_cc3b71f8e5bd40a0a2589de5",
+    "file": "scene01_motion_v2.mp4",
+    "before_file": "scene01_motion.mp4",
+    "before_job_id": "vjob_5533f7c0cfe24c33b813ecd2",
+    "seconds": 8,
+    "resolution": "720p",
+    "prompt": "Wide shot, very slow dolly-in, camera stays far back. A small faceless silhouette seen from behind in a dark navy coat with an amber scarf gently fluttering, standing in the lower-left third at a fork of many glowing electric-blue (#2F6BFF) winding paths with floating saturated electric-blue arrow shapes, in a foggy deep navy night. All clouds and hills are dark navy and slate-blue shapes with a faint blue rim light; no white, beige, peach or orange clouds. The amber scarf is the only warm color. Arrows pulse softly, the mood is lost and uncertain. Minimal flat vector illustration look, clean geometric shapes, smooth soft gradients, deep navy (#0B1B3F) and electric blue (#2F6BFF) palette with a warm amber (#FFB400) accent and off-white (#F5F7FB) highlights. The protagonist is a faceless dark navy silhouette wearing a flowing amber scarf. No text, no letters, no logos, no watermark, no subtitles. No human speech, no dialogue, no voice-over. Audio: soft ambient piano and synth pad music, no speech, no voice.",
+    "prompt_v1": "Wide shot, slow dolly-in. A faceless silhouette seen from behind in a dark navy coat with an amber scarf gently fluttering, standing at a fork of many glowing electric-blue winding paths with floating blue arrow shapes, in a foggy deep navy night with soft rounded cloud banks drifting slowly. Arrows pulse softly, the mood is lost and uncertain. Minimal flat vector illustration look, clean geometric shapes, smooth soft gradients, deep navy (#0B1B3F) and electric blue (#2F6BFF) palette with a warm amber (#FFB400) accent and off-white (#F5F7FB) highlights. The protagonist is a faceless dark navy silhouette wearing a flowing amber scarf. No text, no letters, no logos, no watermark, no subtitles. No human speech, no dialogue, no voice-over. Audio: soft ambient piano and synth pad music, no speech, no voice.",
+    "output_summary": "구름·언덕이 네이비/회청, 앰버 스카프·얼굴 없음·글자 없음 유지. 한계: 정지 이미지의 '여러 갈래 길'이 한 줄기 구불길+위로 향한 큰 화살표로 바뀌었고 길 색이 #2F6BFF보다 밝은 시안.",
+    "used_as": "편집에서 24→30fps, 8초 중 7초 사용, 채도 0.9·밝기 -0.03 보정, 오디오는 BGM 소스로만 추출"
+   }
+  },
+  {
+   "no": 2,
+   "phase": "승(심화)",
+   "duration_sec": 7,
+   "goal_message": "혼자 하는 학습은 비용과 시간의 벽에 막힌다.",
+   "composition": "구도: 미디엄 쇼트, 책상 위 노트북과 두 손(클로즈업), 얼굴 없음. 피사체: 손이 키보드 위에서 멈춰 있고 옆에 쌓인 강의 카드·동전·모래시계. 배경: 어두운 남색 방, 창가의 차가운 푸른빛. 텍스트: 없음.",
+   "narration": "강의는 들었지만, 혼자서는 비싼 학비와 시간이 발목을 잡죠.",
+   "image_prompt": "medium close-up of two hands resting still on a laptop keyboard at a desk, stacked course cards, coins and an hourglass beside it, dim navy room with cold blue window light, a sense of being stuck, no face visible, minimal flat vector illustration, clean geometric shapes, soft gradient background, wide cinematic composition, deep navy (#0B1B3F) and electric blue (#2F6BFF) with warm amber (#FFB400) accent, off-white (#F5F7FB) highlights, soft rim light, faceless silhouette characters, no text, no letters, no logo, no watermark, 16:9",
+   "motion_plan": "정지 이미지 + 느린 패닝(좌→우) 으로 처리. 크레딧 절약, 손 이미지는 영상 변환 시 손가락 왜곡 위험이 커서 변환하지 않음.",
+   "audio": {
+    "narration": "scene02_vo_gpt.mp3",
+    "sfx": "없음",
+    "bgm": "bgm_veo.m4a (veo-3.1-fast 생성 오디오, 전 구간 -19dB 믹스+내레이션 덕킹)"
+   },
+   "files": {
+    "image_round1": [
+     "scene02_img_v1.png"
+    ],
+    "image_final": "scene02_img_gpt_v2.png",
+    "motion": null,
+    "vo": "scene02_vo_gpt.mp3",
+    "vo_round1": "scene02_vo.mp3"
+   },
+   "output_summary": "수정 후: 몸통·머리를 프레임 밖으로 빼 손+노트북+강의카드+동전+모래시계만 남김, 앰버 스카프는 의자 등받이에 걸어 식별자 유지. 콘티 구도와 일치",
+   "final": {
+    "image": "scene02_img_gpt_v2.png",
+    "image_prompt": "Medium close-up framed tightly on the desk only: two faceless hands resting still on a laptop keyboard, the person's body cut off above the wrist so no head and no torso are visible. Beside the laptop a stack of course cards, a few coins and an hourglass. Dim navy room with a cold electric-blue window behind. A small amber scarf end hangs over the chair edge as the identifying marker. Strict flat 2D vector illustration, solid color shapes only, no painterly texture, no photorealism, no 3D render, no gradients except smooth sky/background. Palette limited to deep navy #0B1B3F, electric blue #2F6BFF, warm amber #FFB400, off-white #F5F7FB. Any human is a faceless solid-color silhouette with no facial features at all (no eyes, nose, mouth). The single protagonist always wears a bright amber #FFB400 scarf as the identifying marker. Wide cinematic 3:2 composition. Absolutely no text, no letters, no numbers, no logo, no watermark.",
+    "image_tool": "COPA gpt-image-2 1536x1024",
+    "output_summary": "수정 후: 몸통·머리를 프레임 밖으로 빼 손+노트북+강의카드+동전+모래시계만 남김, 앰버 스카프는 의자 등받이에 걸어 식별자 유지. 콘티 구도와 일치",
+    "vo": "scene02_vo_gpt.mp3",
+    "vo_tool": "COPA gpt-4o-mini-tts nova",
+    "vo_duration_sec": 5.52,
+    "motion": "ffmpeg zoompan (AI 영상 없음, 의도된 선택)"
+   }
+  },
+  {
+   "no": 3,
+   "phase": "전(전환)",
+   "duration_sec": 8,
+   "goal_message": "코디세이는 강의 대신 동료와 직접 만들며 배우는 길을 연다.",
+   "composition": "구도: 와이드 쇼트, 어둡던 길 끝에서 앰버 빛의 문/포털이 열림. 피사체: 앰버 스카프 실루엣이 빛을 향해 한 걸음 내딛고, 멀리 다른 실루엣 두 개가 손짓. 배경: 남색에서 일렉트릭 블루로 전환되는 하늘. 텍스트: 없음.",
+   "narration": "그래서 코디세이는 강의 대신, 직접 만들며 동료와 함께 배우는 길을 엽니다.",
+   "image_prompt": "wide shot of a faceless silhouette with an amber scarf walking toward a glowing amber doorway opening at the end of a dark path, two more faceless silhouettes waving from the light, sky shifting from deep navy to electric blue, hopeful turning point, minimal flat vector illustration, clean geometric shapes, soft gradient background, wide cinematic composition, deep navy (#0B1B3F) and electric blue (#2F6BFF) with warm amber (#FFB400) accent, off-white (#F5F7FB) highlights, soft rim light, faceless silhouette characters, no text, no letters, no logo, no watermark, 16:9",
+   "motion_plan": "원 계획: HF Space I2V(1차에서 쿼터 실패). 최종: COPA veo-3.1 T2V 클립 사용(COPA 영상 API는 이미지 입력 없음). 8초 전체 사용(편집에서 24→30fps만), 보정 없음. 씬당 2회 한도를 fast 1회+veo-3.1 1회로 사용",
+   "audio": {
+    "narration": "scene03_vo_gpt.mp3",
+    "sfx": "없음",
+    "bgm": "bgm_veo.m4a (veo-3.1-fast 생성 오디오, 전 구간 -19dB 믹스+내레이션 덕킹)"
+   },
+   "files": {
+    "image_round1": [
+     "scene03_img_v1.png"
+    ],
+    "image_final": "scene03_img_gpt.png",
+    "motion": "scene03_motion_veo31.mp4",
+    "vo": "scene03_vo_gpt.mp3",
+    "vo_round1": "scene03_vo.mp3",
+    "motion_before": "scene03_motion.mp4"
+   },
+   "output_summary": "인물 1명(앰버 스카프)이 어두운 길을 따라 언덕 위 앰버 문으로 향함, 남색→블루 하늘. 1차의 인물 2명·스카프 없음 문제 해결. 동료 실루엣 2명 손짓은 의도적으로 제외",
+   "final": {
+    "image": "scene03_img_gpt.png",
+    "image_prompt": "Wide shot: one faceless silhouette wearing an amber scarf, alone in the foreground, stepping along a dark path toward a large glowing amber doorway opening at the path's end. Sky shifts from deep navy to electric blue. Exactly one human figure in the whole image. Hopeful turning point. Strict flat 2D vector illustration, solid color shapes only, no painterly texture, no photorealism, no 3D render, no gradients except smooth sky/background. Palette limited to deep navy #0B1B3F, electric blue #2F6BFF, warm amber #FFB400, off-white #F5F7FB. Any human is a faceless solid-color silhouette with no facial features at all (no eyes, nose, mouth). The single protagonist always wears a bright amber #FFB400 scarf as the identifying marker. Wide cinematic 3:2 composition. Absolutely no text, no letters, no numbers, no logo, no watermark.",
+    "image_tool": "COPA gpt-image-2 1536x1024",
+    "output_summary": "인물 1명(앰버 스카프)이 어두운 길을 따라 언덕 위 앰버 문으로 향함, 남색→블루 하늘. 1차의 인물 2명·스카프 없음 문제 해결. 동료 실루엣 2명 손짓은 의도적으로 제외",
+    "vo": "scene03_vo_gpt.mp3",
+    "vo_tool": "COPA gpt-4o-mini-tts nova",
+    "vo_duration_sec": 6.26,
+    "motion": "veo-3.1 T2V 클립 scene03_motion_veo31.mp4",
+    "video_prompt": "Wide shot, slow dolly-in toward the light. A faceless silhouette in a dark navy suit with an amber scarf blowing in the wind walks up a winding path on a dark navy rocky hilltop toward a tall glowing amber doorway at the summit, warm amber light spreading along the path, sky shifting from deep navy to bright electric blue, flat white clouds drifting. Hopeful turning point. Minimal flat vector illustration look, clean geometric shapes, smooth soft gradients, deep navy (#0B1B3F) and electric blue (#2F6BFF) palette with a warm amber (#FFB400) accent and off-white (#F5F7FB) highlights. The protagonist is a faceless dark navy silhouette wearing a flowing amber scarf. No text, no letters, no logos, no watermark, no subtitles. No human speech, no dialogue, no voice-over. Audio: gentle wind only, no music, no speech.",
+    "video_output_summary": "앰버 길과 빛나는 문, 뒷모습 실루엣+스카프, 글자 없음. 한계: 정지 이미지의 네이비 길·흰 구름이 앰버 길·크림색 구름으로 바뀌고, 문이 정상 위 구조물이 아니라 바위 입구 모양이며 7초 무렵 문이 화면을 채움."
+   },
+   "video": {
+    "tool": "코디세이 COPA 게이트웨이 veo-3.1 (Text-to-Video, fast 동일 프롬프트와 비교 후 채택)",
+    "model": "veo-3.1",
+    "job_id": "vjob_05d34ad334d14442a77f648c",
+    "file": "scene03_motion_veo31.mp4",
+    "before_file": "scene03_motion.mp4",
+    "before_job_id": "vjob_3b57c9e4234643c8a495eafd",
+    "seconds": 8,
+    "resolution": "720p",
+    "prompt": "Wide shot, slow dolly-in toward the light. A faceless silhouette in a dark navy suit with an amber scarf blowing in the wind walks up a winding path on a dark navy rocky hilltop toward a tall glowing amber doorway at the summit, warm amber light spreading along the path, sky shifting from deep navy to bright electric blue, flat white clouds drifting. Hopeful turning point. Minimal flat vector illustration look, clean geometric shapes, smooth soft gradients, deep navy (#0B1B3F) and electric blue (#2F6BFF) palette with a warm amber (#FFB400) accent and off-white (#F5F7FB) highlights. The protagonist is a faceless dark navy silhouette wearing a flowing amber scarf. No text, no letters, no logos, no watermark, no subtitles. No human speech, no dialogue, no voice-over. Audio: gentle wind only, no music, no speech.",
+    "prompt_v1": "Wide shot, slow dolly-in toward the light. A faceless silhouette in a dark navy suit with an amber scarf blowing in the wind walks up a winding path on a dark navy rocky hilltop toward a tall glowing amber doorway at the summit, warm amber light spreading along the path, sky shifting from deep navy to bright electric blue, flat white clouds drifting. Hopeful turning point. Minimal flat vector illustration look, clean geometric shapes, smooth soft gradients, deep navy (#0B1B3F) and electric blue (#2F6BFF) palette with a warm amber (#FFB400) accent and off-white (#F5F7FB) highlights. The protagonist is a faceless dark navy silhouette wearing a flowing amber scarf. No text, no letters, no logos, no watermark, no subtitles. No human speech, no dialogue, no voice-over. Audio: gentle wind only, no music, no speech.",
+    "output_summary": "앰버 길과 빛나는 문, 뒷모습 실루엣+스카프, 글자 없음. 한계: 정지 이미지의 네이비 길·흰 구름이 앰버 길·크림색 구름으로 바뀌고, 문이 정상 위 구조물이 아니라 바위 입구 모양이며 7초 무렵 문이 화면을 채움.",
+    "used_as": "8초 전체 사용(편집에서 24→30fps만), 보정 없음. 씬당 2회 한도를 fast 1회+veo-3.1 1회로 사용"
+   }
+  },
+  {
+   "no": 4,
+   "phase": "결(해결 1) 동료·프로젝트",
+   "duration_sec": 8,
+   "goal_message": "프로젝트 속에서 서로 묻고 가르치며, 전공·경력과 상관없이 시작할 수 있다.",
+   "composition": "구도: 미디엄~와이드 쇼트, 둥근 테이블에 모인 4명의 얼굴 없는 실루엣이 하나의 화면(코드·블록)을 함께 가리킴. 피사체: 앰버 스카프 실루엣 포함. 배경: 밝은 오프화이트·블루 스튜디오, 떠다니는 기하학 블록. 텍스트: 없음.",
+   "narration": "프로젝트 속에서 서로 묻고 가르치며, 전공도 경력도 상관없이 시작할 수 있어요.",
+   "image_prompt": "medium wide shot of four faceless silhouettes around a round table pointing together at a glowing screen of floating geometric code blocks, one wearing an amber scarf, bright off-white and blue collaborative studio, warm friendly mood, minimal flat vector illustration, clean geometric shapes, soft gradient background, wide cinematic composition, deep navy (#0B1B3F) and electric blue (#2F6BFF) with warm amber (#FFB400) accent, off-white (#F5F7FB) highlights, soft rim light, faceless silhouette characters, no text, no letters, no logo, no watermark, 16:9",
+   "motion_plan": "정지 이미지 + 느린 줌아웃. 다수 인물의 영상 변환은 일관성 붕괴 위험이 커서 패닝/줌만 사용.",
+   "audio": {
+    "narration": "scene04_vo_gpt.mp3",
+    "sfx": "없음",
+    "bgm": "bgm_veo.m4a (veo-3.1-fast 생성 오디오, 전 구간 -19dB 믹스+내레이션 덕킹)"
+   },
+   "files": {
+    "image_round1": [
+     "scene04_img_v1.png"
+    ],
+    "image_final": "scene04_img_gpt.png",
+    "motion": null,
+    "vo": "scene04_vo_gpt.mp3",
+    "vo_round1": "scene04_vo.mp3"
+   },
+   "output_summary": "둥근 테이블에 4명 실루엣이 떠 있는 코드 블록 화면을 함께 가리킴, 앰버 스카프 1명, 밝은 오프화이트·블루 스튜디오. 얼굴 이목구비 없음(1차 v3의 사실적 얼굴 해결)",
+   "final": {
+    "image": "scene04_img_gpt.png",
+    "image_prompt": "Medium wide shot of four faceless solid-color silhouettes (blank smooth heads, no facial features, flat vector shapes) around a round table, all pointing together at a glowing screen of floating geometric code blocks. One of them wears an amber scarf. Bright off-white and blue collaborative studio, floating geometric blocks, warm friendly mood. Strict flat 2D vector illustration, solid color shapes only, no painterly texture, no photorealism, no 3D render, no gradients except smooth sky/background. Palette limited to deep navy #0B1B3F, electric blue #2F6BFF, warm amber #FFB400, off-white #F5F7FB. Any human is a faceless solid-color silhouette with no facial features at all (no eyes, nose, mouth). The single protagonist always wears a bright amber #FFB400 scarf as the identifying marker. Wide cinematic 3:2 composition. Absolutely no text, no letters, no numbers, no logo, no watermark.",
+    "image_tool": "COPA gpt-image-2 1536x1024",
+    "output_summary": "둥근 테이블에 4명 실루엣이 떠 있는 코드 블록 화면을 함께 가리킴, 앰버 스카프 1명, 밝은 오프화이트·블루 스튜디오. 얼굴 이목구비 없음(1차 v3의 사실적 얼굴 해결)",
+    "vo": "scene04_vo_gpt.mp3",
+    "vo_tool": "COPA gpt-4o-mini-tts nova",
+    "vo_duration_sec": 7.32,
+    "motion": "ffmpeg zoompan (AI 영상 없음, 의도된 선택)"
+   }
+  },
+  {
+   "no": 5,
+   "phase": "결(해결 2) 장학금·두 트랙",
+   "duration_sec": 9,
+   "goal_message": "장학금으로 학비 부담을 덜고, 5개월 AI 네이티브와 18개월 AI 올인원 중 나에게 맞는 과정을 고를 수 있다.",
+   "composition": "구도: 와이드 쇼트, 하나의 출발점에서 두 갈래 길이 뻗음(짧은 길=5개월, 긴 길=18개월 은유). 피사체: 앰버 스카프 실루엣이 갈림길에서 앞을 바라봄(뒷모습), 길 위에 장학금을 상징하는 앰버 별/동전 조각. 배경: 맑은 블루 하늘과 멀리 보이는 도시·캠퍼스 실루엣. 텍스트: 후편집으로 '5개월 AI 네이티브', '18개월 AI 올인원' 라벨 오버레이.",
+   "narration": "장학금으로 학비 부담은 덜고, 나에게 맞는 AI 과정을 고르세요.",
+   "image_prompt": "wide shot of a faceless silhouette with an amber scarf seen from behind at the start of two diverging glowing roads, one short and one long, small amber stars and coins floating along the paths, clear bright blue sky with a distant campus skyline, confident hopeful mood, minimal flat vector illustration, clean geometric shapes, soft gradient background, wide cinematic composition, deep navy (#0B1B3F) and electric blue (#2F6BFF) with warm amber (#FFB400) accent, off-white (#F5F7FB) highlights, soft rim light, faceless silhouette characters, no text, no letters, no logo, no watermark, 16:9",
+   "motion_plan": "원 계획: HF Space I2V(1차에서 쿼터 실패). 최종: COPA veo-3.1-fast T2V 클립 사용(COPA 영상 API는 이미지 입력 없음). 편집에서 24→30fps, 8초 뒤 마지막 프레임 1초 유지로 9초 채움, 보정 없음",
+   "audio": {
+    "narration": "scene05_vo_gpt.mp3",
+    "sfx": "없음",
+    "bgm": "bgm_veo.m4a (veo-3.1-fast 생성 오디오, 전 구간 -19dB 믹스+내레이션 덕킹)"
+   },
+   "files": {
+    "image_round1": [
+     "scene05_img_v1.png"
+    ],
+    "image_final": "scene05_img_gpt.png",
+    "motion": "scene05_motion_v2.mp4",
+    "vo": "scene05_vo_gpt.mp3",
+    "vo_round1": "scene05_vo.mp3",
+    "motion_before": "scene05_motion.mp4"
+   },
+   "output_summary": "앰버 스카프 뒷모습이 두 갈래 길(좌 캠퍼스·우 도시)에 서 있고 앰버 별·동전 조각 배치. 한계: 건물 디테일이 다른 씬보다 정교하고 길이 흰색이라 5개월/18개월 길이 차이는 약함",
+   "narration_note": "원안(트랙명 포함)은 씬 길이 초과로 축약. 5개월/18개월 트랙명은 화면 라벨로 전달.",
+   "final": {
+    "image": "scene05_img_gpt.png",
+    "image_prompt": "Wide shot: a faceless silhouette wearing an amber scarf seen from behind at the start of two diverging glowing roads, one short and one long, small amber stars and coins floating along the paths, clear bright blue sky with a distant campus and city skyline silhouette, confident hopeful mood. Strict flat 2D vector illustration, solid color shapes only, no painterly texture, no photorealism, no 3D render, no gradients except smooth sky/background. Palette limited to deep navy #0B1B3F, electric blue #2F6BFF, warm amber #FFB400, off-white #F5F7FB. Any human is a faceless solid-color silhouette with no facial features at all (no eyes, nose, mouth). The single protagonist always wears a bright amber #FFB400 scarf as the identifying marker. Wide cinematic 3:2 composition. Absolutely no text, no letters, no numbers, no logo, no watermark.",
+    "image_tool": "COPA gpt-image-2 1536x1024",
+    "output_summary": "앰버 스카프 뒷모습이 두 갈래 길(좌 캠퍼스·우 도시)에 서 있고 앰버 별·동전 조각 배치. 한계: 건물 디테일이 다른 씬보다 정교하고 길이 흰색이라 5개월/18개월 길이 차이는 약함",
+    "vo": "scene05_vo_gpt.mp3",
+    "vo_tool": "COPA gpt-4o-mini-tts nova",
+    "vo_duration_sec": 5.76,
+    "motion": "veo-3.1-fast T2V 클립 scene05_motion_v2.mp4",
+    "video_prompt": "Wide shot from behind, camera locked with only a very slow subtle push-in, never close to the character. A small faceless silhouette with an amber scarf fluttering stands at the bottom center where one road splits into two separate glowing off-white ribbon-like winding roads in a Y shape, no lane markings, no asphalt. The left road leads to a small distant campus building, the right road leads to a city skyline. Small amber stars and gold coins float and twinkle upward along both roads in a clear bright electric blue sky with deep navy hills. No forks, knives, spoons or cutlery shapes anywhere. Confident and hopeful. Minimal flat vector illustration look, clean geometric shapes, smooth soft gradients, deep navy (#0B1B3F) and electric blue (#2F6BFF) palette with a warm amber (#FFB400) accent and off-white (#F5F7FB) highlights. The protagonist is a faceless dark navy silhouette wearing a flowing amber scarf. No text, no letters, no logos, no watermark, no subtitles. No human speech, no dialogue, no voice-over. Audio: light airy ambience, no speech.",
+    "video_output_summary": "하단 중앙에서 Y자로 갈라지는 두 길, 좌 캠퍼스·우 도시, 별·동전 반짝임, 식기 형상 없음, 글자 없음. 한계: 길이 크림색, 별·동전이 정지 이미지보다 훨씬 많고 인물이 갈림길 시작점을 가림."
+   },
+   "video": {
+    "tool": "코디세이 COPA 게이트웨이 veo-3.1-fast (Text-to-Video)",
+    "model": "veo-3.1-fast",
+    "job_id": "vjob_38f45d16c91748c1a8909bf8",
+    "file": "scene05_motion_v2.mp4",
+    "before_file": "scene05_motion.mp4",
+    "before_job_id": "vjob_6072d1efca11499db64e0357",
+    "seconds": 8,
+    "resolution": "720p",
+    "prompt": "Wide shot from behind, camera locked with only a very slow subtle push-in, never close to the character. A small faceless silhouette with an amber scarf fluttering stands at the bottom center where one road splits into two separate glowing off-white ribbon-like winding roads in a Y shape, no lane markings, no asphalt. The left road leads to a small distant campus building, the right road leads to a city skyline. Small amber stars and gold coins float and twinkle upward along both roads in a clear bright electric blue sky with deep navy hills. No forks, knives, spoons or cutlery shapes anywhere. Confident and hopeful. Minimal flat vector illustration look, clean geometric shapes, smooth soft gradients, deep navy (#0B1B3F) and electric blue (#2F6BFF) palette with a warm amber (#FFB400) accent and off-white (#F5F7FB) highlights. The protagonist is a faceless dark navy silhouette wearing a flowing amber scarf. No text, no letters, no logos, no watermark, no subtitles. No human speech, no dialogue, no voice-over. Audio: light airy ambience, no speech.",
+    "prompt_v1": "Medium wide shot from behind, slow dolly-in. A faceless silhouette with an amber scarf fluttering stands at the fork of two glowing off-white roads, a distant campus building on the left and a city skyline on the right, small amber stars and gold coins floating and twinkling upward along the paths in a clear bright electric blue sky. Confident and hopeful. Minimal flat vector illustration look, clean geometric shapes, smooth soft gradients, deep navy (#0B1B3F) and electric blue (#2F6BFF) palette with a warm amber (#FFB400) accent and off-white (#F5F7FB) highlights. The protagonist is a faceless dark navy silhouette wearing a flowing amber scarf. No text, no letters, no logos, no watermark, no subtitles. No human speech, no dialogue, no voice-over. Audio: light airy ambience, no speech.",
+    "output_summary": "하단 중앙에서 Y자로 갈라지는 두 길, 좌 캠퍼스·우 도시, 별·동전 반짝임, 식기 형상 없음, 글자 없음. 한계: 길이 크림색, 별·동전이 정지 이미지보다 훨씬 많고 인물이 갈림길 시작점을 가림.",
+    "used_as": "편집에서 24→30fps, 8초 뒤 마지막 프레임 1초 유지로 9초 채움, 보정 없음"
+   }
+  },
+  {
+   "no": 6,
+   "phase": "엔드카드(CTA)",
+   "duration_sec": 5,
+   "goal_message": "코디세이에서 나의 AI 여정을 시작하자.",
+   "composition": "구도: 중앙 정렬 엔드카드. 피사체: 일렉트릭 블루 그라디언트 위에 앰버 별/궤도 아이콘 하나(로고 모사 금지, 일반 기하 도형). 배경: 단색에 가까운 미니멀 그라디언트. 텍스트: 후편집으로 '코디세이 Codyssey' + 슬로건 '나의 AI 여정, 코디세이에서 시작하세요' + CTA 'codyssey.kr'.",
+   "narration": "코디세이. 지금, 나의 AI 여정을 시작하세요.",
+   "image_prompt": "minimal centered end card background, a single small amber star orbiting a faint circle on a smooth electric blue to deep navy gradient, lots of empty space in the center for text overlay, minimal flat vector illustration, clean geometric shapes, soft gradient background, wide cinematic composition, deep navy (#0B1B3F) and electric blue (#2F6BFF) with warm amber (#FFB400) accent, off-white (#F5F7FB) highlights, soft rim light, faceless silhouette characters, no text, no letters, no logo, no watermark, 16:9",
+   "motion_plan": "정지 이미지 + 별 궤도 느린 줌인(필요시 ffmpeg zoompan). AI 영상 변환 사용하지 않음. 텍스트는 ffmpeg 오버레이로 페이드인. 키 등록 후에도 씬 6은 영상 재시도를 하지 않았다(텍스트 오버레이가 들어가는 엔드카드라 정지 배경이 안전).",
+   "audio": {
+    "narration": "scene06_vo_gpt.mp3",
+    "sfx": "없음",
+    "bgm": "bgm_veo.m4a (veo-3.1-fast 생성 오디오, 전 구간 -19dB 믹스+내레이션 덕킹)"
+   },
+   "files": {
+    "image_round1": [
+     "scene06_img_v1.png"
+    ],
+    "image_final": "scene06_img_gpt_v2.png",
+    "motion": null,
+    "vo": "scene06_vo_gpt.mp3",
+    "vo_round1": "scene06_vo.mp3"
+   },
+   "output_summary": "별 크기를 키우고 흰 궤도 링과 글로우 추가, 중앙·하단 2/3 비어 있음. 한계: 별이 우상단 코너에 치우쳐 있고 단순 그라디언트",
+   "final": {
+    "image": "scene06_img_gpt_v2.png",
+    "image_prompt": "Minimal end card background: smooth electric blue to deep navy gradient. In the upper-right corner a clearly visible amber star with a soft glow orbiting a thin off-white circle ring, the star about 4 percent of image width. The entire center and lower two-thirds are completely empty open space for text overlay. No people. Strict flat 2D vector illustration, solid color shapes only, no painterly texture, no photorealism, no 3D render, no gradients except smooth sky/background. Palette limited to deep navy #0B1B3F, electric blue #2F6BFF, warm amber #FFB400, off-white #F5F7FB. Any human is a faceless solid-color silhouette with no facial features at all (no eyes, nose, mouth). The single protagonist always wears a bright amber #FFB400 scarf as the identifying marker. Wide cinematic 3:2 composition. Absolutely no text, no letters, no numbers, no logo, no watermark.",
+    "image_tool": "COPA gpt-image-2 1536x1024",
+    "output_summary": "별 크기를 키우고 흰 궤도 링과 글로우 추가, 중앙·하단 2/3 비어 있음. 한계: 별이 우상단 코너에 치우쳐 있고 단순 그라디언트",
+    "vo": "scene06_vo_gpt.mp3",
+    "vo_tool": "COPA gpt-4o-mini-tts nova",
+    "vo_duration_sec": 4.42,
+    "motion": "ffmpeg zoompan (AI 영상 없음, 의도된 선택)"
+   }
+  }
+ ],
+ "timing_check": {
+  "durations_sec": [
+   7,
+   7,
+   8,
+   8,
+   9,
+   5
+  ],
+  "total_sec": 44,
+  "narration_note": "내레이션 음절 수는 씬당 약 17~40음절로 초당 6~7음절 기준 길이 안에 여유 있게 들어감. 실제 TTS 길이는 ffprobe로 측정해 초과 시 문장 축약 또는 rate 조정."
+ },
+ "motion_strategy": {
+  "final": "씬 1·3·5 = COPA veo T2V 클립(AI 영상), 씬 2·4·6 = 정지 이미지 + ffmpeg zoompan(패닝/줌아웃/줌인)",
+  "reason": "COPA 영상 API는 이미지 입력이 없어 Text-to-Video만 가능. 손(2)·다인원(4)은 영상 변환 시 왜곡 위험, 엔드카드(6)는 텍스트 오버레이 때문에 정지 유지. 풍경 중심 씬 1·3·5만 영상 대상.",
+  "quota": "영상 씬당 최대 2회: 씬 1 = fast v1+v2, 씬 3 = fast+veo-3.1, 씬 5 = fast v1+v2 (총 6 job) + 키 등록 확인용 4초 테스트 1 job(video_log.json 기록)",
+  "access": "키 등록 전 COPA 영상은 전부 HTTP 503(media_provider_unavailable, job 생성 전 거절). QA 기관에 Google provider 키가 등록되지 않았던 것이 원인이었고 등록 후 해결. 도구 접근성 대응은 8장 참조",
+  "assemble": "assemble.sh 가 video_log.json 의 final 맵을 읽어 클립을 사용. 24→30fps, 1920x1080 정규화, 씬 1만 가벼운 eq, 클립 오디오는 버리고 씬 1 클립 오디오만 BGM 소스로 사용"
+ },
+ "prompt_revision_target": {
+  "scene_no": 1,
+  "before_prompt": "a person feeling lost, AI learning, digital art",
+  "expected_failure_points": [
+   "얼굴이 포함된 사실적 인물이 생성되어 특정인 닮음/일관성 문제 발생",
+   "화풍·팔레트 불일치(실사/3D/일러스트 혼재)",
+   "이미지에 의미 없는 글자·로고 생성",
+   "구도·피사체 위치가 불명확해 후편집 자막 영역 확보 실패"
+  ],
+  "after_prompt": "scene 1의 image_prompt (얼굴 없는 뒷모습 실루엣, 앰버 스카프 식별자, 갈림길 구도, style_suffix 전체 + no text)",
+  "revision_reasons": [
+   "faceless silhouette from behind: 인물 일관성·딥페이크 회피",
+   "style_suffix + hex 팔레트: 화풍 고정",
+   "no text, no letters: 글자 깨짐 방지",
+   "wide shot + 위치 지정: 자막 영역 확보"
+  ],
+  "result_summary": "씬 1(Pollinations) v1→v2: 얼굴 있는 사실적 인물 → 얼굴 없는 뒷모습 실루엣·남색 톤. 2차 씬 2(COPA gpt-image-2) gpt→gpt_v2: 화면 절반을 덮던 상반신 실루엣 → 손+책상 소품 클로즈업. 씬 6도 별 크기 확대로 재생성."
+ },
+ "alternatives": {
+  "image": [
+   "COPA imagen-4 / gpt-image-1.5 / gemini-2.5-flash-image(미사용. imagen-4-fast는 키 등록 전 503이었고 이후 재시도 안 함)",
+   "Pollinations(1차, 비교본으로 보존)"
+  ],
+  "video": [
+   "COPA veo-3.1-fast(최종, 씬 1·5)",
+   "COPA veo-3.1(씬 3 채택·비교)",
+   "COPA sora-2(OpenAI가 2026-09-24 Videos API 제거 → 실패)",
+   "HF Spaces i2v 4종(1차, 쿼터 실패)",
+   "ffmpeg zoompan(씬 2·4·6 실사용, 영상 전면 실패 시 대체 경로)"
+  ],
+  "audio": [
+   "COPA tts-1-hd / gemini-2.5-flash-tts(미사용, 후자는 키 등록 전 503)",
+   "gTTS(1차, 비교본)",
+   "edge-tts(403 실패)",
+   "BGM: veo 생성 오디오(사용) / MusicGen·Stable Audio Open(1차 실패)"
+  ]
+ },
+ "naming_rule": "scene{NN}_{kind}_{variant}.{ext} — kind: img | motion | vo. 1차 Pollinations: scene01_img_v1~v3.png, scene01_vo.mp3. 2차 COPA: scene01_img_gpt.png, 수정본 scene02_img_gpt_v2.png, scene01_vo_gpt.mp3. 영상: scene01_motion.mp4(1차 시도), scene01_motion_v2.mp4(프롬프트 수정본), scene03_motion_veo31.mp4(모델 변경), BGM: bgm_veo.m4a(채택, 씬 1 v2 오디오), bgm_veo_v1.m4a(v1 오디오 보존). 최종: output/Codyssey_GenAI_Ad_16x9.mp4, output/Codyssey_GenAI_Ad_9x16.mp4",
+ "round2": {
+  "tools": {
+   "image": "COPA gpt-image-2 (최종) / Pollinations (1차·비교)",
+   "video": "COPA veo-3.1-fast(최종, 씬 1·5) / veo-3.1(씬 3 채택·비교) / sora-2(업스트림 종료로 실패) / HF Spaces(익명 쿼터 실패) / zoompan(씬 2·4·6)",
+   "audio": "COPA gpt-4o-mini-tts nova (내레이션) / veo 생성 오디오(BGM) / gTTS·edge-tts(1차·실패)"
+  },
+  "calls": "assets/copa_log.jsonl 43행: TTS 12(성공 10 + gemini-2.5-flash-tts 503 2), 이미지 9(gpt-image-2 성공 8 + imagen-4-fast 503 1), 영상 22(성공 6: veo-3.1-fast 5 + veo-3.1 1 / 실패 16: veo 503 11 + sora-2 400 1·503 4). 키 등록 확인용 4초 테스트는 video_log.json 에 기록",
+  "t2i_vs_i2v_vs_t2v": "COPA 영상 API는 이미지 입력을 받지 않아 I2V 불가, T2V만 가능했다. 정지 이미지와의 일관성은 영상 프롬프트에 팔레트 hex·얼굴 없는 실루엣·앰버 스카프·flat vector와 카메라 거리를 명시해 맞췄다. 결과: 화풍(플랫 벡터)·팔레트 계열·앰버 스카프·얼굴 없음은 6개 클립 모두 유지됐지만 구도·색은 정지 이미지와 달랐다(씬 1 갈래 길→한 줄기 길, 씬 3 네이비 길→앰버 길, 씬 5 별·동전 과다). 프롬프트 수정(v2)으로 구름색·식기 형상·인물 크기는 잡혔고 구도 자체는 잡지 못했다. 색 편차는 편집에서 씬 1만 가볍게 보정했다.",
+  "access_response": [
+   "HF ZeroGPU 익명 쿼터 소진(1차, Space 4종 x 씬 3개 = 12회 실패) → 코디세이 COPA 게이트웨이로 전환, 영상은 zoompan으로 대체",
+   "COPA 영상 503(media_provider_unavailable): 모델(veo-3.1-fast/veo-3.1)·프롬프트(씬 프롬프트/최소 프롬프트)·길이(8초/4초)를 바꿔도 job 생성 전 거절 → 프롬프트 문제가 아닌 provider 측 문제로 판단하고 호출 반복을 멈춤(쿼터 보호). 원인은 QA 기관에 Google provider 키가 등록되지 않은 것이었고, 키 등록 후 veo-3.1-fast 4초 테스트가 완료·다운로드(1280x720 H.264+AAC)까지 성공해 해결",
+   "sora-2: 1차 400(resolution은 1280x720|720x1280만 허용)을 고친 뒤에도 503(media_provider_error). OpenAI가 2026-09-24에 Videos API를 제거해 키 등록과 무관한 영구 실패로 판단하고 재시도하지 않음"
+  ],
+  "bonus": {
+   "other_tool_remake_images": "달성: 6씬 Pollinations vs gpt-image-2 나란히 비교(스토리보드 8장)",
+   "other_tool_remake_video": "달성(씬 3 1건): 같은 프롬프트로 veo-3.1-fast vs veo-3.1 생성·비교. veo vs sora는 sora 종료로 불가",
+   "aspect_9x16": "달성: 1080x1920 (16:9 중앙 배치 + 블러 배경). 1:1 미제작",
+   "lipsync": "미달성"
+  }
+ }
+}

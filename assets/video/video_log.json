@@ -1,0 +1,362 @@
+{
+ "1": {
+  "scene": 1,
+  "input": "scene01_img_v2.png",
+  "prompt": "slow drifting fog over the dark navy forest path, the faceless silhouette stands still, gentle subtle camera push-in, soft glowing light, smooth cinematic motion",
+  "attempts": [
+   {
+    "space": "Upsampler/wan-2-2-14b-image-to-video",
+    "duration_seconds": 3.5,
+    "steps": 6,
+    "seed": 42,
+    "result": "fail",
+    "error": "You have exceeded your ZeroGPU runs limit. Authenticate with a Hugging Face token for more quota - https://huggingface.co/settings/tokens",
+    "sec": 5
+   },
+   {
+    "space": "Lightricks/ltx-video-distilled",
+    "duration_seconds": 2.0,
+    "steps": 6,
+    "seed": 42,
+    "result": "fail",
+    "error": "You have exceeded your ZeroGPU quota (120s requested vs. -60s left). Try again in 0:00:00. Authenticate with a Hugging Face token for more quota - https://huggingface.co/settings/tokens",
+    "sec": 5
+   },
+   {
+    "space": "multimodalart/wan2-1-fast",
+    "duration_seconds": 2.0,
+    "steps": 6,
+    "seed": 42,
+    "result": "fail",
+    "error": "You have exceeded your ZeroGPU runs limit. Authenticate with a Hugging Face token for more quota - https://huggingface.co/settings/tokens",
+    "sec": 5
+   },
+   {
+    "space": "r3gm/wan2-2-fp8da-aoti-preview",
+    "duration_seconds": 2.0,
+    "steps": 6,
+    "seed": 42,
+    "result": "fail",
+    "error": "You have exceeded your ZeroGPU runs limit. Authenticate with a Hugging Face token for more quota - https://huggingface.co/settings/tokens",
+    "sec": 5
+   }
+  ],
+  "status": "failed",
+  "file": null
+ },
+ "3": {
+  "scene": 3,
+  "input": "scene03_img_v2.png",
+  "prompt": "warm amber light from the glowing doorway slowly spreads and brightens along the path, gentle camera push-in toward the light, smooth cinematic motion",
+  "attempts": [
+   {
+    "space": "Upsampler/wan-2-2-14b-image-to-video",
+    "duration_seconds": 3.5,
+    "steps": 6,
+    "seed": 42,
+    "result": "fail",
+    "error": "You have exceeded your ZeroGPU runs limit. Authenticate with a Hugging Face token for more quota - https://huggingface.co/settings/tokens",
+    "sec": 5
+   },
+   {
+    "space": "Lightricks/ltx-video-distilled",
+    "duration_seconds": 2.0,
+    "steps": 6,
+    "seed": 42,
+    "result": "fail",
+    "error": "You have exceeded your ZeroGPU quota (120s requested vs. -60s left). Try again in 0:00:00. Authenticate with a Hugging Face token for more quota - https://huggingface.co/settings/tokens",
+    "sec": 5
+   },
+   {
+    "space": "multimodalart/wan2-1-fast",
+    "duration_seconds": 2.0,
+    "steps": 6,
+    "seed": 42,
+    "result": "fail",
+    "error": "You have exceeded your ZeroGPU runs limit. Authenticate with a Hugging Face token for more quota - https://huggingface.co/settings/tokens",
+    "sec": 5
+   },
+   {
+    "space": "r3gm/wan2-2-fp8da-aoti-preview",
+    "duration_seconds": 2.0,
+    "steps": 6,
+    "seed": 42,
+    "result": "fail",
+    "error": "You have exceeded your ZeroGPU runs limit. Authenticate with a Hugging Face token for more quota - https://huggingface.co/settings/tokens",
+    "sec": 5
+   }
+  ],
+  "status": "failed",
+  "file": null,
+  "summary": "AI i2v 4개 Space 모두 ZeroGPU 익명 쿼터 초과(HF 토큰 필요)로 실패. 정지 이미지+ffmpeg zoompan(Ken Burns)으로 대체 예정.",
+  "decision": "미션 허용 크레딧 부족 전략(정지 이미지+짧은 모션) 전환"
+ },
+ "5": {
+  "scene": 5,
+  "input": "scene05_img_v2.png",
+  "prompt": "small amber sparkles and stars drift gently over the road, clouds slowly move across the bright blue sky, subtle camera push-in, smooth cinematic motion",
+  "attempts": [
+   {
+    "space": "Upsampler/wan-2-2-14b-image-to-video",
+    "duration_seconds": 3.5,
+    "steps": 6,
+    "seed": 42,
+    "result": "fail",
+    "error": "You have exceeded your ZeroGPU runs limit. Authenticate with a Hugging Face token for more quota - https://huggingface.co/settings/tokens",
+    "sec": 5
+   },
+   {
+    "space": "Lightricks/ltx-video-distilled",
+    "duration_seconds": 2.0,
+    "steps": 6,
+    "seed": 42,
+    "result": "fail",
+    "error": "You have exceeded your ZeroGPU quota (120s requested vs. -60s left). Try again in 0:00:00. Authenticate with a Hugging Face token for more quota - https://huggingface.co/settings/tokens",
+    "sec": 5
+   },
+   {
+    "space": "multimodalart/wan2-1-fast",
+    "duration_seconds": 2.0,
+    "steps": 6,
+    "seed": 42,
+    "result": "fail",
+    "error": "You have exceeded your ZeroGPU runs limit. Authenticate with a Hugging Face token for more quota - https://huggingface.co/settings/tokens",
+    "sec": 5
+   },
+   {
+    "space": "r3gm/wan2-2-fp8da-aoti-preview",
+    "duration_seconds": 2.0,
+    "steps": 6,
+    "seed": 42,
+    "result": "fail",
+    "error": "You have exceeded your ZeroGPU runs limit. Authenticate with a Hugging Face token for more quota - https://huggingface.co/settings/tokens",
+    "sec": 5
+   }
+  ],
+  "status": "failed",
+  "file": null,
+  "summary": "AI i2v 4개 Space 모두 ZeroGPU 익명 쿼터 초과(HF 토큰 필요)로 실패. 정지 이미지+ffmpeg zoompan(Ken Burns)으로 대체 예정.",
+  "decision": "미션 허용 크레딧 부족 전략(정지 이미지+짧은 모션) 전환"
+ },
+ "_plan": {
+  "zoompan_scenes": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "note": "전 씬 편집 단계에서 ffmpeg zoompan 처리. 씬 2,4,6은 원래 계획대로 패닝/줌. HF 무료 토큰 발급 시 scripts/gen_video.py 재실행으로 1,3,5 재시도 가능(HF_TOKEN 환경변수는 gradio_client가 아닌 Client(hf_token=)로 전달해야 하므로 스크립트 수정 필요)."
+ },
+ "copa": [
+  {
+   "tool": "코디세이 COPA 게이트웨이",
+   "model": "veo-3.1-fast",
+   "scene": 1,
+   "prompt_ref": "scripts/gen_video_copa.sh 1",
+   "seconds": 8,
+   "resolution": "720p",
+   "job_id": null,
+   "status": "failed",
+   "file": null,
+   "error": "HTTP 503 media_provider_unavailable (코디세이 COPA 게이트웨이, POST /api/v1/videos 접수 단계 거절, job_id 없음)",
+   "summary": "요청이 job 생성 전에 503으로 거절되어 영상·오디오 없음. 프롬프트 문제가 아닌 provider 측 가용성 문제로 판단(최소 프롬프트 4초 veo-3.1-fast와 veo-3.1 8초도 동일 503)."
+  },
+  {
+   "tool": "코디세이 COPA 게이트웨이",
+   "model": "veo-3.1-fast",
+   "scene": 3,
+   "prompt_ref": "scripts/gen_video_copa.sh 3",
+   "seconds": 8,
+   "resolution": "720p",
+   "job_id": null,
+   "status": "failed",
+   "file": null,
+   "error": "HTTP 503 media_provider_unavailable (코디세이 COPA 게이트웨이, POST /api/v1/videos 접수 단계 거절, job_id 없음)",
+   "summary": "요청이 job 생성 전에 503으로 거절되어 영상·오디오 없음. 프롬프트 문제가 아닌 provider 측 가용성 문제로 판단(최소 프롬프트 4초 veo-3.1-fast와 veo-3.1 8초도 동일 503)."
+  },
+  {
+   "tool": "코디세이 COPA 게이트웨이",
+   "model": "veo-3.1-fast",
+   "scene": 5,
+   "prompt_ref": "scripts/gen_video_copa.sh 5",
+   "seconds": 8,
+   "resolution": "720p",
+   "job_id": null,
+   "status": "failed",
+   "file": null,
+   "error": "HTTP 503 media_provider_unavailable (코디세이 COPA 게이트웨이, POST /api/v1/videos 접수 단계 거절, job_id 없음)",
+   "summary": "요청이 job 생성 전에 503으로 거절되어 영상·오디오 없음. 프롬프트 문제가 아닌 provider 측 가용성 문제로 판단(최소 프롬프트 4초 veo-3.1-fast와 veo-3.1 8초도 동일 503)."
+  },
+  {
+   "tool": "코디세이 COPA 게이트웨이",
+   "model": "sora-2",
+   "scene": 3,
+   "prompt_ref": "scripts/gen_video_copa.sh 3sora",
+   "seconds": 8,
+   "resolution": "720p",
+   "job_id": null,
+   "status": "failed",
+   "file": null,
+   "error": "1차 HTTP 400 지원하지 않는 resolution(sora-2는 1280x720|720x1280만 허용) → 스크립트 수정 후 2차 HTTP 503 media_provider_error",
+   "summary": "해상도 값 오류는 수정했으나 이후 provider 처리 실패 503. 영상 없음."
+  },
+  {
+   "tool": "코디세이 COPA 게이트웨이",
+   "model": "veo-3.1-fast",
+   "scene": 1,
+   "prompt_ref": "scripts/gen_video_copa.sh 1 (재시도)",
+   "seconds": 8,
+   "resolution": "720p",
+   "job_id": null,
+   "status": "failed",
+   "file": null,
+   "error": "HTTP 503 media_provider_unavailable (코디세이 COPA 게이트웨이, POST /api/v1/videos 접수 단계 거절, job_id 없음)",
+   "summary": "단독 순차 재시도도 503. 총 veo 호출 7회 전부 job 생성 전 거절(크레딧 소모 없을 가능성 높으나 게이트웨이 청구 내역은 미확인). 씬 영상은 기존 ffmpeg zoompan 유지, bgm_veo.m4a 미생성."
+  },
+  {
+   "tool": "코디세이 COPA 게이트웨이",
+   "seconds": 8,
+   "resolution": "720p",
+   "status": "completed",
+   "model": "veo-3.1-fast",
+   "scene": 1,
+   "prompt_ref": "scripts/gen_video_copa.sh 1",
+   "job_id": "vjob_5533f7c0cfe24c33b813ecd2",
+   "file": "assets/video/scene01_motion.mp4",
+   "elapsed_sec": 63,
+   "audio_mean_db": -20.6,
+   "audio_max_db": -4.9,
+   "summary": "1280x720 H.264 24fps + AAC 48kHz 스테레오 8초. 프레임(1/4/7초) 검수: 글자·로고 없음, 얼굴 없음(뒷모습), 앰버 스카프 유지. 어긋남: 구름이 정지 이미지의 네이비가 아닌 베이지/피치색, 화살표·길이 시안 계열로 밝아져 '짙은 네이비 밤' 팔레트에서 벗어나고 7초에 인물이 화면을 크게 채움 → v2로 수정."
+  },
+  {
+   "tool": "코디세이 COPA 게이트웨이",
+   "seconds": 8,
+   "resolution": "720p",
+   "status": "completed",
+   "model": "veo-3.1-fast",
+   "scene": 1,
+   "prompt_ref": "scripts/gen_video_copa.sh 1v2",
+   "job_id": "vjob_cc3b71f8e5bd40a0a2589de5",
+   "file": "assets/video/scene01_motion_v2.mp4",
+   "elapsed_sec": 53,
+   "audio_mean_db": -16.9,
+   "audio_max_db": -0.8,
+   "summary": "v1 대비 프롬프트 수정(구름·언덕은 어두운 네이비/슬레이트 + 옅은 블루 림라이트, 흰/베이지/피치/주황 구름 금지, 화살표는 채도 높은 electric blue #2F6BFF, 앰버 스카프만 유일한 따뜻한 색, 인물은 좌하단에 작게·카메라는 멀리). 결과: 구름·언덕이 네이비/회청색으로 정리되고 인물이 작게 유지됨, 글자·얼굴 없음. 길은 여전히 시안에 가까워 정지 이미지의 #2F6BFF보다 밝음(잔여 편차). 피크 -0.8dB로 클리핑 직전이라 편집 단계에서 레벨 조정 필요.",
+   "prompt_change": {
+    "before": "구름·화살표 색 지정 없음(STYLE 접미의 팔레트 문장만), 'foggy deep navy night with soft rounded cloud banks'",
+    "after": "모든 구름·언덕은 어두운 네이비/슬레이트, 흰·베이지·피치·주황 구름 금지, 화살표 #2F6BFF, 앰버는 스카프만, 인물 작게(좌하단 1/3), camera stays far back",
+    "reason": "v1에서 '구름'이라는 단어의 모델 기본값(밝은 크림색 구름)이 팔레트 문장보다 우선해 정지 이미지와 색감이 어긋남. 색을 명사 단위로 직접 지정하고 금지색을 명시"
+   }
+  },
+  {
+   "tool": "코디세이 COPA 게이트웨이",
+   "seconds": 8,
+   "resolution": "720p",
+   "status": "completed",
+   "model": "veo-3.1-fast",
+   "scene": 3,
+   "prompt_ref": "scripts/gen_video_copa.sh 3",
+   "job_id": "vjob_3b57c9e4234643c8a495eafd",
+   "file": "assets/video/scene03_motion.mp4",
+   "elapsed_sec": 64,
+   "audio_mean_db": -24.3,
+   "audio_max_db": -7.1,
+   "summary": "1280x720 H.264 24fps + AAC 8초. 글자·로고 없음, 얼굴 없음(뒷모습), 스카프 유지. 어긋남(미수정): 길이 네이비가 아닌 앰버/황금색, 문이 '정상 위'가 아니라 바위 동굴 입구처럼 생성, 하늘 하단이 청록색. 씬당 호출 한도(2회) 때문에 v2는 생성하지 않음(씬 3은 보너스 veo-3.1로 이미 2회 사용)."
+  },
+  {
+   "tool": "코디세이 COPA 게이트웨이",
+   "seconds": 8,
+   "resolution": "720p",
+   "status": "completed",
+   "model": "veo-3.1",
+   "scene": 3,
+   "prompt_ref": "scripts/gen_video_copa.sh 3q (보너스: 비 fast 비교)",
+   "job_id": "vjob_05d34ad334d14442a77f648c",
+   "file": "assets/video/scene03_motion_veo31.mp4",
+   "elapsed_sec": 65,
+   "audio_mean_db": -34.7,
+   "audio_max_db": -14.5,
+   "summary": "동일 프롬프트를 veo-3.1(비 fast)로 생성. 길이 앰버인 점은 동일하나 구도가 정지 이미지에 더 가까움(문이 정상 바위 위, 인물이 작고 멀리서 걷기, 바위 질감 단순). 소요 시간은 fast 64초 vs 비 fast 65초로 차이 측정 불가(4건을 동시에 제출했고 10초 간격 폴링). 오디오는 fast보다 약 10dB 조용(바람 소리만 지시한 의도에 더 부합)."
+  },
+  {
+   "tool": "코디세이 COPA 게이트웨이",
+   "seconds": 8,
+   "resolution": "720p",
+   "status": "completed",
+   "model": "veo-3.1-fast",
+   "scene": 5,
+   "prompt_ref": "scripts/gen_video_copa.sh 5",
+   "job_id": "vjob_6072d1efca11499db64e0357",
+   "file": "assets/video/scene05_motion.mp4",
+   "elapsed_sec": 64,
+   "audio_mean_db": -20.1,
+   "audio_max_db": -2.4,
+   "summary": "1280x720 H.264 24fps + AAC 8초. 글자·로고 없음, 얼굴 없음. 어긋남: '두 갈래 off-white 길'이 차선 있는 넓은 단일 도로로 생성되어 갈림길 구도 소실, 화면 우하단에 포크 모양 오브젝트가 생성됨(식기 형상 아티팩트), 인물이 7초에 화면 대부분을 가림, 바닥이 베이지/주황 톤 → v2로 수정."
+  },
+  {
+   "tool": "코디세이 COPA 게이트웨이",
+   "seconds": 8,
+   "resolution": "720p",
+   "status": "completed",
+   "model": "veo-3.1-fast",
+   "scene": 5,
+   "prompt_ref": "scripts/gen_video_copa.sh 5v2",
+   "job_id": "vjob_38f45d16c91748c1a8909bf8",
+   "file": "assets/video/scene05_motion_v2.mp4",
+   "elapsed_sec": 54,
+   "audio_mean_db": -35.8,
+   "audio_max_db": -19.3,
+   "summary": "v1 대비 프롬프트 수정. 결과: 하단 중앙에서 Y자로 갈라지는 두 개의 off-white 길, 좌 캠퍼스 건물·우 도시 스카이라인, 별·코인 반짝임 유지, 식기 형상 없음, 글자·얼굴 없음. 잔여 편차: 길 바닥이 크림/베이지 톤이고 인물 발 근처에 작은 앰버 막대 1개가 보임. 오디오는 매우 조용함(평균 -35.8dB)으로 BGM 대신 앰비언스 용도.",
+   "prompt_change": {
+    "before": "'stands at the fork of two glowing off-white roads' (도로 형태 서술 없음), 카메라 'slow dolly-in'",
+    "after": "'one road splits into two separate glowing off-white ribbon-like winding roads in a Y shape, no lane markings, no asphalt', 'No forks, knives, spoons or cutlery shapes', 카메라 'locked, only a very slow subtle push-in, never close to the character'",
+    "reason": "v1에서 fork(갈림길)라는 단어가 포크 식기 형상으로 오해석되고 road가 차선 있는 아스팔트 도로로 해석됨. 도로 형상을 Y자 리본으로 구체화하고 식기·차선을 부정 지시, 돌리인이 인물을 과하게 키우는 문제는 카메라를 고정에 가깝게 변경"
+   }
+  },
+  {
+   "tool": "코디세이 COPA 게이트웨이",
+   "model": "veo-3.1-fast",
+   "scene": null,
+   "prompt": "minimal 4초 테스트 프롬프트",
+   "seconds": 4,
+   "resolution": "720p",
+   "job_id": "vjob_98d442595cfe4d5cb389803f",
+   "status": "completed",
+   "file": null,
+   "elapsed_sec": null,
+   "summary": "기관 provider(Google) 키 등록 직후 4초 테스트가 완료·다운로드까지 성공(1280x720 H.264 + AAC). 이전 7회 503(media_provider_unavailable)의 원인은 프롬프트·모델이 아니라 QA 기관에 Google provider 키가 등록되지 않았던 것이며, 키 등록으로 해결. 도구 접근성 대응 사례."
+  },
+  {
+   "tool": "코디세이 COPA 게이트웨이",
+   "model": "sora-2",
+   "scene": 3,
+   "prompt_ref": "scripts/gen_video_copa.sh 3sora",
+   "seconds": 8,
+   "resolution": "1280x720",
+   "job_id": null,
+   "status": "failed",
+   "file": null,
+   "error": "HTTP 503 media_provider_error",
+   "summary": "OpenAI가 2026-09-24에 Videos API를 제거해 provider 처리 실패. 키 등록과 무관한 영구 실패로 판단, 재시도 안 함. 기존 sora-2 실패 기록(해상도 400 → 503)과 같은 원인."
+  }
+ ],
+ "audio_checks": {
+  "method": "ffprobe + ffmpeg volumedetect (청취 불가, 무음·클리핑 여부만 판정)",
+  "scene01_motion.mp4": "mean -20.6dB / max -4.9dB, 무음 아님",
+  "scene01_motion_v2.mp4": "mean -16.9dB / max -0.8dB, 무음 아님, 피크가 0dB에 근접",
+  "scene03_motion.mp4": "mean -24.3dB / max -7.1dB, 무음 아님",
+  "scene03_motion_veo31.mp4": "mean -34.7dB / max -14.5dB, 낮은 레벨(바람 지시와 일치)",
+  "scene05_motion.mp4": "mean -20.1dB / max -2.4dB",
+  "scene05_motion_v2.mp4": "mean -35.8dB / max -19.3dB, 매우 조용",
+  "bgm_veo.m4a": "assets/audio/bgm_veo.m4a = scene01_motion_v2.mp4 오디오를 ffmpeg -vn -c:a copy 로 추출. v1 오디오는 bgm_veo_v1.m4a로 보존"
+ },
+ "final": {
+  "1": "assets/video/scene01_motion_v2.mp4",
+  "3": "assets/video/scene03_motion_veo31.mp4",
+  "5": "assets/video/scene05_motion_v2.mp4",
+  "bgm": "assets/audio/bgm_veo.m4a",
+  "note": "씬 3은 fast/비 fast 모두 길이 앰버로 생성돼 정지 이미지와 편차가 있으나, 비 fast가 구도(정상 위 문, 작은 인물)가 정지 이미지에 더 가까워 채택. 씬 2·4·6은 정지 이미지 + ffmpeg zoompan 유지. AI 영상은 24fps이므로 assemble 단계에서 30fps 통일 필요."
+ }
+}
