@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # 통합 편집(컷·자막·색보정·오디오 레벨) 전용. 재실행 가능: bash scripts/assemble.sh
 # 입력: assets/images 채택본, assets/video/sceneNN_motion.mp4(있으면 우선 사용), assets/audio/sceneNN_vo_gpt.mp3, bgm_veo.m4a(있으면)
-# 출력: output/Codyssey_GenAI_Ad_16x9.mp4, output/Codyssey_GenAI_Ad_9x16.mp4
+# 출력: output/v1/Codyssey_GenAI_Ad_16x9.mp4, output/v1/Codyssey_GenAI_Ad_9x16.mp4
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$ROOT"
@@ -85,10 +85,10 @@ render() { # $1=layout(16x9|9x16) $2=output
   "$FF" -y -v error "${args[@]}" -i "$B/audio.wav" -filter_complex "${fc%;}" -map "[$prev]" -map "$((k)):a" \
     -c:v libx264 -crf 18 -preset slow -pix_fmt yuv420p -r $FPS -c:a aac -b:a 192k -t "$TOTAL" -movflags +faststart "$out"
 }
-render 16x9 output/Codyssey_GenAI_Ad_16x9.mp4
-render 9x16 output/Codyssey_GenAI_Ad_9x16.mp4
+render 16x9 output/v1/Codyssey_GenAI_Ad_16x9.mp4
+render 9x16 output/v1/Codyssey_GenAI_Ad_9x16.mp4
 
 # 5) 검증 출력
-for f in output/Codyssey_GenAI_Ad_*.mp4; do
+for f in output/v1/Codyssey_GenAI_Ad_*.mp4; do
   echo "== $f"; "$FP" -v error -show_entries stream=codec_name,width,height,r_frame_rate,pix_fmt:format=duration -of default=nw=1 "$f"
 done

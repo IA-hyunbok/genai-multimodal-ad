@@ -1,0 +1,89 @@
+{
+  "title": "v4 「코디세이호, 승선하라」 컷 리스트 (한 컷 = 한 사람 대사)",
+  "look": "Cinematic live-action Korean TV commercial, 35mm anamorphic lens, shallow depth of field, golden-hour natural light, deadpan comedic tone with a perfectly serious epic sea-adventure look, natural skin texture, 16:9, no outer space, no swords, no weapons, no on-screen text, no subtitles, no captions, no logos, no watermark.",
+  "scenes": [
+    {"id": "S01", "name": "출항 신호", "set": "on the bow of {SHIP} on a dark rough sea under gathering storm clouds, golden light breaking through",
+     "key": "Medium shot of {CAPTAIN} standing at the bow facing the camera, coat and braid whipping in the wind.",
+     "cuts": [
+      {"dur": 6, "who": "CAPTAIN", "shot": "Slow push-in from a wide aerial view of the ship to a medium shot of {CAPTAIN} at the bow facing the camera, coat and braid whipping in the wind.",
+       "lines": [["0-3s", "in a grand, slow, solemn voice", "바람이… 바뀌었다."], ["4-5.5s", "in a sudden flat, bored, matter-of-fact voice", "모집 기간이다."]],
+       "note": "3-4s: silence except waves, she just stares into the camera."}
+     ]},
+    {"id": "S02", "name": "국문과", "set": "at a sunny wooden pier in front of a riverside university library, with {SHIP} docked alongside the pier",
+     "key": "Two-shot: {SORA} on the pier on the left looking up, {CAPTAIN} leaning over the ship's rail on the right pointing the spyglass down at her.",
+     "cuts": [
+      {"dur": 4, "who": "CAPTAIN", "shot": "Low-angle medium shot of {CAPTAIN} leaning over the ship's rail, dramatically pointing the brass spyglass down toward the camera.",
+       "lines": [["0-3s", "in a grand, slow voice", "그대. 승선하라."]]},
+      {"dur": 4, "who": "SORA", "shot": "High-angle medium close-up of {SORA} standing on the pier, looking up, blinking, pointing at herself.",
+       "lines": [["0-3.5s", "flustered, her voice rising", "저요? …저 국문과인데요."]]},
+      {"dur": 4, "who": "CAPTAIN", "shot": "Close-up of {CAPTAIN} at the rail. 0-2s: silence, only seagulls; she slowly raises one eyebrow and nothing else.",
+       "lines": [["2-3.5s", "completely flat and unimpressed", "그래서?"]]}
+     ]},
+    {"id": "S03", "name": "빈 문틀", "set": "at the foot of the boarding gangway on the pier, where a freestanding empty wooden door frame with no door in it stands in front of the gangway",
+     "key": "{SORA} stepping through the empty door frame holding a blank paper ticket, {CAPTAIN} at the top of the gangway with arms crossed.",
+     "cuts": [
+      {"dur": 4, "who": "SORA", "shot": "Medium shot: {SORA} walks through the empty door frame holding out a blank paper ticket, then stops and looks around, confused.",
+       "lines": [["0.5-3.5s", "puzzled", "…어? 표 검사 안 해요?"]]},
+      {"dur": 4, "who": "CAPTAIN", "shot": "Medium shot of {CAPTAIN} at the top of the gangway, arms crossed.",
+       "lines": [["0.5-3s", "flat, as if stating the obvious", "원래 없었다, 문턱."]], "super": "전공·경력 무관"}
+     ]},
+    {"id": "S04", "name": "빈 지갑", "set": "at a busy harbor pier with cranes in the background, overcast morning, {SHIP} docked alongside",
+     "key": "{DOHYUN} on the pier saluting, {CAPTAIN} on the deck of the ship above him extending her spyglass toward him.",
+     "cuts": [
+      {"dur": 4, "who": "CAPTAIN", "shot": "Medium shot of {CAPTAIN} on the deck rail, extending the brass spyglass toward the camera with a grand gesture.",
+       "lines": [["0-3.5s", "in a grand, slow, mysterious voice", "그대 안에서… 코드가 깨어났다."]]},
+      {"dur": 4, "who": "DOHYUN", "shot": "Medium shot of {DOHYUN} on the pier: he snaps a crisp salute, then turns his empty wallet upside down and a small puff of dust falls out.",
+       "lines": [["0-1s", "loud and crisp", "충성!"], ["1.5-3.5s", "suddenly small and embarrassed", "…근데 저 돈이 없습니다!"]]},
+      {"dur": 4, "who": "CAPTAIN", "shot": "Close-up of {CAPTAIN}. 0-1s: silence; then she nods once, flatly.",
+       "lines": [["1-3.5s", "flat and calm", "알고 있다. 그래서 준다."]]}
+     ]},
+    {"id": "S05", "name": "장학금", "set": "on the sunlit deck of {SHIP}, beside an open wooden chest glowing with warm golden light, its contents hidden by the glow",
+     "key": "{DOHYUN} staring at the glowing open chest, {CAPTAIN} standing beside it.",
+     "cuts": [
+      {"dur": 4, "who": "DOHYUN", "shot": "Medium shot of {DOHYUN} on deck staring at the glowing open chest, puzzled.",
+       "lines": [["0.5-2s", "puzzled, quiet", "…뭘요?"]]},
+      {"dur": 4, "who": "CAPTAIN", "shot": "Medium close-up of {CAPTAIN} beside the glowing chest, golden light on her face.",
+       "lines": [["1-2.5s", "deadpan, short", "장학금."]], "super": "장학금"}
+     ]},
+    {"id": "S06", "name": "23층", "set": "in a dim late-night office on the 23rd floor of a city tower, fluorescent lights, while outside the window {SHIP} floats in the night sky above the clouds",
+     "key": "{MINSEOK} at his desk in the dark office, and through the window the floating ship with {CAPTAIN} at its rail.",
+     "cuts": [
+      {"dur": 4, "who": "CAPTAIN", "shot": "Shot from inside the office toward the window: outside, {CAPTAIN} stands at the floating ship's rail and taps on the glass with her spyglass.",
+       "lines": [["0.5-3.5s", "grand and solemn, slightly muffled through the glass", "지친 자여… 코디세이로 오라."]]},
+      {"dur": 4, "who": "MINSEOK", "shot": "Medium shot of {MINSEOK} at his desk, slowly turning only his head toward the window, exhausted.",
+       "lines": [["1-3.5s", "tired and drawling", "…여기 23층인데요."]]}
+     ]},
+    {"id": "S07", "name": "혼자", "set": "on the deck of {SHIP} sailing on a calm blue sea in the morning",
+     "key": "{MINSEOK} leaning on the rail looking down, {CAPTAIN} standing next to him.",
+     "cuts": [
+      {"dur": 4, "who": "MINSEOK", "shot": "Close-up of {MINSEOK} leaning on the rail, looking down at the sea.",
+       "lines": [["0-3.5s", "tired, trailing off", "저 혼자 하면… 맨날 포기해요."]]},
+      {"dur": 4, "who": "CAPTAIN", "shot": "Medium close-up of {CAPTAIN} standing next to him, looking at the horizon.",
+       "lines": [["0.5-3s", "flat and simple", "그래서 혼자 안 시킨다."]], "super": "동료학습"}
+     ]},
+    {"id": "S08", "name": "동료", "set": "on the deck of {SHIP} under full cream-white sails heading into the open sea, bright sun",
+     "key": "{SORA}, {DOHYUN} and {MINSEOK} together on deck, {CAPTAIN} at the ship's wheel behind them.",
+     "cuts": [
+      {"dur": 4, "who": "DOHYUN", "shot": "Medium shot: {DOHYUN} salutes {MINSEOK} and {SORA} eagerly.",
+       "lines": [["0-2.5s", "loud and eager", "충성! 동기입니까!"]]},
+      {"dur": 6, "who": "CAPTAIN", "shot": "Medium shot of {CAPTAIN} at the ship's wheel, calm.",
+       "lines": [["0-1.5s", "short and calm", "동료다."], ["2-5.5s", "calm and warm", "이 배에선 서로가 선장이고 선생이다."]]},
+      {"dur": 4, "who": "SORA", "shot": "Wide shot of {SORA}, {DOHYUN} and {MINSEOK} side by side; {SORA} raises her fist, the two men grin and nod.",
+       "lines": [["0.5-2.5s", "bright and cheerful", "같이 갑시다!"]]}
+     ]},
+    {"id": "S09", "name": "노크", "set": "on deck in front of the cabin entrance, where a freestanding empty wooden door frame with no door stands",
+     "key": "{CAPTAIN} raising her fist to knock on the empty door frame, {DOHYUN} behind her.",
+     "cuts": [
+      {"dur": 4, "who": "DOHYUN", "shot": "Medium shot: {CAPTAIN} in the foreground raises her fist to knock on the empty air inside the door frame and freezes; {DOHYUN} stands behind her.",
+       "lines": [["1.5-3.5s", "quietly, almost a whisper", "…문 없는데요."]]},
+      {"dur": 4, "who": "CAPTAIN", "shot": "Close-up of {CAPTAIN}, fist still raised; she clears her throat awkwardly.",
+       "lines": [["1-3s", "flat, pretending nothing happened", "알고 있다."]]}
+     ]},
+    {"id": "S10", "name": "엔드카드", "set": "at the bow of {SHIP} sailing toward a rising sun over the sea",
+     "key": "Wide shot from behind of four people at the bow facing the sunrise: {CAPTAIN}, {SORA}, {DOHYUN}, {MINSEOK}.",
+     "cuts": [
+      {"dur": 6, "who": "CAPTAIN", "shot": "Wide shot from behind of exactly four people at the bow facing the sunrise: {CAPTAIN}, {SORA}, {DOHYUN} and {MINSEOK}. 0-2s: silence, only waves. Then the captain alone turns her head back over her shoulder toward the camera.",
+       "lines": [["2.5-5s", "solemn and commanding", "코디세이로 와라!"]], "end": true}
+     ]}
+  ]
+}

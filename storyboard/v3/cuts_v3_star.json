@@ -1,0 +1,396 @@
+{
+ "title": "v3 「코디세이로 오라」 별의 부름 컷 리스트 (한 컷 = 한 사람 대사)",
+ "look": "Cinematic live-action Korean TV commercial, 35mm anamorphic lens, shallow depth of field, dramatic rim lighting, deadpan comedic tone with a perfectly serious fantasy film-trailer look, natural skin texture, 16:9, no swords, no weapons, no glowing blades, no on-screen text, no subtitles, no captions, no logos, no watermark.",
+ "scenes": [
+  {
+   "id": "S01",
+   "name": "별의 신호",
+   "set": "on a rocky cliff above a sea of clouds under a vast starry night sky",
+   "key": "Medium shot of {MASTER} on the cliff edge facing the camera, cloak flowing, stars behind her.",
+   "cuts": [
+    {
+     "dur": 6,
+     "who": "MASTER",
+     "shot": "Slow push-in from a wide shot of the cliff to a medium shot of {MASTER} facing the camera, cloak flowing in the wind.",
+     "lines": [
+      [
+       "0-3s",
+       "in a grand, slow, solemn voice",
+       "별이… 말했다."
+      ]
+     ],
+     "id": "c01"
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "name": "국문과",
+   "set": "on the grand stone steps of a university library at dusk, first stars appearing",
+   "key": "{MASTER} at the top of the steps holding up the astrolabe, {SORA} at the bottom of the steps looking up.",
+   "cuts": [
+    {
+     "dur": 4,
+     "who": "MASTER",
+     "shot": "Low-angle medium shot of {MASTER} at the top of the steps, raising the brass astrolabe toward the camera.",
+     "lines": [
+      [
+       "0-3.5s",
+       "in a grand, slow voice",
+       "깨어나라, 그대여. 코디세이로 오라."
+      ]
+     ],
+     "id": "c02"
+    },
+    {
+     "dur": 4,
+     "who": "SORA",
+     "shot": "High-angle medium close-up of {SORA} at the bottom of the steps, looking up and blinking.",
+     "lines": [
+      [
+       "0.5-2.5s",
+       "flustered, her voice rising",
+       "…저 국문과인데요?"
+      ]
+     ],
+     "id": "c03"
+    },
+    {
+     "dur": 4,
+     "who": "MASTER",
+     "shot": "Tight close-up of {MASTER}'s face, filling the frame.",
+     "lines": [
+      [
+       "1.5-3.5s",
+       "completely flat",
+       "나는 천문과였다."
+      ]
+     ],
+     "action": [
+      [
+       "0-1.5s",
+       "she stays silent and slowly raises ONE eyebrow very high, an exaggerated, clearly visible comedic eyebrow raise, the rest of her face perfectly still"
+      ]
+     ],
+     "id": "c04"
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "name": "빈 문틀",
+   "set": "on the library steps, where a freestanding empty stone door frame faintly glowing with starlight stands, with no door in it",
+   "key": "{SORA} stepping through the empty glowing door frame, {MASTER} standing beside it.",
+   "cuts": [
+    {
+     "dur": 4,
+     "who": "SORA",
+     "shot": "Medium shot: {SORA} walks through the empty door frame, stops, and looks back at it, surprised.",
+     "lines": [
+      [
+       "0.5-3s",
+       "surprised",
+       "어? 문이… 없네요?"
+      ]
+     ],
+     "id": "c05"
+    },
+    {
+     "dur": 4,
+     "who": "MASTER",
+     "shot": "Medium shot of {MASTER} standing beside the door frame, calm.",
+     "lines": [
+      [
+       "0.5-2.5s",
+       "flat, as if stating the obvious",
+       "문턱도 없다."
+      ]
+     ],
+     "super": "전공·경력 무관",
+     "id": "c06"
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "name": "빈 지갑",
+   "set": "beside a long bare concrete wall along an empty road at dawn, a few stars still in the sky",
+   "key": "{DOHYUN} saluting beside the wall, {MASTER} facing him holding the astrolabe.",
+   "cuts": [
+    {
+     "dur": 4,
+     "who": "MASTER",
+     "shot": "Medium shot of {MASTER} beside the wall, the brass astrolabe glowing softly, pointing it toward the camera.",
+     "lines": [
+      [
+       "0-3.5s",
+       "in a grand, slow, mysterious voice",
+       "그대 안의 코드가… 깨어났다."
+      ]
+     ],
+     "id": "c07"
+    },
+    {
+     "dur": 4,
+     "who": "DOHYUN",
+     "shot": "Medium shot of {DOHYUN} standing by the wall, framed from the knees up so his hands are clearly visible.",
+     "lines": [
+      [
+       "0-1s",
+       "loud and crisp",
+       "충성!"
+      ],
+      [
+       "1.5-3.5s",
+       "suddenly small and embarrassed",
+       "…근데 통장이 비었습니다!"
+      ]
+     ],
+     "action": [
+      [
+       "0-1s",
+       "he snaps a crisp military salute"
+      ],
+      [
+       "1.5-3.5s",
+       "he pulls out a brown leather wallet, opens it wide, and turns it upside down right in front of the camera; nothing falls out except a small grey puff of dust, clearly visible"
+      ]
+     ],
+     "id": "c08"
+    },
+    {
+     "dur": 4,
+     "who": "MASTER",
+     "shot": "Close-up of {MASTER}. 0-1s: silence; then she nods once, flatly.",
+     "lines": [
+      [
+       "1-3s",
+       "flat and calm",
+       "그건 별이 채운다."
+      ]
+     ],
+     "id": "c09"
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "name": "장학금",
+   "set": "beside the same concrete wall at dawn, tiny glowing golden stars drifting down from the sky like snow",
+   "key": "{DOHYUN} holding out his open wallet as tiny glowing stars fall into it, {MASTER} beside him.",
+   "cuts": [
+    {
+     "dur": 4,
+     "who": "DOHYUN",
+     "shot": "Medium shot of {DOHYUN} holding out his open wallet as tiny glowing stars fall into it, astonished.",
+     "lines": [
+      [
+       "0.5-2.5s",
+       "astonished",
+       "…진짜 채워지는데요?"
+      ]
+     ],
+     "id": "c10"
+    },
+    {
+     "dur": 4,
+     "who": "MASTER",
+     "shot": "Medium close-up of {MASTER}, falling stars around her.",
+     "lines": [
+      [
+       "1-2.5s",
+       "deadpan",
+       "장학금이다."
+      ]
+     ],
+     "super": "장학금",
+     "id": "c11"
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "name": "월요일",
+   "set": "in a dim late-night office on the 23rd floor of a city tower, fluorescent lights, with deep starry space outside the window instead of the city",
+   "key": "{MINSEOK} at his desk in the dark office, and outside the window {MASTER} floating in starry space.",
+   "cuts": [
+    {
+     "dur": 4,
+     "who": "MASTER",
+     "shot": "Shot from inside the dark office looking at the big window. Outside the window, {MASTER} floats in mid-air in starry space, completely outside the building, separated from the office by the glass. Nobody else is in the office except an empty desk in the foreground.",
+     "lines": [
+      [
+       "0.5-3.5s",
+       "grand and solemn, slightly muffled through the glass",
+       "지친 자여… 코디세이로 오라."
+      ]
+     ],
+     "action": [
+      [
+       "0-1s",
+       "the Master raises the brass astrolabe and taps it twice on the outside of the glass, tap tap, clearly visible and audible"
+      ]
+     ],
+     "id": "c12"
+    },
+    {
+     "dur": 4,
+     "who": "MINSEOK",
+     "shot": "Medium shot of {MINSEOK} at his desk, slowly turning only his head toward the window, exhausted.",
+     "lines": [
+      [
+       "1-3.5s",
+       "tired and drawling",
+       "…저 내일 출근인데요."
+      ]
+     ],
+     "action": [
+      [
+       "0-1s",
+       "he is hunched over his keyboard, then turns only his head toward the window, slowly, with an exhausted face"
+      ]
+     ],
+     "id": "c13"
+    },
+    {
+     "dur": 4,
+     "who": "MASTER",
+     "shot": "Medium close-up of {MASTER} floating outside the office window in starry space, seen through the glass.",
+     "lines": [
+      [
+       "1-3.5s",
+       "calm and reassuring",
+       "괜찮다… 24시간 개방이다."
+      ]
+     ],
+     "action": [
+      [
+       "0-1s",
+       "she gives a small reassuring nod and opens her free hand"
+      ]
+     ],
+     "id": "c14"
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "name": "동료와 함께",
+   "set": "on the office building rooftop at night under a starry sky, where several small groups of young people sit together around laptops under warm string lights, pointing at screens and helping each other",
+   "key": "{MINSEOK} sitting on the rooftop edge looking discouraged, {MASTER} beside him gesturing toward groups of young people studying together around laptops behind them.",
+   "cuts": [
+    {
+     "dur": 4,
+     "who": "MINSEOK",
+     "shot": "Close-up of {MINSEOK} sitting alone on the rooftop edge, shoulders slumped.",
+     "lines": [
+      [
+       "1-3.5s",
+       "tired, trailing off",
+       "혼자서는… 어려워요."
+      ]
+     ],
+     "action": [
+      [
+       "0-1s",
+       "he lets out a small tired sigh and looks down at his hands"
+      ]
+     ],
+     "id": "c15"
+    },
+    {
+     "dur": 6,
+     "who": "MASTER",
+     "shot": "Medium shot of {MASTER} standing beside him; behind them, small groups of young people study together around laptops under string lights, clearly visible.",
+     "lines": [
+      [
+       "1-3s",
+       "calm",
+       "혼자 하지 않는다."
+      ],
+      [
+       "3.3-5.5s",
+       "calm and warm",
+       "주변 동료들과 함께한다."
+      ]
+     ],
+     "super": "동료학습",
+     "action": [
+      [
+       "0-1s",
+       "she turns and sweeps her open hand toward the groups of people studying together behind them"
+      ]
+     ],
+     "id": "c16"
+    }
+   ]
+  },
+  {
+   "id": "S08",
+   "name": "동료",
+   "set": "on a staircase of glowing stone steps floating in starry space",
+   "key": "{SORA}, {DOHYUN} and {MINSEOK} meeting on the floating stairs, {MASTER} at the top.",
+   "cuts": [
+    {
+     "dur": 4,
+     "who": "DOHYUN",
+     "shot": "Medium shot: {DOHYUN} salutes {MINSEOK} eagerly.",
+     "lines": [
+      [
+       "0-3s",
+       "loud and eager",
+       "충성! 기수가 어떻게 되십니까!"
+      ]
+     ],
+     "id": "c18"
+    },
+    {
+     "dur": 6,
+     "who": "MASTER",
+     "shot": "Medium shot of {MASTER} at the top of the stairs, calm.",
+     "lines": [
+      [
+       "0-3s",
+       "calm and firm",
+       "기수 없다. 모두가 함께 동료다."
+      ],
+      [
+       "3.5-5.5s",
+       "calm and humble",
+       "나도 배우는 중이다."
+      ]
+     ],
+     "id": "c19"
+    }
+   ]
+  },
+  {
+   "id": "S10",
+   "name": "엔드카드",
+   "set": "on a cliff edge under a sky full of bright constellations",
+   "key": "Wide shot from behind of four people on the cliff facing the constellations: {MASTER}, {SORA}, {DOHYUN}, {MINSEOK}.",
+   "cuts": [
+    {
+     "dur": 6,
+     "who": "MASTER",
+     "shot": "Wide shot from behind of exactly four people on the cliff edge facing the constellations: {MASTER}, {SORA}, {DOHYUN} and {MINSEOK}. 0-2s: silence, only wind. Then the Master alone turns her head back over her shoulder toward the camera.",
+     "lines": [
+      [
+       "2.5-5s",
+       "solemn and commanding",
+       "코디세이로 와라!"
+      ]
+     ],
+     "end": true,
+     "action": [
+      [
+       "2-3s",
+       "the Master alone turns her head back over her shoulder toward the camera with a solemn, intense look"
+      ]
+     ],
+     "id": "c23"
+    }
+   ]
+  }
+ ]
+}

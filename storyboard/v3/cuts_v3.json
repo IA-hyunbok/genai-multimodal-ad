@@ -1,0 +1,95 @@
+{
+ "title": "v3 「코디세이로 오라」 바다판 컷 리스트 (한 컷 = 한 사람 대사)",
+ "look": "Cinematic live-action Korean TV commercial, 35mm anamorphic lens, shallow depth of field, golden-hour natural light, deadpan comedic tone with a perfectly serious epic sea-voyage film look, natural skin texture, 16:9, no outer space, no stars in the daytime sky, no swords, no weapons, no on-screen text, no subtitles, no captions, no logos, no watermark.",
+ "scenes": [
+  {"id": "S01", "name": "파도의 신호", "set": "on the bow of {SHIP} on a dark rough sea under gathering storm clouds, golden light breaking through",
+   "key": "Medium shot of {SABU} standing at the bow facing the camera, coat and braid whipping in the wind, huge waves behind.",
+   "cuts": [
+    {"id": "c01", "dur": 4, "who": "SABU", "shot": "Slow push-in from a wide aerial view of the ship crashing through waves to a medium shot of {SABU} at the bow facing the camera, coat and braid whipping in the wind.",
+     "lines": [["0.5-3s", "in a grand, slow, solemn voice", "파도가… 말했다."]]}
+   ]},
+  {"id": "S02", "name": "국문과", "set": "at a sunny wooden pier in front of a riverside university library, with {SHIP} docked alongside the pier",
+   "key": "{SORA} on the pier on the left looking up, {SABU} leaning over the ship's rail on the right pointing the brass spyglass down at her.",
+   "cuts": [
+    {"id": "c02", "dur": 4, "who": "SABU", "shot": "Low-angle medium shot of {SABU} leaning over the ship's rail.",
+     "action": [["0-1s", "she extends the brass spyglass and points it dramatically down toward the camera"]],
+     "lines": [["0.5-3.5s", "in a grand, slow voice", "깨어나라, 그대여. 코디세이로 오라."]]},
+    {"id": "c03", "dur": 4, "who": "SORA", "shot": "High-angle medium close-up of {SORA} standing alone on the pier, looking up. Nobody else is visible.",
+     "action": [["0-1s", "she blinks twice and points at herself with one finger"]],
+     "lines": [["1-3s", "flustered, her voice rising", "…저 국문과인데요?"]]},
+    {"id": "c04", "dur": 4, "who": "SABU", "shot": "Tight close-up of {SABU}'s face at the rail, filling the frame.",
+     "action": [["0-1.5s", "she stays silent and slowly raises ONE eyebrow very high, an exaggerated, clearly visible comedic eyebrow raise, the rest of her face perfectly still"]],
+     "lines": [["1.5-3.5s", "completely flat", "나는 항해학과였다."]]}
+   ]},
+  {"id": "S03", "name": "빈 문틀", "set": "at the foot of the boarding gangway on the pier, where a freestanding empty wooden door frame with no door in it stands in front of the gangway",
+   "key": "{SORA} stepping through the empty door frame, {SABU} at the top of the gangway with arms crossed.",
+   "cuts": [
+    {"id": "c05", "dur": 4, "who": "SORA", "shot": "Medium shot of {SORA} alone.",
+     "action": [["0-1.5s", "she walks through the empty wooden door frame, then stops and looks back at the frame, surprised"]],
+     "lines": [["1.5-3.5s", "surprised", "어? 문이… 없네요?"]]},
+    {"id": "c06", "dur": 4, "who": "SABU", "shot": "Medium shot of {SABU} alone at the top of the gangway, arms crossed.",
+     "lines": [["0.5-2.5s", "flat, as if stating the obvious", "문턱도 없다."]], "super": "전공·경력 무관"}
+   ]},
+  {"id": "S04", "name": "빈 지갑", "set": "at a busy harbor pier with cranes in the background, early morning, {SHIP} docked alongside",
+   "key": "{DOHYUN} on the pier saluting, {SABU} on the deck of the ship above him extending her spyglass toward him.",
+   "cuts": [
+    {"id": "c07", "dur": 4, "who": "SABU", "shot": "Medium shot of {SABU} on the deck rail.",
+     "action": [["0-1s", "she slowly extends the brass spyglass toward the camera with a grand gesture"]],
+     "lines": [["0.5-3.5s", "in a grand, slow, mysterious voice", "그대 안의 코드가… 깨어났다."]]},
+    {"id": "c08", "dur": 4, "who": "DOHYUN", "shot": "Medium shot of {DOHYUN} alone on the pier, framed from the knees up so his hands are clearly visible.",
+     "action": [["0-1s", "he snaps a crisp military salute"], ["1.5-3.5s", "he pulls out a brown leather wallet and opens it wide toward the camera, showing it is completely empty"]],
+     "lines": [["0-1s", "loud and crisp", "충성!"], ["1.5-3.5s", "suddenly small and embarrassed", "…근데 통장이 비었습니다!"]]},
+    {"id": "c09", "dur": 4, "who": "SABU", "shot": "Close-up of {SABU} at the rail.",
+     "action": [["0-1s", "she stays silent, then gives one slow, flat nod"]],
+     "lines": [["1-3s", "flat and calm", "그건 바다가 채운다."]]}
+   ]},
+  {"id": "S05", "name": "장학금", "set": "at the edge of the harbor pier, with waves crashing against the pier and glittering golden spray in the morning sun",
+   "key": "{DOHYUN} holding out his open wallet at the pier edge as a wave splashes glittering golden spray into it.",
+   "cuts": [
+    {"id": "c10", "dur": 4, "who": "DOHYUN", "shot": "Medium shot of {DOHYUN} alone at the edge of the pier, holding out his open wallet.",
+     "action": [["0-1s", "a wave crashes against the pier and a burst of glittering golden spray pours straight into his open wallet, clearly visible"]],
+     "lines": [["1.2-3.2s", "astonished", "…진짜 채워지는데요?"]]},
+    {"id": "c11", "dur": 4, "who": "SABU", "shot": "Medium close-up of {SABU} on the deck, golden spray glittering in the air behind her.",
+     "lines": [["1-2.5s", "deadpan", "장학금이다."]], "super": "장학금"}
+   ]},
+  {"id": "S06", "name": "23층", "set": "in a dim late-night office on the 23rd floor of a city tower, fluorescent lights, while outside the big window {SHIP} floats in the night sky above a sea of clouds",
+   "key": "{MINSEOK} at his desk in the dark office, and through the window the floating ship with {SABU} at its rail.",
+   "cuts": [
+    {"id": "c12", "dur": 4, "who": "SABU", "shot": "Shot from inside the dark office looking at the big window. Outside the window, {SABU} stands at the rail of the floating ship, right against the glass, completely outside the building. Nobody else is in the office except an empty desk in the foreground.",
+     "action": [["0-1s", "she taps the end of the brass spyglass twice on the outside of the window glass, tap tap, clearly visible and audible"]],
+     "lines": [["1-3.5s", "grand and solemn, slightly muffled through the glass", "지친 자여… 코디세이로 오라."]]},
+    {"id": "c13", "dur": 4, "who": "MINSEOK", "shot": "Medium shot of {MINSEOK} alone at his desk.",
+     "action": [["0-1s", "he is hunched over his keyboard, then turns only his head toward the window, slowly, with an exhausted face"]],
+     "lines": [["1-3.5s", "tired and drawling", "…저 내일 출근인데요."]]},
+    {"id": "c14", "dur": 4, "who": "SABU", "shot": "Medium close-up of {SABU} at the rail of the floating ship outside the office window, seen through the glass.",
+     "action": [["0-1s", "she gives a small reassuring nod and opens her free hand, palm up"]],
+     "lines": [["1-3.5s", "calm and reassuring", "괜찮다… 24시간 개방이다."]]}
+   ]},
+  {"id": "S07", "name": "동료와 함께", "set": "on the deck of {SHIP} sailing on a calm blue sea in the morning, where several small groups of young crew members sit together around laptops on the deck, pointing at screens and helping each other",
+   "key": "{MINSEOK} leaning on the rail looking discouraged, {SABU} beside him gesturing toward groups of young people studying together around laptops on the deck behind them.",
+   "cuts": [
+    {"id": "c15", "dur": 4, "who": "MINSEOK", "shot": "Close-up of {MINSEOK} alone, leaning on the ship's rail, shoulders slumped.",
+     "action": [["0-1s", "he lets out a small tired sigh and looks down at the sea"]],
+     "lines": [["1-3.5s", "tired, trailing off", "혼자서는… 어려워요."]]},
+    {"id": "c16", "dur": 6, "who": "SABU", "shot": "Medium shot of {SABU} standing at the rail; behind her on the deck, small groups of young people study together around laptops, clearly visible.",
+     "action": [["0-1s", "she turns and sweeps her open hand toward the groups of people studying together behind her"]],
+     "lines": [["1-3s", "calm", "혼자 하지 않는다."], ["3.3-5.5s", "calm and warm", "주변 동료들과 함께한다."]], "super": "동료학습"}
+   ]},
+  {"id": "S08", "name": "동료", "set": "on the deck of {SHIP} under full cream-white sails heading into the open sea, bright sun",
+   "key": "{DOHYUN} saluting {MINSEOK} on deck, {SABU} at the ship's wheel behind them.",
+   "cuts": [
+    {"id": "c17", "dur": 4, "who": "DOHYUN", "shot": "Medium two-shot of {DOHYUN} and {MINSEOK} facing each other on deck.",
+     "action": [["0-1s", "the young man snaps a crisp salute toward the office worker"]],
+     "lines": [["0-3s", "loud and eager", "충성! 기수가 어떻게 되십니까!"]]},
+    {"id": "c18", "dur": 6, "who": "SABU", "shot": "Medium shot of {SABU} alone at the ship's wheel, calm.",
+     "lines": [["0-3s", "calm and firm", "기수 없다. 모두가 함께 동료다."], ["3.5-5.5s", "calm and humble", "나도 배우는 중이다."]]}
+   ]},
+  {"id": "S09", "name": "엔드카드", "set": "at the bow of {SHIP} sailing toward a rising sun over the sea",
+   "key": "Wide shot from behind of four people at the bow facing the sunrise: {SABU}, {SORA}, {DOHYUN}, {MINSEOK}.",
+   "cuts": [
+    {"id": "c19", "dur": 6, "who": "SABU", "shot": "IMPORTANT: the camera is behind them and we see their backs. Wide shot from behind of exactly four people standing side by side in a row at the bow, facing the sunrise, no one else: from left to right, {SABU}, {SORA}, {DOHYUN} and {MINSEOK}. Nobody wears a black jacket. 0-2s: silence, only waves.",
+     "action": [["2-3s", "the old captain alone turns her head back over her shoulder toward the camera with a solemn, intense look"]],
+     "lines": [["2.5-5s", "solemn and commanding", "코디세이로 와라!"]], "end": true}
+   ]}
+ ]
+}

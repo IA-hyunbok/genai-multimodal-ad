@@ -4,7 +4,7 @@
 사용:
   python scripts/copa.py image <model> <out.png> "<prompt>" [size]
   python scripts/copa.py tts   <model> <out.mp3> "<text>" [voice] [speed]
-  python scripts/copa.py video <model> <out.mp4> "<prompt>" [seconds] [resolution]
+  python scripts/copa.py video <model> <out.mp4> "<prompt>" [seconds] [resolution] [aspect]
 모든 호출은 assets/copa_log.jsonl 에 한 줄씩 남는다.
 """
 import base64
@@ -66,9 +66,9 @@ def tts(model, out, text, voice="alloy", speed="1.0"):
     print(out)
 
 
-def video(model, out, prompt, seconds="8", resolution="720p"):
+def video(model, out, prompt, seconds="8", resolution="720p", aspect="16:9"):
     body = {"model": model, "prompt": prompt, "durationSeconds": int(seconds),
-            "resolution": resolution, "aspectRatio": "16:9"}
+            "resolution": resolution, "aspectRatio": aspect}
     job = post("/api/v1/videos", body)
     job_id = job["jobId"]
     print("job", job_id, flush=True)
@@ -85,7 +85,7 @@ def video(model, out, prompt, seconds="8", resolution="720p"):
     r = requests.get(f"{BASE}/api/v1/videos/{job_id}/download", headers=HEADERS, timeout=300)
     r.raise_for_status()
     Path(out).write_bytes(r.content)
-    log(kind="video", model=model, seconds=int(seconds), resolution=resolution, prompt=prompt,
+    log(kind="video", model=model, seconds=int(seconds), resolution=resolution, aspect=aspect, prompt=prompt,
         job_id=job_id, status="completed", file=str(out))
     print(out)
 

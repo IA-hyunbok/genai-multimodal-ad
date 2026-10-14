@@ -1,0 +1,27 @@
+{
+  "note": "prompt는 build/v3live/<id>[_v2].prompt.txt 에 전문 저장. 로그는 build/v3live/<id>[_v2].log. 한국어 발화 정확성은 청취 불가 — silencedetect는 BGM/앰비언스 때문에 대사 구간 판별 불가(shot02 끝 0.44s, shot07 중반 1.5s 무음만 검출). 프레임 육안 검수만 수행.",
+  "shots": [
+    {"id":"shot01","model":"veo-3.1","prompt_file":"build/v3live/shot01.prompt.txt","job":"assets/v3/live/shot01.mp4","status":"completed","retake":null,"verdict":"PASS","summary":"실사 룩·별자리 망토·키보드 검 일치, 글자 없음, 절벽 와이드 대본 일치."},
+    {"id":"shot02","model":"veo-3.1","prompt_file":"build/v3live/shot02.prompt.txt","job":"assets/v3/live/shot02.mp4","status":"completed","retake":null,"verdict":"PASS(주의)","summary":"도서관 계단·소라 일치, 글자 없음. 검이 키보드형이 아니라 흰 광선 검(광선검 느낌)으로 나옴 — 컷 길이를 줄이거나 검 노출 최소화 권장."},
+    {"id":"shot03","model":"veo-3.1","prompt_file":"build/v3live/shot03.prompt.txt","job":"assets/v3/live/shot03.mp4","status":"completed","retake":{"file":"assets/v3/live/shot03_v2.mp4","prompt_file":"build/v3live/shot03_v2.prompt.txt","reason":"v1: 레터박스 띠에 필름 타임코드/글자 생성(0F 3:3:7, BA M 등).","change":"프롬프트에서 '35mm anamorphic lens', 'film-trailer look' 제거, 'no film borders, no sprocket holes, no timecode, no camera overlay graphics' 추가.","result":"필름 띠는 사라졌으나 화면 안에 깨진 한글 가짜 자막이 새로 생성됨(잠들고킥 언페다 등) — 여전히 실패."},"verdict":"FAIL(양쪽 모두 글자 결함)","summary":"v1은 글자가 검은 띠 안에만 있어 상하 약 12% 크롭+확대로 제거 가능하여 v1 채택(크롭 필수). v2는 화면 중앙 하단 글자라 제거 불가. 재생성 권장."},
+    {"id":"shot04","model":"veo-3.1","prompt_file":"build/v3live/shot04.prompt.txt","job":"assets/v3/live/shot04.mp4","status":"completed","retake":null,"verdict":"PASS","summary":"연병장 벽, 도현 경례·지갑, 카키 후드·더플백 일치, 글자 없음. 검은 키보드 검 형태 유지."},
+    {"id":"shot05","model":"veo-3.1","prompt_file":"build/v3live/shot05.prompt.txt","job":"assets/v3/live/shot05.mp4","status":"completed","retake":null,"verdict":"PASS(주의)","summary":"황금 비 속 도현 경례, 글자 없음. 비는 별 동전보다 금빛 낙엽에 가깝고 사부 의상이 약간 달라지며 검이 금빛 일반 검."},
+    {"id":"shot06","model":"veo-3.1","prompt_file":"build/v3live/shot06.prompt.txt","job":"assets/v3/live/shot06.mp4","status":"completed","retake":null,"verdict":"PASS(주의)","summary":"야근 사무실·창밖 우주의 사부 구도 좋음, 글자 없음. 민석 눈에 푸른 렌즈형 아티팩트, 검은 흰 광선 검."},
+    {"id":"shot07","model":"veo-3.1-fast","prompt_file":"build/v3live/shot07.prompt.txt","job":"assets/v3/live/shot07.mp4","status":"completed","retake":{"file":"assets/v3/live/shot07_v2.mp4","prompt_file":"build/v3live/shot07_v2.prompt.txt","reason":"v1: 눈가가 푸른 패드처럼 기괴하게 렌더, 사원증에 가짜 글자.","change":"'heavy eye bags', 'white employee ID badge on a lanyard' 제거, 'natural relaxed eyes, normal realistic eyes' 추가.","result":"눈·얼굴 자연스러움, 사원증/글자 없음, 별 3개 별자리 표현 양호."},"verdict":"PASS(v2)","summary":"v2 채택. 민석 클로즈업 별 3개 연결, 미소 직전 표정."},
+    {"id":"shot08","model":"veo-3.1","prompt_file":"build/v3live/shot08.prompt.txt","job":"assets/v3/live/shot08.mp4","status":"completed","retake":{"file":"assets/v3/live/shot08_v2.mp4","prompt_file":"build/v3live/shot08_v2.prompt.txt","reason":"v1: 화면에 한글 가짜 자막 생성, 사부가 젊은 여성으로 붕괴, 민석 회색 후드로 의상 불일치, 장난감 검.","change":"사부를 계단 위에 먼저 서술, 세 청년 의상 3종을 'keep exactly these outfits'로 고정, 장난감 검 대신 주먹, 'no lower-third text' 추가.","result":"글자 사라지고 사부 일치, 주먹 '같이 갑니다' 구도 성립. 단 도현이 소년풍 회색 후드로 나오고 2프레임에 군복 유령 인물이 겹침."},"verdict":"PASS(주의, v2)","summary":"v2 채택. 글자 해결·사부 복구, 도현 의상/나이 불일치와 일시적 중복 인물이 잔존 — 컷에서 후반 구간 위주로 사용."},
+    {"id":"shot09","model":"veo-3.1","prompt_file":"build/v3live/shot09.prompt.txt","job":"assets/v3/live/shot09.mp4","status":"completed","retake":{"file":"assets/v3/live/shot09_v2.mp4","prompt_file":"build/v3live/shot09_v2.prompt.txt","reason":"v1: 화면 상하에 필름 스트립 천공 프레임 생성, 도현이 군복 위장무늬, 민석 연한 셔츠.","change":"'clean full-frame image, no film strip, no borders, no sprocket holes' 추가, 의상 구체화('olive-khaki hoodie (not a uniform)').","result":"필름 스트립 제거, 노크 동작 성립, 글자 없음. 단 청년이 3명이 아닌 4명으로 보이고 의상이 카디건 계열로 흐트러짐."},"verdict":"PASS(주의, v2)","summary":"v2 채택. 글자·테두리 해결, 인물 수/의상 불일치 잔존. 3초 컷이라 허용 가능하나 재생성 여지."},
+    {"id":"shot10","model":"veo-3.1-fast","prompt_file":"build/v3live/shot10.prompt.txt","job":"assets/v3/live/shot10.mp4(없음)","status":"failed: {'code': '13', 'message': None}","retake":{"file":"assets/v3/live/shot10_v2.mp4","prompt_file":"build/v3live/shot10_v2.prompt.txt","reason":"v1: 생성 실패 code 13(원인 메시지 없음).","change":"'empty background plate for a title card', 'silhouettes', 'No text in the sky', 'keyboard sword' 표현 제거하고 일반 문장으로 단순화.","result":"성공. 네 명 뒷모습·별하늘, 사부가 고개 돌려 미소, 위쪽 빈 하늘 확보, 글자 없음. 원인이 프롬프트인지 일시 오류인지는 단정 불가."},"verdict":"PASS(v2)","summary":"v2 채택. 의상 4인 일치(크림·카키·코발트·네이비 별 망토), 키보드 검 미등장."}
+  ],
+  "final": {
+    "shot01":"assets/v3/live/shot01.mp4",
+    "shot02":"assets/v3/live/shot02.mp4",
+    "shot03":"assets/v3/live/shot03.mp4 (상하 약 12% 크롭 필수)",
+    "shot04":"assets/v3/live/shot04.mp4",
+    "shot05":"assets/v3/live/shot05.mp4",
+    "shot06":"assets/v3/live/shot06.mp4",
+    "shot07":"assets/v3/live/shot07_v2.mp4",
+    "shot08":"assets/v3/live/shot08_v2.mp4",
+    "shot09":"assets/v3/live/shot09_v2.mp4",
+    "shot10":"assets/v3/live/shot10_v2.mp4"
+  }
+}

@@ -42,7 +42,7 @@ def vthumb(name, t=4):
 def frame(lay, t):
     """최종 mp4 에서 프레임 캡처 -> thumbs/final_{lay}_t{t}.jpg"""
     out = TH / f"final_{lay}_t{t}.jpg"
-    subprocess.run([FF, "-y", "-v", "error", "-ss", str(t), "-i", str(ROOT / f"output/Codyssey_GenAI_Ad_{lay}.mp4"),
+    subprocess.run([FF, "-y", "-v", "error", "-ss", str(t), "-i", str(ROOT / f"output/v1/Codyssey_GenAI_Ad_{lay}.mp4"),
                     "-frames:v", "1", "-vf", "scale=-2:480", "-q:v", "3", str(out)], check=True)
     return f"thumbs/{out.name}"
 
@@ -60,7 +60,7 @@ for a in AUDLOG:
         VO[int(a["file"][5:7])] = a
 vid = {}
 for lay in ("16x9", "9x16"):
-    p = ROOT / f"output/Codyssey_GenAI_Ad_{lay}.mp4"
+    p = ROOT / f"output/v1/Codyssey_GenAI_Ad_{lay}.mp4"
     j = probe(p)
     v = next(s for s in j["streams"] if "width" in s)
     a = next(s for s in j["streams"] if "sample_rate" in s)
@@ -144,7 +144,7 @@ w(f"""<h2 style='margin-top:6mm'>5. 스타일 고정 파라미터</h2>
 <tr><th>생성 규격</th><td>최종 gpt-image-2 1536x1024(3:2) → 중앙 16:9(1536x864) 크롭 → 1920x1080 업스케일. veo 클립은 8초·720p·16:9 요청, 1280x720 24fps 수신 → 1920x1080 30fps로 정규화. 출력 30fps H.264/AAC. 9:16 은 1080x1920(16:9 중앙 배치 + 블러 배경). 1차 Pollinations는 1024x576 수신, 워터마크 크롭 후 업스케일</td></tr>
 <tr><th>실제로 효과 있던 것</th><td>1차: 긴 style_suffix는 sana가 거의 무시, 짧은 'flat vector' 선두 프롬프트가 나았음. 2차: gpt-image-2는 같은 긴 STYLE 문구를 그대로 따라 6씬 화풍·스카프가 일관됨. 단, 인물 스케일 지시("몸통 프레임 밖")는 재생성이 필요했음(씬 2)</td></tr>
 <tr><th>일관성 한계(정직 기록)</th><td>cref/sref·ControlNet 미사용. 씬 5 건물 묘사가 다른 씬보다 정교하고 씬 6 별이 우상단 코너에 치우침(로그 기록). 씬 2는 스카프가 의자에 걸린 소품으로만 등장</td></tr>
-<tr><th>파일 네이밍</th><td><code>scene{{NN}}_{{kind}}_{{variant}}.{{ext}}</code> kind = img | motion | vo. 1차 scene01_img_v2.png / scene01_vo.mp3, 2차 scene01_img_gpt.png, 수정본 scene02_img_gpt_v2.png / scene01_vo_gpt.mp3. 영상 scene01_motion.mp4(1차 시도) / scene01_motion_v2.mp4(프롬프트 수정본) / scene03_motion_veo31.mp4(모델 변경), BGM bgm_veo.m4a. 최종 output/Codyssey_GenAI_Ad_{{16x9|9x16}}.mp4</td></tr></table>""")
+<tr><th>파일 네이밍</th><td><code>scene{{NN}}_{{kind}}_{{variant}}.{{ext}}</code> kind = img | motion | vo. 1차 scene01_img_v2.png / scene01_vo.mp3, 2차 scene01_img_gpt.png, 수정본 scene02_img_gpt_v2.png / scene01_vo_gpt.mp3. 영상 scene01_motion.mp4(1차 시도) / scene01_motion_v2.mp4(프롬프트 수정본) / scene03_motion_veo31.mp4(모델 변경), BGM bgm_veo.m4a. 최종 output/v1/Codyssey_GenAI_Ad_{{16x9|9x16}}.mp4</td></tr></table>""")
 
 # 6 씬 카드
 w("<section><h2>6. 씬별 카드 (최종 채택 소스)</h2>")
@@ -253,7 +253,7 @@ w(f"""<div class='ba'><div><b>veo-3.1-fast (scene03_motion.mp4, 4초 프레임)<
 # 9 최종 영상
 w("<section><h2>9. 최종 영상 정보</h2><table><tr><th>파일명</th><th>길이</th><th>해상도</th><th>fps</th><th>코덱</th><th>크기</th></tr>")
 for lay, (nm, d, v, a, sz) in vid.items():
-    w(f"<tr><td>output/{nm}</td><td>{d:.1f}초</td><td>{v['width']}x{v['height']}</td><td>{v['r_frame_rate']}</td><td>{v['codec_name'].upper()} / {a['codec_name'].upper()} {a['sample_rate']}Hz {a['channels']}ch</td><td>{sz/1e6:.1f}MB</td></tr>")
+    w(f"<tr><td>output/v1/{nm}</td><td>{d:.1f}초</td><td>{v['width']}x{v['height']}</td><td>{v['r_frame_rate']}</td><td>{v['codec_name'].upper()} / {a['codec_name'].upper()} {a['sample_rate']}Hz {a['channels']}ch</td><td>{sz/1e6:.1f}MB</td></tr>")
 w(f"""</table><p>값은 ffprobe 실측. 씬 길이 {' + '.join(str(s['duration_sec']) for s in SB['scenes'])} = {SB['timing_check']['total_sec']}초(30~60초 범위). 마지막 씬 6(5초)에 'CODYSSEY' 로고 텍스트·슬로건·CTA(codyssey.kr) 엔드카드. 9:16 버전은 16:9 영상을 중앙에 두고 블러 확대 배경을 채운 파생본(보너스: 화면 비율 2종).</p>
 <div class='warn'>미션 요건 대비 현황: AI 시각 요소(gpt-image-2 이미지 + veo 영상 클립) 충족, AI 청각 요소(gpt-4o-mini-tts 내레이션 + veo 생성 오디오 BGM) 충족, 다른 도구 재제작(이미지 Pollinations vs gpt-image-2, 영상 veo-3.1-fast vs veo-3.1)·9:16 달성. 미달성: 립싱크, 1:1 비율, veo vs sora 비교(sora 종료). 구성: 씬 1·3·5는 AI 영상 클립(총 24초), 씬 2·4·6은 정지 이미지 + zoompan(20초). 오디오는 청취하지 못했고 수치로만 확인했다.</div>
 <div class='fr'><img src='{frame("16x9",3)}'><img src='{frame("16x9",18)}'><img src='{frame("16x9",34)}'><img src='{frame("16x9",42)}'><img src='{frame("9x16",40)}'></div>

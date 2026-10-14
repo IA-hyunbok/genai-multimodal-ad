@@ -1,18 +1,69 @@
 # 코디세이(Codyssey) AI 여정 광고 — GenAI 멀티모달 콘텐츠 제작
 
-코디세이 광고 영상(44초)과 스토리보드를 생성형 AI 도구로 제작한 프로젝트다. 1차는 무료 도구(Pollinations, gTTS, HF Spaces)로, 2차는 코디세이 COPA 게이트웨이(gpt-image-2, gpt-4o-mini-tts, veo)로 만들었다. 최종 영상은 2차 결과물이다. 씬 1·3·5는 veo T2V 클립, 씬 2·4·6은 정지 이미지 + ffmpeg 패닝/줌이다. 모든 생성 호출은 `scripts/`에 재실행 가능한 형태로 남겼고, 성공과 실패를 구분해 기록했다.
+코디세이 광고 영상과 스토리보드를 생성형 AI 도구로 제작한 프로젝트다. 여러 버전을 만들었고, 최종 제출본은 아래 두 편이다. 1차(v1, 44초 내레이션 광고) 기록은 이 문서 뒷부분에 그대로 남겼다. 모든 생성 호출은 `scripts/`에 재실행 가능한 형태로 남겼고, 성공과 실패를 구분해 기록했다.
 
-## 결과물
+## 최종 제출본
+
+| 순위 | 영상 | 길이·규격 | 스토리보드 | 콘셉트 |
+|---|---|---|---|---|
+| **1순위** | [output/final/Codyssey_Final_1st_v3_ocean_16x9.mp4](output/final/Codyssey_Final_1st_v3_ocean_16x9.mp4) | 57.8초, 1920x1080, 30fps, H.264/AAC | [storyboard/v3/storyboard_v3.md](storyboard/v3/storyboard_v3.md) (대본), [storyboard/v3/cuts_v3.md](storyboard/v3/cuts_v3.md) (컷·프롬프트·디자인 시트·키프레임) | v3 바다판 「코디세이로 오라」. 코디세이호의 노선장(사부)이 국문과생·전역자·직장인을 차례로 부르고, 셋의 핑계를 한마디로 받아친다 |
+| **2순위** | [output/final/Codyssey_Final_2nd_v4_booth_16x9.mp4](output/final/Codyssey_Final_2nd_v4_booth_16x9.mp4) | 56.4초, 1920x1080, 30fps, H.264/AAC | [storyboard/v4/storyboard_v4_booth.md](storyboard/v4/storyboard_v4_booth.md) | v4 booth 「코디세이 홍보영상이 망한 이유」. 설명회 조정실에서 AI로 홍보영상을 만들다 프롬프트를 고칠 때마다 결과가 엉뚱해지는 메타 코미디 |
+
+공통 메시지: **문턱은 없고, 동료는 있다.** / 전공 무관 · 장학금 · 동료학습 / CTA codyssey.kr (마지막 3~5초 엔드카드). 전 컷에 "연출된 가상 상황 · AI로 제작" 고지.
+
+### 1순위(v3 바다판) 제작 방식
+
+코디세이 = 오디세이의 항해라는 콘셉트로, 별·우주 버전(`output/v3/Codyssey_v3_star_16x9.mp4`, 보관)을 바다로 다시 만들었다.
+
+1. **캐릭터 디자인 시트** — gpt-image-2로 인물 5명(선장·사부·소라·도현·민석)의 정면·옆모습·얼굴을 한 장씩 뽑았다(`scripts/design_sheets.py` → `assets/v5/design/`). 바다판 사부는 선장 시트를 그대로 쓴다.
+2. **씬 키프레임** — 씬마다 gpt-image-2 사진 1장으로 구도를 먼저 확정했다(`scripts/cuts.py v3 keys` → `assets/v3c/keys/`).
+3. **컷별 영상** — veo-3.1 Text-to-Video, 4초·6초 클립 19개(`scripts/shoot.sh v3c cNN`). **한 컷에는 한 사람의 대사만** 넣었다. 이전 버전에서 한 클립에 두세 명의 대사를 넣자 veo가 대사를 엉뚱한 인물에게 배정했다(사부가 "저 국문과인데요"를 말함).
+4. **싱크 조건을 프롬프트에 명시** — 말하는 사람의 얼굴·입이 보이고 음절에 맞춰 입이 움직일 것, 대사마다 시작·끝 초와 "정확히 한 번, 글자 그대로", 그 외 시간엔 입을 닫을 것, 다른 인물은 말하지 않을 것, 인물별 고정 목소리 문장, 배경음악·내레이션 금지. 괄호 속 상황(경례, 빈 지갑, 물보라, 손짓)은 `VISUAL ACTION`으로 시간과 함께 따로 적었다.
+5. **받아쓰기 기준 편집** — `scripts/sync_cuts.py`가 컷마다 faster-whisper(VAD)로 받아써 대사 앞 0.15초~뒤 0.2초만 남기고, 자막은 대본 글자를 실제 발화 시간에 맞춰 넣는다. 대본 앞뒤에 섞인 군말은 대본 첫·끝 글자로 찾아 잘라낸다. 박혀 나온 깨진 자막·레터박스는 크롭한다. `scripts/edit_cut.py`가 음량 맞춤(-16 LUFS)·자막·키워드 슈퍼·엔드카드를 합성한다.
+
+검증: 19컷 모두 말하는 순간의 프레임으로 화자를 확인했고, 받아쓰기로 대사를 대조했다. 남은 한계는 엔드컷 인원·의상(네 명 대신 세 명, 소라가 재킷 차림), S06 사부가 망원경으로 유리를 두드리는 동작이 안 보이는 점, 첫 컷이 2초로 짧은 점이다.
+
+**Image-to-Video 테스트**: 디자인 시트를 영상 재료로 쓰려고 COPA 영상 API에 이미지 필드를 붙여 1회 요청했다(job `vjob_8cc5911c52864c939087d7ce`). 요청은 접수됐지만 결과에 이미지가 반영되지 않았다(다른 인물·배경). 그래서 시트에서 본 생김새를 글로 옮겨 매 컷 같은 문장으로 넣는 방식으로 갔다.
+
+**사용량 예산 초과**: 19컷 일괄 생성 중 COPA가 `budget_exceeded`(429)로 13컷을 거절했다(4초 클립 1개에 약 53만 normalized tokens 필요). 예산이 다시 들어온 뒤 남은 컷만 이어서 생성했다.
+
+### 2순위(v4 booth) 제작 방식
+
+레퍼런스 영상(fTHUtHvAUe4)의 "조정실 + AI로 금방 만들게요 + 고칠수록 엉뚱해지는 결과" 구조만 빌리고 장면·대사·인물은 새로 썼다. 광고 안에서 프롬프트 수정 전/후가 화면에 그대로 나온다. 조정실 클립과 AI 결과물 클립을 veo로 만들고 `scripts/edit_v4.py`로 프롬프트 UI 타이핑 화면·자막·엔드카드를 합성했다. 세부 결과는 스토리보드 끝의 "제작 결과"에 있다.
+
+### 버전 이력
+
+| 버전 | 결과물 | 상태 |
+|---|---|---|
+| v1 | `output/v1/Codyssey_GenAI_Ad_{16x9,9x16}.mp4` (44초) | 1차 제출본, 내레이션형 (아래 기록) |
+| v3 애니메틱·실사·새 대본 | `output/v3/animatic_v3.mp4`, `Codyssey_v3_live_16x9.mp4`, `Codyssey_v3_new_16x9.mp4` | 화자 뒤섞임·검 모양 문제로 폐기 |
+| v3 별·우주 | `output/v3/Codyssey_v3_star_16x9.mp4` (59초), `storyboard/v3/storyboard_v3_star.md` | 바다판으로 대체, 보관 |
+| **v3 바다** | `output/v3/Codyssey_v3_cuts_16x9.mp4` | **최종 1순위** |
+| **v4 booth** | `output/v4/Codyssey_v4_booth_16x9.mp4` | **최종 2순위** |
+| v4 항해 | `output/v4/Codyssey_v4_sail_16x9.mp4`, `storyboard/v4/storyboard_v4.md` | v3 바다판과 세계관이 겹쳐 중단 |
+
+### 재현 (1순위)
+
+```bash
+.venv/bin/python scripts/design_sheets.py           # 캐릭터 디자인 시트
+.venv/bin/python scripts/cuts.py v3                 # cuts_v3.json -> 컷별 프롬프트 build/v3c/, cuts_v3.md
+.venv/bin/python scripts/cuts.py v3 keys            # 씬 키프레임
+seq -f "c%02g" 1 19 | xargs -P 3 -I{} bash scripts/shoot.sh v3c {}   # 컷 생성 (동시 3개 이하, 많으면 503)
+.venv/bin/python scripts/sync_cuts.py v3 c05@crop=1024:576:128:72 c10@crop=1024:576:160:72   # 받아쓰기 싱크 -> storyboard/v3/timeline_v3c.json
+/opt/homebrew/bin/python3 scripts/edit_cut.py storyboard/v3/timeline_v3c.json               # 편집 -> output/v3/Codyssey_v3_cuts_16x9.mp4
+```
+
+## v1 기록: 결과물
 
 | 구분 | 경로 |
 |---|---|
-| 광고 영상 16:9 | [output/Codyssey_GenAI_Ad_16x9.mp4](output/Codyssey_GenAI_Ad_16x9.mp4) |
-| 광고 영상 9:16 (파생) | [output/Codyssey_GenAI_Ad_9x16.mp4](output/Codyssey_GenAI_Ad_9x16.mp4) |
+| 광고 영상 16:9 | [output/v1/Codyssey_GenAI_Ad_16x9.mp4](output/v1/Codyssey_GenAI_Ad_16x9.mp4) |
+| 광고 영상 9:16 (파생) | [output/v1/Codyssey_GenAI_Ad_9x16.mp4](output/v1/Codyssey_GenAI_Ad_9x16.mp4) |
 | 스토리보드 PDF (14쪽) | [storyboard/Codyssey_Storyboard.pdf](storyboard/Codyssey_Storyboard.pdf) |
 | 스토리보드 원본 | [storyboard/storyboard.json](storyboard/storyboard.json), [storyboard/storyboard.html](storyboard/storyboard.html) |
 | 생성 로그 | `assets/copa_log.jsonl`(COPA 전 호출), `assets/images/generation_log.json`, `assets/video/video_log.json`, `assets/audio/audio_log.json` |
 
-## 최종 영상 스펙 (ffprobe 실측)
+## v1 기록: 영상 스펙 (ffprobe 실측)
 
 | 파일 | 길이 | 해상도 | fps | 코덱 |
 |---|---|---|---|---|
@@ -32,7 +83,7 @@
 
 6개 씬을 이은 뒤 전체에 동일한 색보정(contrast/saturation/colorbalance)을 한 번 더 적용했다. 클립의 생성 오디오는 버리고(`-an`), 씬 1 v2 클립의 오디오만 BGM으로 쓴다.
 
-## 사용 도구
+## v1 기록: 사용 도구
 
 | 구분 | 최종 | 비교·시도 | 선택 이유 | 대체 도구 |
 |---|---|---|---|---|
@@ -41,7 +92,7 @@
 | 음성 | COPA gpt-4o-mini-tts, voice nova, speed 1.0 | nova/shimmer/alloy 비교, 1차 gTTS, edge-tts 403 실패 | 6씬 모두 씬 길이 이내라 가속·축약 불필요 | COPA tts-1-hd, gemini-2.5-flash-tts, gTTS |
 | BGM | veo 생성 오디오(씬 1 v2 클립에서 추출, `assets/audio/bgm_veo.m4a`) | 씬 1 v1 오디오(`bgm_veo_v1.m4a`, 미채택). 1차 HF MusicGen 계열 실패 | 별도 BGM 모델 호출 없이 영상 호출의 부산물로 확보(쿼터 절약) | MusicGen, Stable Audio Open |
 
-## 도구 접근성 대응
+## v1 기록: 도구 접근성 대응
 
 실제 있었던 일을 순서대로 적는다.
 
@@ -50,7 +101,7 @@
 3. **원인과 해결.** QA 기관에 Google provider 키가 등록되지 않은 것이 원인이었다. 키 등록 후 veo-3.1-fast 4초 테스트(job `vjob_98d442595cfe4d5cb389803f`)가 완료·다운로드까지 성공했다(1280x720 H.264 + AAC). 이후 씬 1·3·5를 생성했다. imagen-4-fast, gemini TTS는 대체 도구라 키 등록 후 재호출하지 않았고, 같은 원인이었는지는 검증하지 않았다.
 4. **sora-2 종료.** 1차 HTTP 400(resolution은 1280x720|720x1280만 허용)을 고친 뒤 HTTP 503 `media_provider_error`가 났다. OpenAI가 2026-09-24에 Videos API를 제거해서 생긴 실패로, 키 등록과 무관한 영구 실패로 보고 재시도하지 않았다.
 
-## 현재 상태와 한계 (먼저 읽을 것)
+## v1 기록: 상태와 한계
 
 해결된 항목:
 - **이미지 일관성**: 앰버 스카프·플랫 벡터 화풍·얼굴 없는 실루엣이 6씬에 반영됐다(1차에서는 스카프 미반영, 씬 1 회화풍, 씬 4 사실적 인물).
@@ -80,10 +131,11 @@ scripts/         copa.py(COPA 클라이언트), gen_images_copa.sh, gen_audio_co
                  assemble.sh, make_overlays.py, build_storyboard.py,
                  gen_images.py, gen_images_alt.py, gen_video.py, gen_audio.py, log_verdict.py (1차)
 build/           중간 산출물 (gitignore)
-output/          최종 mp4 2종
+output/final/    최종 제출본 2편 (1순위 v3 바다, 2순위 v4 booth)
+output/v1/       1차 mp4 2종 (v3·v4 작업본은 output/v3, output/v4)
 ```
 
-## 재현 방법
+## v1 기록: 재현 방법
 
 `.env`에 `COPA_BASE_URL`, `COPA_API_KEY`를 설정한다. 사전: `.venv`(requests), ffmpeg/ffprobe(/opt/homebrew/bin), Pillow가 있는 시스템 python3, Chrome. 영상은 기관에 Google provider 키가 등록돼 있어야 한다.
 
@@ -91,13 +143,15 @@ output/          최종 mp4 2종
 scripts/gen_images_copa.sh all gpt         # 이미지 6장 (재생성: scripts/gen_images_copa.sh 2 gpt_v2, 6 gpt_v2)
 VOICE=nova scripts/gen_audio_copa.sh       # 내레이션 (voice 비교: scripts/gen_audio_copa.sh compare)
 scripts/gen_video_copa.sh 1v2              # 영상(1|3|5|1v2|5v2|3q|6|3sora). 최종 클립은 1v2, 3q(veo-3.1), 5v2
-bash scripts/assemble.sh                   # 통합 편집 -> output/*.mp4
+bash scripts/assemble.sh                   # 통합 편집 -> output/v1/*.mp4
 python3 scripts/build_storyboard.py        # 스토리보드 HTML -> PDF
 ```
 
 `assemble.sh`는 `assets/video/video_log.json`의 `final` 맵에 적힌 클립을 씬 1·3·5에 쓰고(없으면 zoompan), `assets/audio/bgm_veo.*`가 있으면 BGM으로 믹스한다(-19dB, 내레이션 덕킹, 끝 3초 페이드).
 
 ## 동료 평가 질문 답변
+
+아래 답변은 1차(v1) 제작 기준이다. 최종 제출본의 파이프라인·일관성 제어·크레딧 대응은 위 "최종 제출본" 절에 정리했다.
 
 **1. 기획→생성→검수→편집/통합 파이프라인 순서**
 기획(공식 출처로 브랜드 조사, storyboard.json 확정, style_lock·네이밍) → 생성(이미지 → 음성 → 영상) → 검수(이미지·영상 프레임을 육안으로 보고 채택/불합격을 로그에 기록, 불합격이면 프롬프트 수정 후 재생성) → 편집/통합(`assemble.sh`: veo 클립 30fps 정규화, 이미지는 16:9 크롭·zoompan, 색보정, 오디오 믹스, 자막). 영상은 이미지가 확정된 뒤에만 시도하도록 설계했다.

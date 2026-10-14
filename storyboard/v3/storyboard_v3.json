@@ -1,0 +1,856 @@
+{
+ "version": "v3",
+ "status": "기획만 완료. COPA/생성 API 호출 없음. 모든 output_summary는 제작 후 기입(미생성).",
+ "brand": {
+  "name": "코디세이 (Codyssey)",
+  "operator": "이노베이션 아카데미 (과학기술정보통신부·서울특별시·정보통신기획평가원 지원)",
+  "what_it_is": "AI·SW 인재 교육 플랫폼. 프랑스 에꼴42 모델 기반의 한국형 교육으로, 강의 위주가 아닌 자기주도·동료학습·프로젝트 기반 학습(PBL)을 중심으로 운영한다.",
+  "programs": [
+   "AI 올인원 (18개월, 개발자·엔지니어 양성)",
+   "AI 네이티브 (5개월, 생성형 AI 활용·자동화 중심)"
+  ],
+  "target": "AI·SW 분야로 진입하고 싶은 성인 학습자(전공·경력 무관, 성인 또는 고졸 이상 — 2026 AI 네이티브 모집 공고 기준). 광고 주 타깃: 20~30대 비전공자·커리어 전환 희망자.",
+  "tone_and_manner": "차분하지만 응원하는 톤. 과장·공포 소구 없이 '시작할 수 있다'는 신뢰감. v2는 병맛 상황과 형식에만 과장을 쓰고 마지막 15초는 따뜻하게 닫는다.",
+  "usp": [
+   "학비·시간 제약 없이 장학금을 받으며 배우는 AI 전문인재 과정 (공식 사이트 문구)",
+   "교수 중심 강의가 아닌 동료학습 + 프로젝트 기반 학습",
+   "전공·경력 무관 지원 가능 (AI 네이티브 2026 모집 기준)",
+   "AI 네이티브는 생성형 AI 활용·자동화 중심"
+  ],
+  "sources": [
+   "https://www.codyssey.kr",
+   "https://www.syu.ac.kr/4aov",
+   "https://www.ajunews.com/view/20240930085245816",
+   "storyboard/storyboard.json brand 섹션 (v1 확정본)"
+  ],
+  "fact_caveats": "모집 일정·과정 구성은 변동 가능. 광고에는 일정·금액·취업률·기간(5개월/18개월)·최고/1위 표현을 쓰지 않는다. 공식 로고 에셋이 없어 엔드카드는 텍스트 워드마크 CODYSSEY만 쓴다. 가상 인물·상황은 연출이며 '※ 연출된 가상 후기 · AI로 제작' 고지를 넣는다.",
+  "claims_whitelist": [
+   "장학금을 받으며 배우는 AI 과정",
+   "동료학습",
+   "프로젝트",
+   "전공 무관",
+   "AI 자동화(생성형 AI 활용·자동화)"
+  ]
+ },
+ "campaign": {
+  "concept": "코디세이로 오세요: 기사단의 부름 (스타워즈풍 장대한 부름 x 장삐쭈풍 B급 개그, 오리지널 오마주)",
+  "logline": "우주를 떠도는 사부가 평범한 사람 셋(문과생 소라, 전역자 도현, 직장인 민석)을 차례로 \"코디세이로 오라\" 부른다. 셋이 \"저 국문과인데요 / 통장이 비었습니다 / 혼자 하면 맨날 포기하는데요\" 하고 빼면 사부가 한 방에 받아치고, 마지막엔 셋이 한 줄로 서서 기사단이 된다.",
+  "objective": "인지 + 호감 (사이트 유입까지)",
+  "core_message": "전공·경력 몰라도, 장학금 받으며, 동료와 서로 가르치며 AI를 배우는 곳.",
+  "slogan": "문턱은 없고, 동료는 있다.",
+  "slogan_note": "창작 카피. 엔드카드 서브라인에 \"전공 무관 · 장학금 · 동료학습\"을 붙여 3메시지를 한 줄로 회수.",
+  "cta": "코디세이로 오세요~ / codyssey.kr",
+  "total_sec": 55,
+  "adopted_from": "judging.md: B 채택 + A의 대사(경력도 안 본다/배우는 데만 집중해/먼저 푼 사람이 가르친다/나도 동료한테 배웠다/같이 간다) 접목",
+  "ip_avoidance": "제다이·포스·라이트세이버·스타워즈 단어, 요다형 캐릭터, 오프닝 크롤, 존 윌리엄스 선율 미사용. 정적 타이틀 카드, 키보드 검, 별자리, 오리지널 코믹 팡파르."
+ },
+ "style_lock": {
+  "style_suffix": "flat 2D vector cartoon animation, uniform thick dark-navy outlines, solid flat colors with no gradients, bright pop palette of coral red, mint green, cobalt blue, sunflower yellow and cream, exaggerated cartoon expressions, simple geometric shapes, clean shadows as single flat color blocks, subtle paper grain, no text, no letters, no logos, 16:9",
+  "style_suffix_rule": "모든 Veo·이미지 프롬프트 끝에 한 글자도 바꾸지 않고 동일하게 붙인다.",
+  "palette": {
+   "coral": "#FF6B5B",
+   "mint": "#6FD6B5",
+   "cobalt": "#2F5BEA",
+   "sunflower": "#FFC933",
+   "cream": "#FFF4E0",
+   "ink_navy": "#1B1F3B"
+  },
+  "seed": "COPA 호출 인자에 seed가 없다는 v1 기록(storyboard.json round2_note)에 따라 seed 고정은 쓰지 않는 것을 기본으로 한다. 제작 시 게이트웨이가 받으면 시도한 값을 README에 기록.",
+  "model": "영상: veo-3.1(S01·S07·S08 대사·표정 비중 큼), veo-3.1-fast(S03·S04·S06·BGM). 이미지: gpt-image-2(스튜디오 카드·엔드카드 배경). 음성: gpt-4o-mini-tts(홈쇼핑 쇼호스트), gemini-2.5-flash-tts(외계인·팀장 더빙).",
+  "generate_resolution": "Veo 1280x720 (720p)",
+  "final_resolution": "1920x1080 (ffmpeg lanczos 업스케일), 24fps, H.264/AAC",
+  "post_unify": "6개 Veo 클립에 동일 ffmpeg 필터(eq 채도·대비 소폭, scale lanczos 1080p, fps 24, 동일 미세 그레인). 이미지 컷도 같은 필터. 편마다 배경색이 다르므로 클립별 색 차이는 허용.",
+  "typography": {
+   "no_drawtext_note": "이 PC의 ffmpeg에는 drawtext/subtitles 필터가 없음(확인함). Pillow로 투명 PNG(또는 6프레임 팝인 시퀀스)를 렌더링해 overlay enable=between(t,a,b)로 합성한다. v1 scripts/make_overlays.py와 동일 방식.",
+   "font": "Apple SD Gothic Neo ExtraBold (이 PC에 설치 확인). Black Han Sans·Pretendard는 이 PC fc-list에서 확인 안 됨(미설치) — 쓰려면 설치 필요. 폰트 변경 시 파일명 variant 기록.",
+   "weight": "ExtraBold 고정. 박스·반투명 배경 없음.",
+   "fill_stroke": "흰색 글자 + ink_navy(#1B1F3B) 외곽선 두께 글자 크기의 약 12%. 강조어만 sunflower(#FFC933).",
+   "keyword_caption": {
+    "use": "편마다 USP 한 단어~한 줄, 컷 박자에 쾅",
+    "size_px_1080p": 150,
+    "position": "화면 중앙, 세로 중앙선 기준 약 -5%",
+    "max_chars_per_line": 8
+   },
+   "dialogue_emphasis": {
+    "use": "대사 중 강조 단어만(전체 문장 반복 금지)",
+    "size_px_1080p": 84,
+    "position": "하단 중앙, 하단 안전 여백 12% 위"
+   },
+   "notice": {
+    "use": "※ 연출된 가상 후기 · AI로 제작",
+    "size_px_1080p": 30,
+    "position": "좌하단 안전 여백 안, 불투명도 90%"
+   },
+   "end_card": {
+    "slogan_size_px_1080p": 120,
+    "wordmark_size_px_1080p": 64,
+    "url_size_px_1080p": 44,
+    "layout": "크림 배경 중앙 정렬, 도장 원 안에 CODYSSEY 워드마크"
+   },
+   "animation": "등장: 0.2초 팝인(스케일 0.6 -> 1.12 -> 1.0, 6프레임 @30fps PNG 시퀀스 또는 scale eval=frame). 유지 후 하드컷 아웃(페이드 없음). 마지막 단어에 줌펀치 1.08배 0.1초 허용. 느린 줌/패닝 금지.",
+   "safe_area": "상하좌우 5%, 하단 12%는 대사 강조 영역",
+   "no_double_explain": "내레이션과 같은 문장을 자막으로 반복하지 않는다. 키워드·강조어만."
+  },
+  "consistency_strategy": "(1) 옴니버스로 편 간 인물 일관성 요구 제거 (2) 3인 재등장은 S08 한 컷뿐이며 의상 색 대비로 구분, 실패 시 gpt-image-2 단일 이미지 대체 (3) 동일 STYLE 접미어·팔레트 hex 고정 (4) 검수 기준표: 외곽선 두께, 팔레트 5색 안, 화면 속 글자 없음, 위협·무기 표현 없음, 대사 인식 가능 (5) 외계인은 입 없음으로 디자인 고정",
+  "episode_backgrounds": {
+   "S02-S03": "크림+민트(도서관)",
+   "S04-S05": "코발트+크림(연병장)",
+   "S06-S07": "노랑+코랄(야근 사무실)",
+   "S08-S09": "우주 계단, 세 색 혼합"
+  },
+  "character_blocks": {
+   "MASTER": "a tall calm mentor character with a long silver braid, a cobalt-blue cloak patterned with tiny constellation dots, and a giant glowing mint-green computer keyboard carried on the shoulder like a sword, simple dot eyes, tiny expressive eyebrows",
+   "SORA": "a young woman humanities student, round glasses, yellow hair tie, cream cardigan, hugging a tall stack of paperback books, simple dot eyes",
+   "DOHYUN": "a young man with a buzz cut, khaki hoodie, habit of snapping a salute, duffel bag on his shoulder, simple dot eyes",
+   "MINSEOK": "a young man office worker, cobalt blue shirt, loose navy tie, employee ID badge on a lanyard, tired droopy eyes, simple dot eyes"
+  },
+  "character_rule": "캐릭터 블록은 프롬프트마다 문자 그대로 복붙(이 JSON의 프롬프트는 이미 풀어쓴 상태). 사부는 매 컷 같은 별자리 점무늬 코발트 망토+은빛 땋은 머리+키보드 검이 고정 식별자. 의상색이 겹치지 않게 소라=크림, 도현=카키, 민석=코발트.",
+  "still_size": "스틸은 gpt-image-2 1536x1024로 생성 후 중앙 16:9(1536x864) 크롭 -> 1920x1080. 프롬프트 접미어의 \"16:9\"는 v2 그대로 유지하고 피사체를 중앙에 둔다."
+ },
+ "tts_voice": {
+  "engine": "gpt-4o-mini-tts (대체: gemini-2.5-flash-tts)",
+  "assignments": {
+   "MASTER": {
+    "voice": "onyx",
+    "instruction": "깊고 차분한 저음. 부름 대사는 장엄하게 천천히, 받아침 대사는 갑자기 무심하게 평평하게(장엄->무심 낙차가 개그). 마지막 CTA만 따뜻하게 웃는 톤. speed 0.95~1.0"
+   },
+   "SORA": {
+    "voice": "nova",
+    "instruction": "밝고 또렷한 20대 여성. 당황하면 반 박자 늦고 음정이 올라감."
+   },
+   "DOHYUN": {
+    "voice": "echo",
+    "instruction": "씩씩하고 각 잡힌 청년 목소리. 경례 직후 크게, 통장 대사는 급히 꺾여 작아짐."
+   },
+   "MINSEOK": {
+    "voice": "fable",
+    "instruction": "기운 없는 늘어진 톤, 문장 끝이 흐려짐. S07/S08에서 점점 살아남."
+   }
+  },
+  "master_tone_rationale": "사부 onyx. (1) 이 광고의 개그는 \"장엄한 부름 -> 소박한 거절 -> 무심한 받아침\"의 낙차라 저음 권위 목소리(onyx)가 앞 박자의 장엄함을 만들고, instructions로 같은 목소리를 받아침에서 평평하게 낮춰야 웃긴다. (2) 소라 nova(밝은 여성), 도현 echo(씩씩한 청년), 민석 fable(힘 빠진 표현형)과 음색이 겹치지 않아 한 번 듣고 구분된다. (3) 마지막 CTA 한 줄만 따뜻하게 웃는 톤으로 바꿔 브랜드 톤(차분하지만 응원)으로 닫는다. (4) 요다식 도치 어순·쉰 목소리를 피해 IP 연상 방지.",
+  "timing": "컷별 개별 생성 후 ffprobe로 길이 측정, adelay로 배치. 한 대사 최대 약 3초, 초과 시 문장 축약. +-0.3초 조정 허용.",
+  "fallback": "onyx가 너무 젊게 나오면 echo와 겹치므로 sage/ash 계열 비교 후 기록(미확인 이름은 제작 시 API 목록에서 확인)."
+ },
+ "bgm_prompt": "A plain dark navy screen with slowly twinkling small stars. Audio only matters: an original comedic brass fanfare, solemn and grand at first with timpani, then a tiny kazoo and a plucky pizzicato playful ending, 8 seconds, loopable, no melody from any existing film. flat 2D vector cartoon animation, uniform thick dark-navy outlines, solid flat colors with no gradients, bright pop palette of coral red, mint green, cobalt blue, sunflower yellow and cream, exaggerated cartoon expressions, simple geometric shapes, clean shadows as single flat color blocks, subtle paper grain, no text, no letters, no logos, 16:9",
+ "audio_mix": "대사 0dB 기준, BGM -18dB, 대사 구간 BGM -24dB 덕킹, 최종 -14 LUFS 근처. 정적 개그 구간(S02 11.0, S04 21.5, S06 32.0, S09)은 BGM도 완전 정지.",
+ "scenes": [
+  {
+   "no": 1,
+   "episode": "부름",
+   "phase": "오프닝 부름(장대한 시작)",
+   "duration_sec": 6,
+   "goal_message": "평범한 사람에게도 부름이 온다는 세계관. 코디세이 기사단 등장.",
+   "composition": "우주 와이드 -> 사부 정면, 하단 여백. 별이 모여 키보드 검 윤곽.",
+   "narration": null,
+   "subtitle": [
+    {
+     "t": "4.4-6.0",
+     "text": "코디세이 기사단",
+     "size_px": 120,
+     "emph": []
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "MASTER",
+     "line": "별이 말했다.",
+     "voice": "onyx",
+     "start_sec": 0.8
+    },
+    {
+     "speaker": "MASTER",
+     "line": "평범한 자에게도, 부름은 온다.",
+     "voice": "onyx",
+     "start_sec": 2.2
+    }
+   ],
+   "production": "veo",
+   "tools": {
+    "video": "veo-3.1-fast T2V (6초 요청)",
+    "image": "gpt-image-2 1536x1024 - 애니메틱 키프레임",
+    "audio": "gpt-4o-mini-tts(대사), Veo 효과음/BGM 클립",
+    "edit": "ffmpeg + Pillow 키워드 오버레이"
+   },
+   "still_prompt": "Deep navy outer space full of twinkling stars, stars connected by thin lines tracing the outline of a giant keyboard-shaped sword. In the center foreground a tall calm mentor character with a long silver braid, a cobalt-blue cloak patterned with tiny constellation dots, and a giant glowing mint-green computer keyboard carried on the shoulder like a sword, simple dot eyes, tiny expressive eyebrows, facing the camera with a solemn look, cloak fluttering. Wide epic composition, empty space in the lower third, subject kept in the central safe area. flat 2D vector cartoon animation, uniform thick dark-navy outlines, solid flat colors with no gradients, bright pop palette of coral red, mint green, cobalt blue, sunflower yellow and cream, exaggerated cartoon expressions, simple geometric shapes, clean shadows as single flat color blocks, subtle paper grain, no text, no letters, no logos, 16:9",
+   "video_prompt": "Night outer space, deep navy sky full of twinkling stars. The stars drift together and trace the outline of a giant keyboard-shaped sword, then fade to calm. In the center foreground a tall calm mentor character with a long silver braid, a cobalt-blue cloak patterned with tiny constellation dots, and a giant glowing mint-green computer keyboard carried on the shoulder like a sword, simple dot eyes, tiny expressive eyebrows, slowly turns around to face the camera with a solemn look, cloak fluttering. Slow epic push-in, 6 seconds. Sound effects only: soft star twinkles and a low wind, no speech, no dialogue, no voices. flat 2D vector cartoon animation, uniform thick dark-navy outlines, solid flat colors with no gradients, bright pop palette of coral red, mint green, cobalt blue, sunflower yellow and cream, exaggerated cartoon expressions, simple geometric shapes, clean shadows as single flat color blocks, subtle paper grain, no text, no letters, no logos, 16:9",
+   "motion_plan": "고정 푸시인 1회. 하드컷 아웃.",
+   "audio": {
+    "dialogue": "gpt-4o-mini-tts 컷별 생성 후 adelay 배치(Veo 오디오는 효과음만)",
+    "sfx": "별 반짝, 낮은 바람",
+    "bgm": "오리지널 브라스 팡파르 시작(웅장)"
+   },
+   "files": {
+    "video": "v3_s01_veo_call_v01.mp4",
+    "image": "v3_s01_img_call_v01.png",
+    "tts": "v3_s01_tts_master_v01.mp3",
+    "overlay": "v3_s01_ovl_title_v01.png"
+   },
+   "output_summary": "미생성 - 제작 후 기입",
+   "ref_basis": "B안 S01. 스타워즈 크롤 대신 정적 타이틀 카드.",
+   "beat": "부름(장엄)",
+   "still_fallback": "정지컷 + 0.1초 줌펀치(가능)",
+   "start_sec": 0.0
+  },
+  {
+   "no": 2,
+   "episode": "1번째 부름: 문과생 소라",
+   "phase": "부름 -> 거절 -> 정적 -> 받아침",
+   "duration_sec": 8,
+   "goal_message": "전공이 달라도(국문과여도) 입구에 전공 칸이 없다.",
+   "composition": "크림+민트 도서관 계단. 고정 미디엄 2인, 사부 우측.",
+   "narration": null,
+   "subtitle": [],
+   "dialogue": [
+    {
+     "speaker": "MASTER",
+     "line": "깨어나라, 그대여. 코디세이로 오라.",
+     "voice": "onyx",
+     "start_sec": 6.4
+    },
+    {
+     "speaker": "SORA",
+     "line": "...저 국문과인데요?",
+     "voice": "nova",
+     "start_sec": 9.4,
+     "note": "이후 1초 정적, 사부 눈썹만 올라감"
+    },
+    {
+     "speaker": "MASTER",
+     "line": "입구에 전공 칸 없다.",
+     "voice": "onyx",
+     "start_sec": 11.4,
+     "note": "무심한 평평한 톤"
+    }
+   ],
+   "production": "veo",
+   "tools": {
+    "video": "veo-3.1-fast T2V (8초 요청)",
+    "image": "gpt-image-2 1536x1024 - 애니메틱 키프레임",
+    "audio": "gpt-4o-mini-tts(대사), Veo 효과음/BGM 클립",
+    "edit": "ffmpeg + Pillow 키워드 오버레이"
+   },
+   "still_prompt": "Cream and mint colored library steps, a sunny day. a young woman humanities student, round glasses, yellow hair tie, cream cardigan, hugging a tall stack of paperback books, simple dot eyes, standing frozen on the steps with a sweat drop, while a tall calm mentor character with a long silver braid, a cobalt-blue cloak patterned with tiny constellation dots, and a giant glowing mint-green computer keyboard carried on the shoulder like a sword, simple dot eyes, tiny expressive eyebrows, sweeps in from the right with cloak flying and points at her dramatically. Fixed medium shot, both characters fully in frame. flat 2D vector cartoon animation, uniform thick dark-navy outlines, solid flat colors with no gradients, bright pop palette of coral red, mint green, cobalt blue, sunflower yellow and cream, exaggerated cartoon expressions, simple geometric shapes, clean shadows as single flat color blocks, subtle paper grain, no text, no letters, no logos, 16:9",
+   "video_prompt": "Cream and mint colored library steps, a sunny day. a young woman humanities student, round glasses, yellow hair tie, cream cardigan, hugging a tall stack of paperback books, simple dot eyes, walks up the steps. a tall calm mentor character with a long silver braid, a cobalt-blue cloak patterned with tiny constellation dots, and a giant glowing mint-green computer keyboard carried on the shoulder like a sword, simple dot eyes, tiny expressive eyebrows, sweeps in from the right with cloak flying and points at her dramatically. She freezes, sweat drop, mouth moves in a small hesitant way. A one second silent beat: the mentor only raises one eyebrow. Then the mentor gives a flat dismissive wave to the side and she turns her head to look where he points. Fixed medium shot, 8 seconds, comedic timing with a hard pause. Sound effects only: cloak whoosh and a small record scratch, no speech, no dialogue, no voices. flat 2D vector cartoon animation, uniform thick dark-navy outlines, solid flat colors with no gradients, bright pop palette of coral red, mint green, cobalt blue, sunflower yellow and cream, exaggerated cartoon expressions, simple geometric shapes, clean shadows as single flat color blocks, subtle paper grain, no text, no letters, no logos, 16:9",
+   "motion_plan": "고정샷. 4박(부름-거절-정적1초-받아침)을 8초에 배치.",
+   "audio": {
+    "dialogue": "gpt-4o-mini-tts 컷별 생성 후 adelay 배치(Veo 오디오는 효과음만)",
+    "sfx": "망토 휘익, 레코드 스크래치(9.9), 정적, 짧은 띵(12.8)",
+    "bgm": "멈춤 -> 스크래치 -> 정적 -> 띵"
+   },
+   "files": {
+    "video": "v3_s02_veo_humanities_v01.mp4",
+    "image": "v3_s02_img_humanities_v01.png",
+    "tts": "v3_s02_tts_*_v01.mp3"
+   },
+   "output_summary": "미생성 - 제작 후 기입",
+   "ref_basis": "B안 S02(리듬 원형). 부름-거절-정적-받아침 4박의 첫 번째.",
+   "beat": "1번째 4박",
+   "still_fallback": "정지컷 2장+컷 전환(연기 중심이라 어려움)",
+   "start_sec": 6.0
+  },
+  {
+   "no": 3,
+   "episode": "1번째 부름: 소라",
+   "phase": "증명(빈 문틀)",
+   "duration_sec": 3,
+   "goal_message": "정말로 문턱이 없다. 전공도 경력도 안 본다.",
+   "composition": "정지컷. 문도 문턱도 없는 빈 문틀, 소라 뒤돌아봄, 사부 키보드 검에 기대 흐뭇.",
+   "narration": null,
+   "subtitle": [
+    {
+     "t": "14.1-17.0",
+     "text": "전공·경력 무관",
+     "size_px": 150,
+     "emph": [
+      "전공",
+      "경력"
+     ]
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "SORA",
+     "line": "어? 문턱이 없네?",
+     "voice": "nova",
+     "start_sec": 14.2
+    },
+    {
+     "speaker": "MASTER",
+     "line": "경력도 안 본다.",
+     "voice": "onyx",
+     "start_sec": 15.5,
+     "note": "A안 \"자격은 안 묻는다\" 계열 접목, 무심하게"
+    }
+   ],
+   "production": "still",
+   "tools": {
+    "video": "(대체용) veo-3.1-fast 4초, 평소 미사용",
+    "image": "gpt-image-2 1536x1024 - 애니메틱 + 최종 정지컷",
+    "audio": "gpt-4o-mini-tts(대사), Veo 효과음/BGM 클립",
+    "edit": "ffmpeg + Pillow 키워드 오버레이"
+   },
+   "still_prompt": "An empty wooden doorframe standing alone with no door and no threshold step, floating on white steps in a sunny cream and mint scene, a bright path passing straight through it. In front, a young woman humanities student, round glasses, yellow hair tie, cream cardigan, hugging a tall stack of paperback books, simple dot eyes, looks back over her shoulder in surprise. In the back a tall calm mentor character with a long silver braid, a cobalt-blue cloak patterned with tiny constellation dots, and a giant glowing mint-green computer keyboard carried on the shoulder like a sword, simple dot eyes, tiny expressive eyebrows, leans on his keyboard sword, smug. Wide composition with empty space at the center for a caption, key subjects inside the central 16:9 crop. flat 2D vector cartoon animation, uniform thick dark-navy outlines, solid flat colors with no gradients, bright pop palette of coral red, mint green, cobalt blue, sunflower yellow and cream, exaggerated cartoon expressions, simple geometric shapes, clean shadows as single flat color blocks, subtle paper grain, no text, no letters, no logos, 16:9",
+   "video_prompt": "An empty wooden doorframe with no door and no threshold step on cream and mint steps. a young woman humanities student, round glasses, yellow hair tie, cream cardigan, hugging a tall stack of paperback books, simple dot eyes, walks straight through it and looks back in surprise. a tall calm mentor character with a long silver braid, a cobalt-blue cloak patterned with tiny constellation dots, and a giant glowing mint-green computer keyboard carried on the shoulder like a sword, simple dot eyes, tiny expressive eyebrows, leans on the keyboard sword, smug. Fixed shot, 4 seconds. Sound effects only: one fanfare note and wind, no speech, no dialogue, no voices. flat 2D vector cartoon animation, uniform thick dark-navy outlines, solid flat colors with no gradients, bright pop palette of coral red, mint green, cobalt blue, sunflower yellow and cream, exaggerated cartoon expressions, simple geometric shapes, clean shadows as single flat color blocks, subtle paper grain, no text, no letters, no logos, 16:9",
+   "motion_plan": "정지컷 + 키워드 쾅 팝인 + 0.1초 줌펀치. 느린 줌 금지.",
+   "audio": {
+    "dialogue": "gpt-4o-mini-tts 컷별 생성 후 adelay 배치(Veo 오디오는 효과음만)",
+    "sfx": "팡파르 한 음, 바람",
+    "bgm": "팡파르 복귀 힌트"
+   },
+   "files": {
+    "image": "v3_s03_img_nothreshold_v01.png",
+    "tts": "v3_s03_tts_*_v01.mp3",
+    "overlay": "v3_s03_ovl_kw_v01.png"
+   },
+   "output_summary": "미생성 - 제작 후 기입",
+   "ref_basis": "B안 S03 + A안 S03의 \"전공 무관·경력 무관\" 키워드와 \"경력도\" 대사 접목.",
+   "beat": "증명",
+   "still_fallback": "",
+   "start_sec": 14.0
+  },
+  {
+   "no": 4,
+   "episode": "2번째 부름: 전역자 도현",
+   "phase": "부름 -> 거절 -> 정적 -> 받아침",
+   "duration_sec": 8,
+   "goal_message": "돈이 없어도 장학금을 받으며 배울 수 있다.",
+   "composition": "코발트+크림 연병장 담벼락. 고정 미디엄. 도현 경례, 빈 지갑 털기.",
+   "narration": null,
+   "subtitle": [],
+   "dialogue": [
+    {
+     "speaker": "MASTER",
+     "line": "그대 안의 코드도 깨어났다. 코디세이로 오라.",
+     "voice": "onyx",
+     "start_sec": 17.4
+    },
+    {
+     "speaker": "DOHYUN",
+     "line": "충성! ...통장이 비었습니다!",
+     "voice": "echo",
+     "start_sec": 20.3
+    },
+    {
+     "speaker": "MASTER",
+     "line": "장학금 받으며 배운다.",
+     "voice": "onyx",
+     "start_sec": 22.8,
+     "note": "무심하게"
+    }
+   ],
+   "production": "veo",
+   "tools": {
+    "video": "veo-3.1-fast T2V (8초 요청)",
+    "image": "gpt-image-2 1536x1024 - 애니메틱 키프레임",
+    "audio": "gpt-4o-mini-tts(대사), Veo 효과음/BGM 클립",
+    "edit": "ffmpeg + Pillow 키워드 오버레이"
+   },
+   "still_prompt": "Cobalt blue and cream colored parade ground wall, a bright day. a young man with a buzz cut, khaki hoodie, habit of snapping a salute, duffel bag on his shoulder, simple dot eyes, stands at attention with a panicked face and an empty wallet turned inside out, a tiny puff of dust. a tall calm mentor character with a long silver braid, a cobalt-blue cloak patterned with tiny constellation dots, and a giant glowing mint-green computer keyboard carried on the shoulder like a sword, simple dot eyes, tiny expressive eyebrows, drifts in from above with cloak flapping. Fixed medium shot. flat 2D vector cartoon animation, uniform thick dark-navy outlines, solid flat colors with no gradients, bright pop palette of coral red, mint green, cobalt blue, sunflower yellow and cream, exaggerated cartoon expressions, simple geometric shapes, clean shadows as single flat color blocks, subtle paper grain, no text, no letters, no logos, 16:9",
+   "video_prompt": "Cobalt blue and cream colored parade ground wall, a bright day. a young man with a buzz cut, khaki hoodie, habit of snapping a salute, duffel bag on his shoulder, simple dot eyes, stands at attention and snaps a salute. a tall calm mentor character with a long silver braid, a cobalt-blue cloak patterned with tiny constellation dots, and a giant glowing mint-green computer keyboard carried on the shoulder like a sword, simple dot eyes, tiny expressive eyebrows, drifts in from above with cloak flapping, reaching out a hand. The young man pulls his empty wallet out of the hoodie pocket and turns it inside out, a tiny puff of dust falls out, he looks panicked. A one second silent beat. The mentor swings the keyboard sword up slowly with a confident grin, a glowing scroll with a ribbon unrolls from it. Fixed medium shot, 8 seconds. Sound effects only: salute snap, dust puff, scroll unroll, no speech, no dialogue, no voices. flat 2D vector cartoon animation, uniform thick dark-navy outlines, solid flat colors with no gradients, bright pop palette of coral red, mint green, cobalt blue, sunflower yellow and cream, exaggerated cartoon expressions, simple geometric shapes, clean shadows as single flat color blocks, subtle paper grain, no text, no letters, no logos, 16:9",
+   "motion_plan": "고정샷. 빈 지갑 먼지 -> 정적 -> 두루마리 펼침.",
+   "audio": {
+    "dialogue": "gpt-4o-mini-tts 컷별 생성 후 adelay 배치(Veo 오디오는 효과음만)",
+    "sfx": "경례 착, 먼지 휘이, 두루마리 촤락",
+    "bgm": "행진 리듬 -> 멈춤 -> 복귀"
+   },
+   "files": {
+    "video": "v3_s04_veo_veteran_v01.mp4",
+    "image": "v3_s04_img_veteran_v01.png",
+    "tts": "v3_s04_tts_*_v01.mp3"
+   },
+   "output_summary": "미생성 - 제작 후 기입",
+   "ref_basis": "B안 S04. \"충성! 통장이 비었습니다\" 가 가장 웃긴 거절 대사.",
+   "beat": "2번째 4박(같은 길이)",
+   "still_fallback": "정지컷 2장+줌",
+   "start_sec": 17.0
+  },
+  {
+   "no": 5,
+   "episode": "2번째 부름: 도현",
+   "phase": "증명(별 동전 비)",
+   "duration_sec": 3,
+   "goal_message": "장학금: 배우는 데만 집중하면 된다.",
+   "composition": "정지컷. 별 모양 동전이 비처럼 쏟아지고 도현이 입 벌리고 올려다봄. 사부가 리본 두루마리를 둘러줌.",
+   "narration": null,
+   "subtitle": [
+    {
+     "t": "25.1-28.0",
+     "text": "장학금",
+     "size_px": 150,
+     "emph": [
+      "장학금"
+     ]
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "DOHYUN",
+     "line": "...받으며요?!",
+     "voice": "echo",
+     "start_sec": 25.1
+    },
+    {
+     "speaker": "MASTER",
+     "line": "배우는 데만 집중해.",
+     "voice": "onyx",
+     "start_sec": 26.4,
+     "note": "A안 S07 \"너희는 배우는 데만 집중해\" 접목"
+    }
+   ],
+   "production": "still",
+   "tools": {
+    "video": "(대체용) veo-3.1-fast 4초, 평소 미사용",
+    "image": "gpt-image-2 1536x1024 - 애니메틱 + 최종 정지컷",
+    "audio": "gpt-4o-mini-tts(대사), Veo 효과음/BGM 클립",
+    "edit": "ffmpeg + Pillow 키워드 오버레이"
+   },
+   "still_prompt": "Star-shaped golden coins pouring down like rain from the top of the frame onto a young man with a buzz cut, khaki hoodie, habit of snapping a salute, duffel bag on his shoulder, simple dot eyes, who looks up with his mouth wide open and one hand frozen in a salute. a tall calm mentor character with a long silver braid, a cobalt-blue cloak patterned with tiny constellation dots, and a giant glowing mint-green computer keyboard carried on the shoulder like a sword, simple dot eyes, tiny expressive eyebrows, stands beside him draping a glowing ribbon scroll over his shoulder, smiling. Cobalt blue and cream background, space left in the upper center for a caption, key subjects inside the central 16:9 crop. flat 2D vector cartoon animation, uniform thick dark-navy outlines, solid flat colors with no gradients, bright pop palette of coral red, mint green, cobalt blue, sunflower yellow and cream, exaggerated cartoon expressions, simple geometric shapes, clean shadows as single flat color blocks, subtle paper grain, no text, no letters, no logos, 16:9",
+   "video_prompt": "Star-shaped golden coins pour down like rain onto a young man with a buzz cut, khaki hoodie, habit of snapping a salute, duffel bag on his shoulder, simple dot eyes, who looks up with his mouth wide open. a tall calm mentor character with a long silver braid, a cobalt-blue cloak patterned with tiny constellation dots, and a giant glowing mint-green computer keyboard carried on the shoulder like a sword, simple dot eyes, tiny expressive eyebrows, drapes a glowing ribbon scroll over his shoulder. Fixed shot, 4 seconds. Sound effects only: coins pouring, a salute snap, no speech, no dialogue, no voices. flat 2D vector cartoon animation, uniform thick dark-navy outlines, solid flat colors with no gradients, bright pop palette of coral red, mint green, cobalt blue, sunflower yellow and cream, exaggerated cartoon expressions, simple geometric shapes, clean shadows as single flat color blocks, subtle paper grain, no text, no letters, no logos, 16:9",
+   "motion_plan": "정지컷 + 키워드 쾅 + 줌펀치.",
+   "audio": {
+    "dialogue": "gpt-4o-mini-tts 컷별 생성 후 adelay 배치(Veo 오디오는 효과음만)",
+    "sfx": "동전 쏟아지는 소리, 경례 착",
+    "bgm": "팡파르 복귀"
+   },
+   "files": {
+    "image": "v3_s05_img_scholarship_v01.png",
+    "tts": "v3_s05_tts_*_v01.mp3",
+    "overlay": "v3_s05_ovl_kw_v01.png"
+   },
+   "output_summary": "미생성 - 제작 후 기입",
+   "ref_basis": "B안 S05 + A안 \"배우는 데만 집중해\".",
+   "beat": "증명",
+   "still_fallback": "",
+   "start_sec": 25.0
+  },
+  {
+   "no": 6,
+   "episode": "3번째 부름: 직장인 민석",
+   "phase": "부름 -> 거절 -> 정적 -> 받아침",
+   "duration_sec": 8,
+   "goal_message": "혼자는 못 해도 된다. 먼저 푼 사람이 가르치는 동료학습.",
+   "composition": "노랑+코랄 야근 사무실, 창밖 우주에서 사부 등장. 고정 미디엄.",
+   "narration": null,
+   "subtitle": [],
+   "dialogue": [
+    {
+     "speaker": "MASTER",
+     "line": "지친 자여. 코디세이로 오라.",
+     "voice": "onyx",
+     "start_sec": 28.4
+    },
+    {
+     "speaker": "MINSEOK",
+     "line": "혼자 하면 맨날 포기하는데요...",
+     "voice": "fable",
+     "start_sec": 30.6
+    },
+    {
+     "speaker": "MASTER",
+     "line": "혼자 안 한다. 먼저 푼 사람이 가르친다.",
+     "voice": "onyx",
+     "start_sec": 33.0,
+     "note": "A안 S06 접목. 무심하게"
+    }
+   ],
+   "production": "veo",
+   "tools": {
+    "video": "veo-3.1-fast T2V (8초 요청)",
+    "image": "gpt-image-2 1536x1024 - 애니메틱 키프레임",
+    "audio": "gpt-4o-mini-tts(대사), Veo 효과음/BGM 클립",
+    "edit": "ffmpeg + Pillow 키워드 오버레이"
+   },
+   "still_prompt": "Yellow and coral colored office at night, a big window showing outer space and stars. a young man office worker, cobalt blue shirt, loose navy tie, employee ID badge on a lanyard, tired droopy eyes, simple dot eyes, slumps over a laptop. a tall calm mentor character with a long silver braid, a cobalt-blue cloak patterned with tiny constellation dots, and a giant glowing mint-green computer keyboard carried on the shoulder like a sword, simple dot eyes, tiny expressive eyebrows, floats outside the window in space, cloak waving. Fixed medium shot, both characters fully in frame. flat 2D vector cartoon animation, uniform thick dark-navy outlines, solid flat colors with no gradients, bright pop palette of coral red, mint green, cobalt blue, sunflower yellow and cream, exaggerated cartoon expressions, simple geometric shapes, clean shadows as single flat color blocks, subtle paper grain, no text, no letters, no logos, 16:9",
+   "video_prompt": "Yellow and coral colored office at night, a big window showing outer space and stars. a young man office worker, cobalt blue shirt, loose navy tie, employee ID badge on a lanyard, tired droopy eyes, simple dot eyes, slumps over a laptop with his face drooping toward the keyboard. a tall calm mentor character with a long silver braid, a cobalt-blue cloak patterned with tiny constellation dots, and a giant glowing mint-green computer keyboard carried on the shoulder like a sword, simple dot eyes, tiny expressive eyebrows, rises up outside the window floating in space, cloak waving, and taps on the glass with one finger. The young man looks up slowly and shrugs, drooping. A one second silent beat. Then two small star-shaped lights float in through the window and settle next to him, he blinks at them. Fixed medium shot, 8 seconds. Sound effects only: glass tap, soft chime, no speech, no dialogue, no voices. flat 2D vector cartoon animation, uniform thick dark-navy outlines, solid flat colors with no gradients, bright pop palette of coral red, mint green, cobalt blue, sunflower yellow and cream, exaggerated cartoon expressions, simple geometric shapes, clean shadows as single flat color blocks, subtle paper grain, no text, no letters, no logos, 16:9",
+   "motion_plan": "고정샷. 별 두 개가 창으로 들어옴(다음 컷 별자리 복선).",
+   "audio": {
+    "dialogue": "gpt-4o-mini-tts 컷별 생성 후 adelay 배치(Veo 오디오는 효과음만)",
+    "sfx": "유리 톡톡, 부드러운 차임",
+    "bgm": "낮은 첼로 한 줄 -> 밝아짐"
+   },
+   "files": {
+    "video": "v3_s06_veo_worker_v01.mp4",
+    "image": "v3_s06_img_worker_v01.png",
+    "tts": "v3_s06_tts_*_v01.mp3"
+   },
+   "output_summary": "미생성 - 제작 후 기입",
+   "ref_basis": "B안 S06 + A안 \"먼저 푼 사람이 가르친다\".",
+   "beat": "3번째 4박(같은 길이)",
+   "still_fallback": "정지컷 2장+줌",
+   "start_sec": 28.0
+  },
+  {
+   "no": 7,
+   "episode": "3번째 부름: 민석",
+   "phase": "증명(별자리)",
+   "duration_sec": 3,
+   "goal_message": "별이 이어져 별자리가 되듯 동료와 이어진다.",
+   "composition": "정지컷. 민석 머리 위 별 3개가 선으로 이어짐, 민석이 처음 웃음.",
+   "narration": null,
+   "subtitle": [
+    {
+     "t": "36.1-39.0",
+     "text": "동료학습",
+     "size_px": 150,
+     "emph": [
+      "동료"
+     ]
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "MINSEOK",
+     "line": "(작은 웃음)",
+     "voice": "fable",
+     "start_sec": 36.5
+    }
+   ],
+   "production": "still",
+   "tools": {
+    "video": "(대체용) veo-3.1-fast 4초, 평소 미사용",
+    "image": "gpt-image-2 1536x1024 - 애니메틱 + 최종 정지컷",
+    "audio": "gpt-4o-mini-tts(대사), Veo 효과음/BGM 클립",
+    "edit": "ffmpeg + Pillow 키워드 오버레이"
+   },
+   "still_prompt": "Three glowing stars above three people's heads connected by thin sunflower yellow lines into a small constellation, over a yellow and coral night office window. a young man office worker, cobalt blue shirt, loose navy tie, employee ID badge on a lanyard, tired droopy eyes, simple dot eyes, in the foreground smiles for the first time, eyes bright. Two small silhouettes of other people appear faintly under the other stars. Space left at the center for a caption, key subjects inside the central 16:9 crop. flat 2D vector cartoon animation, uniform thick dark-navy outlines, solid flat colors with no gradients, bright pop palette of coral red, mint green, cobalt blue, sunflower yellow and cream, exaggerated cartoon expressions, simple geometric shapes, clean shadows as single flat color blocks, subtle paper grain, no text, no letters, no logos, 16:9",
+   "video_prompt": "Three glowing stars connect with thin sunflower yellow lines into a small constellation over a yellow and coral night office window. a young man office worker, cobalt blue shirt, loose navy tie, employee ID badge on a lanyard, tired droopy eyes, simple dot eyes, smiles for the first time. Fixed shot, 4 seconds. Sound effects only: three rising star chimes, no speech, no dialogue, no voices. flat 2D vector cartoon animation, uniform thick dark-navy outlines, solid flat colors with no gradients, bright pop palette of coral red, mint green, cobalt blue, sunflower yellow and cream, exaggerated cartoon expressions, simple geometric shapes, clean shadows as single flat color blocks, subtle paper grain, no text, no letters, no logos, 16:9",
+   "motion_plan": "정지컷 + 키워드 쾅. 별 연결음 3음에 맞춰 컷.",
+   "audio": {
+    "dialogue": "gpt-4o-mini-tts 컷별 생성 후 adelay 배치(Veo 오디오는 효과음만)",
+    "sfx": "띠링띠링 3음",
+    "bgm": "밝은 현악"
+   },
+   "files": {
+    "image": "v3_s07_img_constellation_v01.png",
+    "tts": "v3_s07_tts_laugh_v01.mp3",
+    "overlay": "v3_s07_ovl_kw_v01.png"
+   },
+   "output_summary": "미생성 - 제작 후 기입",
+   "ref_basis": "B안 S07.",
+   "beat": "증명",
+   "still_fallback": "",
+   "start_sec": 36.0
+  },
+  {
+   "no": 8,
+   "episode": "합류: 기사단 결성",
+   "phase": "박자 깨기 + 동료학습 회수",
+   "duration_sec": 8,
+   "goal_message": "세 사람이 모이고, 사부도 동료에게 배웠다. 교수는 없고 동료가 있다.",
+   "composition": "우주 계단 와이드. 세 명이 각자의 문 없는 입구로 도착해 어색하게 마주침. 마지막 2초 전원 키보드 검 포즈.",
+   "narration": null,
+   "subtitle": [],
+   "dialogue": [
+    {
+     "speaker": "MINSEOK",
+     "line": "...저분들도요?",
+     "voice": "fable",
+     "start_sec": 39.4
+    },
+    {
+     "speaker": "DOHYUN",
+     "line": "충성! 동료입니까!",
+     "voice": "echo",
+     "start_sec": 40.8
+    },
+    {
+     "speaker": "MASTER",
+     "line": "여기 교수는 없다.",
+     "voice": "onyx",
+     "start_sec": 42.4
+    },
+    {
+     "speaker": "MASTER",
+     "line": "동료가 있다. 나도 동료한테 배웠다.",
+     "voice": "onyx",
+     "start_sec": 44.0
+    },
+    {
+     "speaker": "셋(합창)",
+     "line": "같이 갑니다!",
+     "voice": "echo + nova + fable (3트랙 합성)",
+     "start_sec": 46.2
+    }
+   ],
+   "production": "veo",
+   "tools": {
+    "video": "veo-3.1-fast T2V (8초 요청)",
+    "image": "gpt-image-2 1536x1024 - 애니메틱 키프레임",
+    "audio": "gpt-4o-mini-tts(대사), Veo 효과음/BGM 클립",
+    "edit": "ffmpeg + Pillow 키워드 오버레이"
+   },
+   "still_prompt": "A staircase floating in space with stars all around. a young woman humanities student, round glasses, yellow hair tie, cream cardigan, hugging a tall stack of paperback books, simple dot eyes, a young man with a buzz cut, khaki hoodie, habit of snapping a salute, duffel bag on his shoulder, simple dot eyes, and a young man office worker, cobalt blue shirt, loose navy tie, employee ID badge on a lanyard, tired droopy eyes, simple dot eyes, stand on the steps next to a tall calm mentor character with a long silver braid, a cobalt-blue cloak patterned with tiny constellation dots, and a giant glowing mint-green computer keyboard carried on the shoulder like a sword, simple dot eyes, tiny expressive eyebrows. Fixed wide shot, all four fully in frame with distinct outfit colors. flat 2D vector cartoon animation, uniform thick dark-navy outlines, solid flat colors with no gradients, bright pop palette of coral red, mint green, cobalt blue, sunflower yellow and cream, exaggerated cartoon expressions, simple geometric shapes, clean shadows as single flat color blocks, subtle paper grain, no text, no letters, no logos, 16:9",
+   "video_prompt": "A staircase floating in space with stars all around. a young woman humanities student, round glasses, yellow hair tie, cream cardigan, hugging a tall stack of paperback books, simple dot eyes, a young man with a buzz cut, khaki hoodie, habit of snapping a salute, duffel bag on his shoulder, simple dot eyes, and a young man office worker, cobalt blue shirt, loose navy tie, employee ID badge on a lanyard, tired droopy eyes, simple dot eyes, each arrive through their own empty doorframe and stop awkwardly when they see each other. They look at one another and wave stiffly. a tall calm mentor character with a long silver braid, a cobalt-blue cloak patterned with tiny constellation dots, and a giant glowing mint-green computer keyboard carried on the shoulder like a sword, simple dot eyes, tiny expressive eyebrows, turns his back, arms crossed, then slowly looks over his shoulder. The three look surprised together. In the last two seconds all four raise their keyboard swords like trophies at the same time in a heroic pose while stars connect behind them into a constellation. Fixed wide shot, 8 seconds. Sound effects only: soft footsteps, star chimes, no speech, no dialogue, no voices. flat 2D vector cartoon animation, uniform thick dark-navy outlines, solid flat colors with no gradients, bright pop palette of coral red, mint green, cobalt blue, sunflower yellow and cream, exaggerated cartoon expressions, simple geometric shapes, clean shadows as single flat color blocks, subtle paper grain, no text, no letters, no logos, 16:9",
+   "motion_plan": "고정 와이드. 3인 의상색 대비(크림/카키/코발트)로 구분. 검은 트로피처럼 들어 올리는 포즈만(휘두름 없음).",
+   "audio": {
+    "dialogue": "gpt-4o-mini-tts 컷별 생성 후 adelay 배치(Veo 오디오는 효과음만)",
+    "sfx": "발소리, 별 차임",
+    "bgm": "어색한 침묵 -> 팡파르 복귀(46.0)"
+   },
+   "files": {
+    "video": "v3_s08_veo_knights_v01.mp4",
+    "image": "v3_s08_img_knights_v01.png",
+    "tts": "v3_s08_tts_*_v01.mp3"
+   },
+   "output_summary": "미생성 - 제작 후 기입",
+   "ref_basis": "B안 S08 + A안 \"나도 동료한테 배웠다/같이 간다\" 접목. B안의 셋 \"...네?\" 박자는 시간상 삭제(표정으로 대체).",
+   "beat": "박자 깨기(셋 동시 등장)",
+   "still_fallback": "S07식 정지컷 3컷(3인 일관성 실패 시)",
+   "start_sec": 39.0
+  },
+  {
+   "no": 9,
+   "episode": "코다",
+   "phase": "개그 코다(문턱 없음 회수)",
+   "duration_sec": 3,
+   "goal_message": "문이 없으니 노크할 필요도 없다(진입장벽 없음 재회수).",
+   "composition": "정지컷. 빈 문틀 앞 네 명. 사부가 허공에 노크하려다 멈춤, 세 명은 땀방울.",
+   "narration": null,
+   "subtitle": [],
+   "dialogue": [
+    {
+     "speaker": "SORA",
+     "line": "노크는요?",
+     "voice": "nova",
+     "start_sec": 47.2
+    },
+    {
+     "speaker": "MASTER",
+     "line": "문이 없다.",
+     "voice": "onyx",
+     "start_sec": 48.1,
+     "note": "무심하게. 정적 후 한 방"
+    }
+   ],
+   "production": "still",
+   "tools": {
+    "video": "(대체용) veo-3.1-fast 4초, 평소 미사용",
+    "image": "gpt-image-2 1536x1024 - 애니메틱 + 최종 정지컷",
+    "audio": "gpt-4o-mini-tts(대사), Veo 효과음/BGM 클립",
+    "edit": "ffmpeg + Pillow 키워드 오버레이"
+   },
+   "still_prompt": "An empty wooden doorframe floating in space in front of four characters in a row, a young woman humanities student, round glasses, yellow hair tie, cream cardigan, hugging a tall stack of paperback books, simple dot eyes, a young man with a buzz cut, khaki hoodie, habit of snapping a salute, duffel bag on his shoulder, simple dot eyes, a young man office worker, cobalt blue shirt, loose navy tie, employee ID badge on a lanyard, tired droopy eyes, simple dot eyes, and a tall calm mentor character with a long silver braid, a cobalt-blue cloak patterned with tiny constellation dots, and a giant glowing mint-green computer keyboard carried on the shoulder like a sword, simple dot eyes, tiny expressive eyebrows. The mentor raises a fist about to knock on the empty air with a deadpan face, while the other three watch him with sweat drops. Cream and mint background. Wide composition, all four inside the central 16:9 crop. flat 2D vector cartoon animation, uniform thick dark-navy outlines, solid flat colors with no gradients, bright pop palette of coral red, mint green, cobalt blue, sunflower yellow and cream, exaggerated cartoon expressions, simple geometric shapes, clean shadows as single flat color blocks, subtle paper grain, no text, no letters, no logos, 16:9",
+   "video_prompt": "An empty wooden doorframe floating in space in front of four characters in a row. The mentor raises a fist to knock on the empty air, stops, and lowers it with a deadpan face while the other three watch with sweat drops. Fixed shot, 4 seconds. Sound effects only: a soft wind, no speech, no dialogue, no voices. flat 2D vector cartoon animation, uniform thick dark-navy outlines, solid flat colors with no gradients, bright pop palette of coral red, mint green, cobalt blue, sunflower yellow and cream, exaggerated cartoon expressions, simple geometric shapes, clean shadows as single flat color blocks, subtle paper grain, no text, no letters, no logos, 16:9",
+   "motion_plan": "정지컷, 컷 박자에 대사. 줌 없음.",
+   "audio": {
+    "dialogue": "gpt-4o-mini-tts 컷별 생성 후 adelay 배치(Veo 오디오는 효과음만)",
+    "sfx": "바람, 정적",
+    "bgm": "팡파르 직전 짧은 정적"
+   },
+   "files": {
+    "image": "v3_s09_img_knock_v01.png",
+    "tts": "v3_s09_tts_*_v01.mp3"
+   },
+   "output_summary": "미생성 - 제작 후 기입",
+   "ref_basis": "B안 S09. 원안 \"노크는... 하세요\"는 의미가 불분명해 소라 질문+사부 한 줄로 수정.",
+   "beat": "코다",
+   "still_fallback": "",
+   "start_sec": 47.0
+  },
+  {
+   "no": 10,
+   "episode": "엔드카드",
+   "phase": "슬로건·CTA",
+   "duration_sec": 5,
+   "goal_message": "문턱은 없고, 동료는 있다. 코디세이로 오세요.",
+   "composition": "크림 배경, 도장 원 안 CODYSSEY 워드마크, 위에 슬로건, 아래 3키워드와 URL.",
+   "narration": null,
+   "subtitle": [
+    {
+     "t": "50.1-55.0",
+     "text": "문턱은 없고, 동료는 있다.",
+     "size_px": 120,
+     "emph": [
+      "문턱",
+      "동료"
+     ]
+    },
+    {
+     "t": "50.5-55.0",
+     "text": "전공 무관 · 장학금 · 동료학습",
+     "size_px": 64,
+     "emph": []
+    },
+    {
+     "t": "50.5-55.0",
+     "text": "CODYSSEY",
+     "size_px": 64,
+     "emph": []
+    },
+    {
+     "t": "50.8-55.0",
+     "text": "codyssey.kr",
+     "size_px": 44,
+     "emph": []
+    },
+    {
+     "t": "0-55",
+     "text": "※ 연출된 가상 상황 · AI로 제작",
+     "size_px": 30,
+     "emph": []
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "MASTER",
+     "line": "코디세이로 오세요~",
+     "voice": "onyx",
+     "start_sec": 50.3,
+     "note": "이 한 줄만 따뜻하게 웃는 톤"
+    }
+   ],
+   "production": "still",
+   "tools": {
+    "video": "(대체용) veo-3.1-fast 4초, 평소 미사용",
+    "image": "gpt-image-2 1536x1024 - 애니메틱 + 최종 정지컷",
+    "audio": "gpt-4o-mini-tts(대사), Veo 효과음/BGM 클립",
+    "edit": "ffmpeg + Pillow 키워드 오버레이"
+   },
+   "still_prompt": "A clean cream background with a soft ring of tiny constellation stars forming a circle at the center, three small cartoon figures standing on the lower edge looking up at the stars, plenty of empty space for a slogan above and a logo stamp at the center. Keep the lower edge figures small and inside the central 16:9 crop. flat 2D vector cartoon animation, uniform thick dark-navy outlines, solid flat colors with no gradients, bright pop palette of coral red, mint green, cobalt blue, sunflower yellow and cream, exaggerated cartoon expressions, simple geometric shapes, clean shadows as single flat color blocks, subtle paper grain, no text, no letters, no logos, 16:9",
+   "video_prompt": "A clean cream background with twinkling constellation stars slowly appearing around a central ring and three small cartoon figures at the bottom looking up. Fixed shot, 5 seconds. Sound effects only: one star chime, no speech, no dialogue, no voices. flat 2D vector cartoon animation, uniform thick dark-navy outlines, solid flat colors with no gradients, bright pop palette of coral red, mint green, cobalt blue, sunflower yellow and cream, exaggerated cartoon expressions, simple geometric shapes, clean shadows as single flat color blocks, subtle paper grain, no text, no letters, no logos, 16:9",
+   "motion_plan": "도장 쿵과 함께 슬로건 하드컷 등장 후 정지. 박스·버튼 없음.",
+   "audio": {
+    "dialogue": "gpt-4o-mini-tts 컷별 생성 후 adelay 배치(Veo 오디오는 효과음만)",
+    "sfx": "도장 쿵, 별 띠링 1음",
+    "bgm": "팡파르 마무리"
+   },
+   "files": {
+    "image": "v3_s10_img_endcard-bg_v01.png",
+    "tts": "v3_s10_tts_master-end_v01.mp3",
+    "overlay": "v3_s10_ovl_endcard_v01.png"
+   },
+   "output_summary": "미생성 - 제작 후 기입",
+   "ref_basis": "B안 S10 + 3키워드 서브라인(시청자 한 줄 요약용).",
+   "beat": "CTA",
+   "still_fallback": "",
+   "start_sec": 50.0
+  }
+ ],
+ "timing_check": {
+  "durations_sec": [
+   6,
+   8,
+   3,
+   8,
+   3,
+   8,
+   3,
+   8,
+   3,
+   5
+  ],
+  "total_sec": 55,
+  "message_budget_sec": {
+   "진입장벽 없음(S02-S03)": 11,
+   "장학금(S04-S05)": 11,
+   "동료학습(S06-S07)": 11,
+   "회수(S08)": 8,
+   "코다·오프닝·엔드": 14
+  },
+  "note": "미션 30~60초 충족. 마지막 5초(S10)에 브랜드명·슬로건·CTA 동시 노출."
+ },
+ "veo_clip_budget": {
+  "planned": 6,
+  "list": [
+   "S01",
+   "S02",
+   "S04",
+   "S06",
+   "S08",
+   "BGM"
+  ],
+  "quota_cap": 8,
+  "retry_reserve": 2,
+  "retry_priority": [
+   "S08(3인 일관성)",
+   "S02(정적 박자)",
+   "S04"
+  ],
+  "images": "gpt-image-2 정지컷 5장(S03·S05·S07·S09·S10) + 애니메틱용 키프레임 5장(S01·S02·S04·S06·S08)"
+ },
+ "motion_strategy": {
+  "final": "veo 5클립(S01·S02·S04·S06·S08) + 정지컷 5장(S03·S05·S07·S09·S10), 하드컷",
+  "reason": "T2V만 가능하므로 컷 독립 완결 옴니버스. 증명 박자(S03·S05·S07)는 정지컷+키워드 쾅으로 짧게."
+ },
+ "cutdown_15s": {
+  "purpose": "60초 -> 15초 축약",
+  "keep": "S02 부름+거절+받아침(5초) + S05 장학금 쾅(2초) + S07 동료학습(2초) + S08 끝 포즈(2초) + S10(4초)",
+  "drop": "S01, S04, S06, S09",
+  "message": "문턱 없음 / 장학금 / 동료 3키워드만 유지"
+ },
+ "prompt_revision_target": {
+  "scene_no": 2,
+  "before_prompt": "A mentor calls a woman student on library stairs, she refuses, cartoon style.",
+  "after_prompt": "scene 2의 video_prompt",
+  "expected_failure_points": [
+   "화풍이 3D/실사로 이탈",
+   "멘토가 요다/오비완식 노인으로 이탈",
+   "1초 정적 없이 연속 동작",
+   "화면에 글자 생성"
+  ],
+  "revision_reasons": [
+   "STYLE 접미어 고정",
+   "캐릭터 블록 고정(은빛 땋은 머리+별자리 망토+키보드 검)",
+   "\"A one second silent beat\" 명시",
+   "no text 유지"
+  ],
+  "result_summary": "미생성 - 제작 후 기입(예상일 뿐 결과 아님)"
+ },
+ "production_gates": [
+  "G1: S02 먼저 생성해 화풍·정적 박자·사부 외형 판정",
+  "G2: Pillow 오버레이 샘플 1컷",
+  "G3: TTS 길이 ffprobe로 측정해 S02·S04·S06·S08 대사 배치 확정",
+  "G4: S08(3인) 생성 후 일관성 판정, 실패 시 정지컷 3컷",
+  "G5: BGM 클립은 마지막에 생성"
+ ],
+ "risks": [
+  {
+   "risk": "8초 클립에 4박이 다 안 들어감",
+   "mitigation": "증명 박자를 정지컷(S03·S05·S07)으로 이미 분리. 최악엔 S02/S04/S06을 정지컷 2장+줌으로 대체"
+  },
+  {
+   "risk": "S08 3인 의상·얼굴 일관성",
+   "mitigation": "의상색 대비, 실패 시 정지컷 3컷"
+  },
+  {
+   "risk": "사부가 특정 IP 캐릭터로 이탈",
+   "mitigation": "키 큰 은빛 땋은 머리+별자리 망토 고정, 도치 어순 금지, 검수표"
+  },
+  {
+   "risk": "S08 사부 \"나도 동료한테 배웠다\"가 실제 운영 사실로 읽힘",
+   "mitigation": "허구 연출. \"※ 연출된 가상 상황 · AI로 제작\" 전 컷 고지"
+  },
+  {
+   "risk": "\"통장이 비었습니다 -> 장학금 받으며\"가 금액·조건 약속으로 읽힘",
+   "mitigation": "금액·조건 언급 없음. 공식 문구 범위(\"장학금을 받으며 배우는\")만 사용"
+  },
+  {
+   "risk": "Veo 한국어 립싱크",
+   "mitigation": "TTS 후배치, 입 작게"
+  }
+ ],
+ "alternatives": {
+  "image": [
+   "gpt-image-2 (기본)",
+   "imagen-4"
+  ],
+  "video": [
+   "veo-3.1 / veo-3.1-fast 상호 대체",
+   "ffmpeg 정지 이미지 + 키워드 쾅(영상 실패 시)"
+  ],
+  "audio": [
+   "gpt-4o-mini-tts (쇼호스트)",
+   "gemini-2.5-flash-tts (외계인·팀장, 상호 대체)",
+   "BGM: Veo 생성 오디오(음악 모델 없음)"
+  ]
+ },
+ "naming_rule": "v3_s{NN}_{kind}_{content}_{variant}.{ext} (kind: veo|img|tts|ovl, variant v01부터). 최종: output/v3/Codyssey_GenAI_Ad_v3_16x9.mp4",
+ "mission_check": {
+  "length_30_60": "55초",
+  "last_3_5s_brand_cta": "S10 5초 슬로건+CODYSSEY+URL",
+  "image_ai": "gpt-image-2",
+  "video_ai": "veo-3.1-fast",
+  "audio_ai": "gpt-4o-mini-tts + Veo 효과음/BGM",
+  "prompt_before_after": "S02"
+ }
+}

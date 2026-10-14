@@ -1,0 +1,287 @@
+{
+ "out": "output/v3/Codyssey_v3_cuts_16x9.mp4",
+ "segs": [
+  {
+   "src": "assets/v3c/c01.mp4",
+   "ss": 1.45,
+   "dur": 2.03,
+   "subs": [
+    [
+     0.05,
+     2.03,
+     "파도가… 말했다."
+    ]
+   ],
+   "vf": "scale=1920:1080:flags=lanczos"
+  },
+  {
+   "src": "assets/v3c/c02.mp4",
+   "ss": 0,
+   "dur": 3.46,
+   "subs": [
+    [
+     0,
+     3.46,
+     "깨어나라, 그대여. 코디세이로 오라."
+    ]
+   ],
+   "vf": "scale=1920:1080:flags=lanczos"
+  },
+  {
+   "src": "assets/v3c/c03.mp4",
+   "ss": 0.89,
+   "dur": 1.79,
+   "subs": [
+    [
+     0.05,
+     1.79,
+     "…저 국문과인데요?"
+    ]
+   ],
+   "vf": "scale=1920:1080:flags=lanczos"
+  },
+  {
+   "src": "assets/v3c/c04.mp4",
+   "ss": 0.67,
+   "dur": 2.97,
+   "subs": [
+    [
+     0.05,
+     2.97,
+     "나는 항해학과였다."
+    ]
+   ],
+   "vf": "scale=1920:1080:flags=lanczos"
+  },
+  {
+   "src": "assets/v3c/c05.mp4",
+   "ss": 0.38,
+   "dur": 2.93,
+   "subs": [
+    [
+     0.05,
+     2.93,
+     "어? 문이… 없네요?"
+    ]
+   ],
+   "vf": "crop=1024:576:128:72,scale=1920:1080:flags=lanczos"
+  },
+  {
+   "src": "assets/v3c/c06.mp4",
+   "ss": 0.51,
+   "dur": 2.15,
+   "subs": [
+    [
+     0.05,
+     2.15,
+     "문턱도 없다."
+    ]
+   ],
+   "vf": "scale=1920:1080:flags=lanczos"
+  },
+  {
+   "src": "assets/v3c/c07.mp4",
+   "ss": 0,
+   "dur": 3.7,
+   "subs": [
+    [
+     0.04,
+     3.7,
+     "그대 안의 코드가… 깨어났다."
+    ]
+   ],
+   "vf": "scale=1920:1080:flags=lanczos"
+  },
+  {
+   "src": "assets/v3c/c08.mp4",
+   "ss": 0,
+   "dur": 3.14,
+   "subs": [
+    [
+     0,
+     1.92,
+     "충성!"
+    ],
+    [
+     1.94,
+     3.14,
+     "…근데 통장이 비었습니다!"
+    ]
+   ],
+   "vf": "scale=1920:1080:flags=lanczos"
+  },
+  {
+   "src": "assets/v3c/c09.mp4",
+   "ss": 0.31,
+   "dur": 2.35,
+   "subs": [
+    [
+     0.05,
+     2.35,
+     "그건 바다가 채운다."
+    ]
+   ],
+   "vf": "scale=1920:1080:flags=lanczos"
+  },
+  {
+   "src": "assets/v3c/c10.mp4",
+   "ss": 1.11,
+   "dur": 1.59,
+   "subs": [
+    [
+     0.05,
+     1.59,
+     "…진짜 채워지는데요?"
+    ]
+   ],
+   "vf": "crop=1024:576:160:72,scale=1920:1080:flags=lanczos"
+  },
+  {
+   "src": "assets/v3c/c11.mp4",
+   "ss": 0.57,
+   "dur": 1.69,
+   "subs": [
+    [
+     0.05,
+     1.69,
+     "장학금이다."
+    ]
+   ],
+   "vf": "scale=1920:1080:flags=lanczos"
+  },
+  {
+   "src": "assets/v3c/c12.mp4",
+   "ss": 0,
+   "dur": 3.58,
+   "subs": [
+    [
+     0,
+     3.58,
+     "지친 자여… 코디세이로 오라."
+    ]
+   ],
+   "vf": "scale=1920:1080:flags=lanczos"
+  },
+  {
+   "src": "assets/v3c/c13.mp4",
+   "ss": 0.99,
+   "dur": 1.91,
+   "subs": [
+    [
+     0.05,
+     1.91,
+     "…저 내일 출근인데요."
+    ]
+   ],
+   "vf": "scale=1920:1080:flags=lanczos"
+  },
+  {
+   "src": "assets/v3c/c14.mp4",
+   "ss": 0.73,
+   "dur": 2.99,
+   "subs": [
+    [
+     0.05,
+     2.99,
+     "괜찮다… 24시간 개방이다."
+    ]
+   ],
+   "vf": "scale=1920:1080:flags=lanczos"
+  },
+  {
+   "src": "assets/v3c/c15.mp4",
+   "ss": 1.19,
+   "dur": 1.96,
+   "subs": [
+    [
+     0.05,
+     1.96,
+     "혼자서는… 어려워요."
+    ]
+   ],
+   "vf": "scale=1920:1080:flags=lanczos"
+  },
+  {
+   "src": "assets/v3c/c16.mp4",
+   "ss": 0.25,
+   "dur": 4.81,
+   "subs": [
+    [
+     0.05,
+     2.72,
+     "혼자 하지 않는다."
+    ],
+    [
+     2.77,
+     4.81,
+     "주변 동료들과 함께한다."
+    ]
+   ],
+   "vf": "scale=1920:1080:flags=lanczos"
+  },
+  {
+   "src": "assets/v3c/c17.mp4",
+   "ss": 0,
+   "dur": 2.86,
+   "subs": [
+    [
+     0,
+     2.86,
+     "충성! 기수가 어떻게 되십니까!"
+    ]
+   ],
+   "vf": "scale=1920:1080:flags=lanczos"
+  },
+  {
+   "src": "assets/v3c/c18.mp4",
+   "ss": 0,
+   "dur": 5.76,
+   "subs": [
+    [
+     0,
+     3.95,
+     "기수 없다. 모두가 함께 동료다."
+    ],
+    [
+     4.0,
+     5.76,
+     "나도 배우는 중이다."
+    ]
+   ],
+   "vf": "scale=1920:1080:flags=lanczos"
+  },
+  {
+   "src": "assets/v3c/c19.mp4",
+   "ss": 0.92,
+   "dur": 6.08,
+   "subs": [
+    [
+     0.05,
+     3.56,
+     "코디세이로 와라!"
+    ]
+   ],
+   "vf": "scale=1920:1080:flags=lanczos,tpad=stop_mode=clone:stop_duration=2"
+  }
+ ],
+ "supers": [
+  [
+   5,
+   0.05,
+   2.1,
+   "전공·경력 무관"
+  ],
+  [
+   10,
+   0.05,
+   1.64,
+   "장학금"
+  ],
+  [
+   15,
+   2.77,
+   2.0399999999999996,
+   "동료학습"
+  ]
+ ]
+}
